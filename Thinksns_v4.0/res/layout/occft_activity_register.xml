@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <RelativeLayout
+        android:id="@+id/tljr_reg_img_lfengexian1"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/tljr_statusbarcolor">
+
+        <TextView
+            android:id="@+id/tljr_txt_hq_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/tljr_reg_txt_ltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新用户注册"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/tljr_reg_btn_lfanhui"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:visibility="gone"
+        android:id="@+id/tljr_reg_grp_lradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tljr_reg_img_lfengexian1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tljr_reg_rbtn_lgeren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:text="个人用户"
+            android:textColor="#555555" />
+
+        <RadioButton
+            android:id="@+id/tljr_reg_rbtn_ljigou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="机构用户"
+            android:textColor="#555555" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tljr_reg_grp_lradio"
+        android:background="#F5F5F5"
+        android:paddingTop="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tljr_reg_et_jigou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_theme"
+            android:ems="10"
+            android:hint="机构名称"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/tljr_text_tishi"
+            android:textCursorDrawable="@drawable/edittextcursor"
+            android:visibility="gone" />
+
+        <EditText
+            android:textSize="14sp"
+            android:id="@+id/tljr_reg_et_lname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/bg_country_border"
+            android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:hint="请输入用户名"
+            android:maxLength="20"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/tljr_text_tishi"
+            android:textCursorDrawable="@drawable/edittextcursor" />
+
+        <EditText
+            android:textSize="14sp"
+            android:id="@+id/tljr_reg_et_lpwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/bg_country_border"
+            android:digits="@string/type_limit"
+            android:ems="10"
+            android:hint="请输入密码6-12位由数字和字母组成"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/tljr_text_tishi"
+            android:textCursorDrawable="@drawable/edittextcursor"></EditText>
+
+        <EditText
+            android:textSize="14sp"
+            android:id="@+id/tljr_reg_et_repwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/bg_country_border"
+            android:digits="@string/type_limit"
+            android:ems="10"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:textColor="@color/default_text"
+            android:textColorHint="@color/tljr_text_tishi"
+            android:textCursorDrawable="@drawable/edittextcursor"></EditText>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/tljr_reg_btn_zhuce"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_login"
+            android:text="注   册"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

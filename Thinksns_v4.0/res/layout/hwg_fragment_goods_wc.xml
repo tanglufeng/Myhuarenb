@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.abcs.haiwaigou.view.CustLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/comment_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            app:pstsDividerColor="@color/white"
+            app:pstsIndicatorColor="@color/colorPrimaryDark"
+            app:pstsIndicatorHeight="4dp"
+            app:pstsShouldExpand="true"
+            app:pstsTabPaddingLeftRight="1dp"
+            app:pstsUnderlineColor="@color/white">
+
+        </com.astuetz.PagerSlidingTabStrip>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperate_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/subscribe_seperate_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/comment_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</com.abcs.haiwaigou.view.CustLinearLayout>

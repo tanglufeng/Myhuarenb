@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sheng_ji_hui_yuan"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hwg_bg"
+    tools:context="com.abcs.huaqiaobang.activity.ShengJiHuiYuanActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/TitleHeight"
+            android:background="@color/result_view">
+
+            <include
+                android:id="@+id/tljr_per_btn_lfanhui"
+                layout="@layout/tljr_view_back" />
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="?attr/TitleTextSize" />
+
+            <TextView
+                android:id="@+id/tljr_per_txt_ltext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="升级会员"
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="?attr/TitleTextSize" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/rl_title"
+            android:id="@+id/rl_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/click_bj">
+
+            <TextView
+                android:id="@+id/tv_type_kai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="@color/hwg_text1"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_hy_dengji"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_type_kai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/hwg_text1"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+        <com.abcs.hqbtravel.wedgt.MyListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.abcs.hqbtravel.wedgt.MyListView>
+
+        <!--<RelativeLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginTop="1dp"-->
+        <!--android:layout_below="@+id/rl_title"-->
+        <!--android:id="@+id/rl_putongka"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="@drawable/click_bj">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_type_kai_puto"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_toRightOf="@+id/img_information"-->
+        <!--android:text="普通会员卡"-->
+        <!--android:textColor="@color/hwg_text1"-->
+        <!--android:textSize="18sp" />-->
+        <!--<TextView-->
+        <!--android:layout_below="@+id/tv_type_kai_puto"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_toRightOf="@+id/img_information"-->
+        <!--android:text="身份特征"-->
+        <!--android:textColor="@color/hwg_text1"-->
+        <!--android:textSize="15sp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_information"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:src="@drawable/img_vip_putong" />-->
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="15dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/img_vip_too" />-->
+
+        <!--</RelativeLayout>-->
+        <!--<RelativeLayout-->
+        <!--android:layout_marginTop="1dp"-->
+        <!--android:layout_below="@+id/rl_title"-->
+        <!--android:id="@+id/rl_jinka"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="@drawable/click_bj">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_type_kai_jin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_toRightOf="@+id/img_information_jin"-->
+        <!--android:text="尊贵金卡"-->
+        <!--android:textColor="@color/hwg_text1"-->
+        <!--android:textSize="18sp" />-->
+        <!--<TextView-->
+        <!--android:layout_below="@+id/tv_type_kai_jin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_toRightOf="@+id/img_information_jin"-->
+        <!--android:text="身份象征，购物的好帮手"-->
+        <!--android:textColor="@color/hwg_text1"-->
+        <!--android:textSize="15sp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_information_jin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:src="@drawable/img_vip_jinka" />-->
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="15dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/img_vip_too" />-->
+
+        <!--</RelativeLayout>-->
+        <!--<RelativeLayout-->
+        <!--android:layout_marginTop="1dp"-->
+        <!--android:layout_below="@+id/rl_title"-->
+        <!--android:id="@+id/rl_bojinka"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="@drawable/click_bj">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_type_kai_bojin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_toRightOf="@+id/img_information_bojin"-->
+        <!--android:text="奢华铂金卡"-->
+        <!--android:textColor="@color/hwg_text1"-->
+        <!--android:textSize="18sp" />-->
+        <!--<TextView-->
+        <!--android:layout_below="@+id/tv_type_kai_bojin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_toRightOf="@+id/img_information_bojin"-->
+        <!--android:text="商旅精英人士最佳选择"-->
+        <!--android:textColor="@color/hwg_text1"-->
+        <!--android:textSize="15sp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_information_bojin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:src="@drawable/img_vip_baijin" />-->
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="15dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/img_vip_too" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_marginTop="1dp"-->
+        <!--android:layout_below="@+id/rl_title"-->
+        <!--android:id="@+id/rl_hei"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="@drawable/click_bj">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_type_kai_hei"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_toRightOf="@+id/img_heika"-->
+        <!--android:text="合伙人黑卡"-->
+        <!--android:textColor="@color/hwg_text1"-->
+        <!--android:textSize="18sp" />-->
+        <!--<TextView-->
+        <!--android:layout_below="@+id/tv_type_kai_hei"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_toRightOf="@+id/img_heika"-->
+        <!--android:text="私人管家优先相应你的一切需求"-->
+        <!--android:textColor="@color/hwg_text1"-->
+        <!--android:textSize="15sp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_heika"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:src="@drawable/img_vip_heika" />-->
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="10dp"-->
+        <!--android:layout_height="15dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/img_vip_too" />-->
+
+        <!--</RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="企业级购买请联系"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:autoLink="phone"
+                android:textColor="@color/text_warning"
+                android:text="0755-32838341"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

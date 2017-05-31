@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PhotoMaster/PhotoMaster.iml" filepath="$PROJECT_DIR$/PhotoMaster/PhotoMaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TSChat/TSChat.iml" filepath="$PROJECT_DIR$/TSChat/TSChat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThinkSnsBase/ThinkSnsBase.iml" filepath="$PROJECT_DIR$/ThinkSnsBase/ThinkSnsBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thinksns_v4.0/Thinksns_v4.0.iml" filepath="$PROJECT_DIR$/Thinksns_v4.0/Thinksns_v4.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-pulltorefresh/android-pulltorefresh.iml" filepath="$PROJECT_DIR$/android-pulltorefresh/android-pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huarenbang.iml" filepath="$PROJECT_DIR$/huarenbang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaapk.com-datapicker_library/javaapk.com-datapicker_library.iml" filepath="$PROJECT_DIR$/javaapk.com-datapicker_library/javaapk.com-datapicker_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_vediorecorder/lib_vediorecorder.iml" filepath="$PROJECT_DIR$/lib_vediorecorder/lib_vediorecorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" />
+    </modules>
+  </component>
+</project>

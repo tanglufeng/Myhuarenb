@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="210dp"
+        android:background="@drawable/modifyheaderview"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="center"
+            android:text="请选择头像上传方式"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/click_bj"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="@color/tljr_text_default" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/subscribe_seperate_line" />
+
+        <TextView
+            android:id="@+id/picture_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/click_bj"
+            android:gravity="center"
+
+            android:text="从相册选择上传"
+            android:textColor="@color/tljr_text_default" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/subscribe_seperate_line" />
+
+        <TextView
+            android:id="@+id/default_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/click_bj"
+            android:gravity="center"
+            android:text="系统默认头像"
+            android:textColor="@color/tljr_text_default" />
+    </LinearLayout>
+
+
+</LinearLayout>

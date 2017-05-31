@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="themeColor">#fff74f66</color>
+    <color name="themeColor_Alpha0.8">#80f74f66</color>
+    <color name="pager_bg">#CA000000</color>
+    <color name= "blue">#ff17a0e9</color>
+</resources>

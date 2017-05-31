@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/preciew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#e7e7e7"
+        android:id="@+id/camera_menu"
+        >
+        <Button
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/cancle"
+            android:background="@null"
+            android:text="取消"
+            />
+        <Button
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:background="@drawable/img_local_paizhaoicon"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/camera_photo"
+            />
+        <Button
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:id="@+id/camera_ok"
+            android:text="确定"
+            />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallery_images"
+        android:layout_above="@id/camera_menu"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:id="@+id/linearlayout_images"
+            android:layout_marginTop="40dp"
+            >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

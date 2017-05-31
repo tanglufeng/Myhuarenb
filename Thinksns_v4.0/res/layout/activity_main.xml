@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <ScrollView
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                                <RelativeLayout
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                        <com.abcs.hqbtravel.RollPager.RollPagerView
+                                            android:background="@android:color/transparent"
+                                            android:id="@+id/roll_pagerview"
+                                            android:layout_width="match_parent"
+                                            android:alpha="0.8"
+                                            android:layout_height="200dp" />
+
+                                        <include
+                                            layout="@layout/hqb_travel_top"></include>
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="65dp">
+
+                                        <RelativeLayout
+                                            android:id="@+id/re2_first1"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_height="match_parent">
+
+                                                <ImageView
+                                                    android:layout_centerHorizontal="true"
+                                                    android:id="@+id/img_second"
+                                                    android:src="@drawable/img_biwan"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp" />
+                                                <TextView
+                                                    android:layout_below="@+id/img_second"
+                                                    android:text="必玩"
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content" />
+                                        </RelativeLayout>
+                                        <RelativeLayout
+                                            android:id="@+id/re3_first1"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_height="match_parent">
+
+                                                <ImageView
+                                                    android:layout_centerHorizontal="true"
+                                                    android:id="@+id/img_third"
+                                                    android:src="@drawable/img_bichi"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp" />
+                                                <TextView
+                                                    android:layout_below="@+id/img_third"
+                                                    android:text="必吃"
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content" />
+                                        </RelativeLayout>
+                                        <RelativeLayout
+                                            android:id="@+id/re4_first1"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_height="match_parent">
+
+                                                <ImageView
+                                                    android:id="@+id/img_fouth"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:src="@drawable/img_bimai"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp" />
+                                                <TextView
+                                                    android:layout_below="@+id/img_fouth"
+                                                    android:text="必买"
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content" />
+                                        </RelativeLayout>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_height="65dp">
+                                        <RelativeLayout
+                                            android:id="@+id/rel_first"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_height="match_parent">
+
+                                                <RelativeLayout
+                                                    android:id="@+id/ff"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp">
+
+                                                        <ImageView
+                                                            android:id="@+id/img_first"
+                                                            android:src="@drawable/img_travelzhuli"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent" />
+
+                                                        <TextView
+                                                            android:visibility="gone"
+                                                            android:layout_alignParentTop="true"
+                                                            android:layout_alignParentRight="true"
+                                                            android:background="@drawable/img_biaoqian"
+                                                            android:layout_width="10dp"
+                                                            android:layout_height="10dp" />
+
+                                                </RelativeLayout>
+
+                                                <TextView
+                                                    android:gravity="center"
+                                                    android:layout_below="@+id/ff"
+                                                    android:text="旅游助理"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content" />
+                                        </RelativeLayout>
+                                        <RelativeLayout
+                                            android:id="@+id/re2_daohang"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_height="match_parent">
+
+                                                <RelativeLayout
+                                                    android:id="@+id/cc"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp">
+                                                        <ImageView
+                                                            android:id="@+id/img_dianzi"
+                                                            android:src="@drawable/img_yuyindaohang"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent" />
+                                                        <TextView
+                                                            android:visibility="gone"
+                                                            android:layout_alignParentTop="true"
+                                                            android:layout_alignParentRight="true"
+                                                            android:background="@drawable/img_biaoqian"
+                                                            android:text="12"
+                                                            android:padding="1dp"
+                                                            android:textSize="@dimen/dimen_18sp"
+                                                            android:gravity="center"
+                                                            android:layout_width="20dp"
+                                                            android:layout_height="15dp" />
+
+                                                </RelativeLayout>
+                                                <TextView
+                                                    android:layout_below="@+id/cc"
+                                                    android:text="语音导航"
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content" />
+                                        </RelativeLayout>
+                                        <RelativeLayout
+                                            android:id="@+id/re3_youji"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_height="match_parent">
+
+                                                <ImageView
+                                                    android:layout_centerHorizontal="true"
+                                                    android:id="@+id/img_jingcai"
+                                                    android:src="@drawable/img_jingcaiyouji"
+                                                    android:layout_marginBottom="5dp"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp" />
+                                                <TextView
+                                                    android:layout_below="@+id/img_jingcai"
+                                                    android:text="精彩游记"
+                                                    android:gravity="center"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content" />
+                                        </RelativeLayout>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/line_jindian"
+                                    android:visibility="gone"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="10dp"
+                                            android:background="#ededed"
+                                            />
+                                        <RelativeLayout
+                                            android:layout_marginTop="10dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:id="@+id/tv_jingdiancount"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_marginLeft="10dp"
+                                                    android:text="附近热门景点(12)"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" />
+                                                <TextView
+                                                    android:id="@+id/tv_moretourist"
+                                                    android:text="更多"
+                                                    android:layout_marginRight="10dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:gravity="center"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="wrap_content" />
+
+                                        </RelativeLayout>
+
+                                        <com.abcs.hqbtravel.wedgt.MyGridView
+                                            android:id="@+id/grid_fujin_jingtian"
+                                            android:layout_margin="10dp"
+                                            android:numColumns="2"
+                                            android:stretchMode="columnWidth"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"></com.abcs.hqbtravel.wedgt.MyGridView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/line_server"
+                                    android:visibility="gone"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="10dp"
+                                            android:background="#ededed"
+                                            />
+                                        <RelativeLayout
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:id="@+id/tv_touristcount"
+                                                    android:layout_marginLeft="10dp"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:text="附近服务(12)"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" />
+                                                <TextView
+                                                    android:text="更多"
+                                                    android:id="@+id/tv_moreserver"
+                                                    android:layout_marginRight="10dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:gravity="center"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="wrap_content" />
+
+                                        </RelativeLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/re_fuqu1"
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                        </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/line_shop"
+                                    android:visibility="gone"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="10dp"
+                                            android:background="#ededed"
+                                            />
+                                        <RelativeLayout
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:id="@+id/tv_shop"
+                                                    android:layout_marginLeft="10dp"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:text="必买(12)"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" />
+                                                <TextView
+                                                    android:text="更多"
+                                                    android:id="@+id/tv_moreshop"
+                                                    android:layout_marginRight="10dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:gravity="center"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="wrap_content" />
+
+                                        </RelativeLayout>
+
+                                        <com.abcs.hqbtravel.wedgt.MyListView
+                                            android:id="@+id/re_shop"
+                                            android:cacheColorHint="#00000000"
+                                            android:listSelector="#00000000"
+                                            android:divider="@null"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"/>
+                                        <!--<LinearLayout-->
+                                        <!--android:id="@+id/re_shop"-->
+                                        <!--android:orientation="vertical"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content">-->
+
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:id="@+id/line_restauants"
+                                    android:visibility="gone"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="10dp"
+                                            android:background="#ededed"
+                                            />
+
+                                        <RelativeLayout
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                                <TextView
+                                                    android:id="@+id/tv_restauants"
+                                                    android:layout_marginLeft="10dp"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:text="必吃(12)"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content" />
+                                                <TextView
+                                                    android:text="更多"
+                                                    android:id="@+id/tv_morerestauants"
+                                                    android:layout_marginRight="10dp"
+                                                    android:layout_alignParentRight="true"
+                                                    android:gravity="center"
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="wrap_content" />
+
+                                        </RelativeLayout>
+
+                                        <com.abcs.hqbtravel.wedgt.MyListView
+                                            android:id="@+id/re_restauants"
+                                            android:cacheColorHint="#00000000"
+                                            android:listSelector="#00000000"
+                                            android:divider="@null"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                        </com.abcs.hqbtravel.wedgt.MyListView>
+                                        <!--<LinearLayout-->
+                                        <!--android:id="@+id/re_restauants"-->
+                                        <!--android:orientation="vertical"-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content">-->
+
+                                        <!--</LinearLayout>-->
+
+                                </LinearLayout>
+
+                        </LinearLayout>
+                </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

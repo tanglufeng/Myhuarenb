@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/local_rl_ad"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/fuchuangbackground"
+        >
+
+        <LinearLayout
+            android:id="@+id/liner_kefu_logo"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_kefu_logo" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff4956"
+                android:textSize="18sp"
+                android:text="联系本地客服"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/liner_weixin_logo"
+            android:layout_marginRight="13dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iv_weixin_logo" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

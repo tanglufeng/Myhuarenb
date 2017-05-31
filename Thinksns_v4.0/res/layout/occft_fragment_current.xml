@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_regiest_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj" >
+
+        <TextView
+            android:id="@+id/tljr_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/fragment_current"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/tljr_btn_lfanhui"
+            layout="@layout/tljr_view_back"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/current_grp"
+        android:layout_below="@+id/tljr_grp_regiest_title"
+        android:background="@color/tljr_white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/TitleBj"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/tlink"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/xian_gray" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="?attr/TitleBj"
+                        android:gravity="center"
+                        android:text="昨日收益(元)"
+                        android:textColor="@color/tljr_white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/Investmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0.00"
+                    android:textColor="@color/tljr_white"
+                    android:textSize="36dp" />
+
+                <TextView
+                    android:id="@+id/leiji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@color/xian_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/xian1"
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/yitougeshu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toLeftOf="@+id/xian1"
+                        android:gravity="center"
+                        android:textColor="@color/c_gray_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/yitoujinqian"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@+id/xian1"
+                        android:gravity="center"
+                        android:textColor="@color/c_gray_text"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+
+                <View
+                    android:id="@+id/zjfgx"
+                    android:layout_width="0.1dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/img_222fengexian" />
+
+                <ImageView
+                    android:id="@+id/checkItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/tljr_pro_red"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/weekgain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/zjfgx"
+                    android:gravity="center"
+                    android:text="近7日年化收益率\n"
+                    android:textColor="@color/tljr_c_red" />
+
+                <TextView
+                    android:id="@+id/tengain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/zjfgx"
+                    android:gravity="center"
+                    android:text="万分收益(元)\n"
+                    android:textColor="@color/tljr_text_tishi" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@drawable/img_222fengexian" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="@color/tljr_bj" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@drawable/img_222fengexian" />
+
+            <LinearLayout
+                android:id="@+id/gain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/fragment_current_more"
+                android:textColor="@color/tljr_text_default"
+                android:textSize="16sp" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <RadioButton
+                    android:id="@+id/week"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cb_current"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/fragment_current_seven"
+                    android:textColor="@color/tljr_txt_check"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/month"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/cb_current"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/fragment_current_month"
+                    android:textColor="@color/tljr_txt_check"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/twomonth"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/cb_current"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/fragment_current_twomonth"
+                    android:textColor="@color/tljr_txt_check"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/current_grp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/TitleBj" >
+
+        <TextView
+            android:id="@+id/xian2"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/xian_gray" />
+
+        <TextView
+            android:id="@+id/turnout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/xian2"
+            android:gravity="center"
+            android:text="@string/turnout"
+            android:textColor="@color/c_gray_text"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/turnoutbj"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/xian2"
+            android:background="@color/tljr_bjatitle"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/turnin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/xian2"
+            android:gravity="center"
+            android:text="@string/turnin"
+            android:textColor="@color/c_gray_text"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

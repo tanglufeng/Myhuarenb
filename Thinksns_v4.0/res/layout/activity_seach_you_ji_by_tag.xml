@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/inf"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:onClick="onCancle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_hwg_back_gray" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/ed_sercher"
+            android:hint="请输入关键字"
+            android:textSize="@dimen/dimen_25sp"
+            android:background="@drawable/img_sercher_bg"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:layout_width="0dp"
+            android:layout_weight="1.3"
+            android:layout_height="30dp" />
+
+        <TextView
+
+            android:clickable="true"
+            android:onClick="onCancle2"
+            android:background="@drawable/bg_text_youji_tag"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="取消"
+            android:textSize="?attr/TitleTextSize"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:visibility="gone"
+        android:layout_below="@+id/inf"
+        android:id="@+id/rv_bytag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_progress="@layout/view_progress" />
+
+    <include layout="@layout/view_nodata"></include>
+
+</RelativeLayout>

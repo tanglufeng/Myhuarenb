@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.abcs.haiwaigou.local.activity.CountryCityActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/main_layout_titlebar_white"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:padding="0dp"
+                android:layout_margin="0dp"
+                android:id="@+id/area_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                app:pstsDividerColor="@color/white"
+                app:pstsTabPaddingLeftRight="10dp"
+                app:pstsIndicatorColor="@color/colorPrimaryDark"
+                app:pstsIndicatorHeight="4dp"
+                app:pstsShouldExpand="false"
+                app:pstsUnderlineColor="@color/white">
+
+            </com.astuetz.PagerSlidingTabStrip>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/seperate_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/subscribe_seperate_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</LinearLayout>

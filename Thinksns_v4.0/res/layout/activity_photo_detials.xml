@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_photo_detials"
+    android:background="@color/bg_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/inf"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img_hwg_back_gray" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_title"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="必吃详情"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></android.support.v4.view.ViewPager>
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tv_name"
+        android:textColor="@color/bg_white"
+        android:text="未知未知"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_name"
+        android:id="@+id/tv_time"
+        android:textColor="@color/bg_white"
+        android:text="摄影于2013-3-23"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_location"
+        android:text="1/10"
+        android:textSize="15sp"
+        android:textColor="@color/bg_white"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:layout_above="@+id/tv_name"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/text_orange"
+        android:layout_marginBottom="5dp"
+        android:text="来自游记《人间四月天》"
+        android:id="@+id/tv_piv_num"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

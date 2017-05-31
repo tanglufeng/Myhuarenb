@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/tljr_statusbarcolor" >
+
+        <TextView
+
+            android:id="@+id/tljr_txt_share_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提示"
+            android:textColor="@color/tljr_white"
+            android:textSize="18sp"  />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tljr_dialog_exit_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="确定退出华侨理财？"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/tljr_text_default"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitXY"
+        android:background="@color/tljr_statusbarcolor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/tljr_dialog_exit_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tljr_dialog_exit_fgx"
+            android:background="@drawable/tljr_click"
+            android:text="取消"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/tljr_dialog_exit_fgx"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:background="@color/tljr_statusbarcolor"/>
+
+        <Button
+            android:id="@+id/tljr_dialog_exit_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tljr_dialog_exit_fgx"
+            android:background="@drawable/tljr_click"
+            android:text="确定"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

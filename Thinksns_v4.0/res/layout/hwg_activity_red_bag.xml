@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fffbfa"
+    android:gravity="center_horizontal"
+    tools:context="com.abcs.haiwaigou.activity.RedBagActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_hwg_redbag_bg">
+        <RelativeLayout
+            android:id="@+id/relative_title"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/TitleHeight">
+
+            <RelativeLayout
+                android:id="@+id/relative_back"
+                android:layout_width="?attr/TitleHeight"
+                android:layout_height="?attr/TitleHeight"
+                android:background="@drawable/tljr_click">
+
+                <include layout="@layout/tljr_view_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="口令红包"
+                android:textColor="@color/white"
+                android:textSize="?attr/TitleTextSize" />
+
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:id="@+id/relative_my"
+                android:layout_width="80dp"
+                android:layout_height="?attr/TitleHeight"
+                android:background="@drawable/tljr_click">
+
+               <TextView
+                   android:layout_centerInParent="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="我的红包"
+                   android:textColor="@color/white"
+                   android:textSize="16sp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/t_text"
+            android:textColor="@color/white"
+            android:layout_below="@+id/relative_title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输口令 领红包"/>
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/t_text"
+            android:layout_toRightOf="@+id/t_text"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/relative_title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_hwg_redbag_msg"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/t_text"
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_code"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/img_hwg_redbag_ed"
+            android:gravity="center"
+            android:hint="请输入口令"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:textColor="@color/hwg_text1"
+            android:textColorHint="@color/hwg_text3"
+            android:textCursorDrawable="@drawable/edittextcursor"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/t_ling"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_hwg_redbag_ling"/>
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textColor="@color/hwg_text2"
+            android:text="如何获取红包口令："
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/hwg_text2"
+            android:layout_marginTop="5dp"
+            android:text="1.微信关注“华人邦”，即可获得红包口令，立即行动，手快有！"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/hwg_text2"
+            android:layout_marginTop="5dp"
+            android:text="2.百度搜索“华人邦红包口令”，定期发活动红包。"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/hwg_text2"
+            android:layout_marginTop="5dp"
+            android:text="3.向介绍你使用这个App的朋友要一个，他多半会知道几个。"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/hwg_text2"
+            android:layout_marginTop="5dp"
+            android:text="4.还有最后一个办法，您输入各种口令试试看看，祝您好运，哈哈！"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

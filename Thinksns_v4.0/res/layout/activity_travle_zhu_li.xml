@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/inf"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="5dp"
+            android:layout_margin="@dimen/dimen_15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_travel_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="@dimen/dimen_35sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="旅行助理"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:id="@+id/tv_mune_right"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="出售服务"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@+id/inf"
+        android:id="@+id/lines"
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relati_selects"
+        android:layout_below="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_72dp">
+        <RelativeLayout
+            android:id="@+id/relata_allserver"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_zhuli_allserver"
+                android:text="全部服务"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_zhuli_allserver"
+                android:background="@drawable/ima_zhuli_down"
+                android:id="@+id/tv_zhuli_allserver_icon"
+                android:layout_width="13dp"
+                android:layout_height="7dp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/relata_allserver"
+            android:layout_marginLeft="25dp"
+            android:background="@color/bg_gray"
+            android:layout_width="1dp"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/relata_nosex_server"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_zhuli_nosex_server"
+                android:text="不限男女"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_zhuli_nosex_server"
+                android:background="@drawable/ima_zhuli_down"
+                android:id="@+id/tv_zhuli_nosex_server_icon"
+                android:layout_width="13dp"
+                android:layout_height="7dp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/relata_nosex_server"
+            android:layout_marginLeft="25dp"
+            style="@style/VerticalDivier15"
+            />
+        <RelativeLayout
+            android:id="@+id/relata_sort_server"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:id="@+id/tv_zhuli_sort_server"
+                android:text="智能排序"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_zhuli_sort_server"
+                android:background="@drawable/ima_zhuli_down"
+                android:id="@+id/tv_zhuli_sort_server_icon"
+                android:layout_width="13dp"
+                android:layout_height="7dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:layout_below="@+id/relati_selects"
+        android:id="@+id/rv_zhuli"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_progress="@layout/view_progress" />
+</RelativeLayout>

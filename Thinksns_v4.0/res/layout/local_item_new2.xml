@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_root"
+    android:background="@drawable/mainclick_selector"
+    android:clickable="true">
+
+<LinearLayout
+    android:id="@+id/item"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="10dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/t_dain"
+            android:gravity="center"
+            android:background="@drawable/img_hwg_indicator_select"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:lineSpacingExtra="1dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left|center_vertical"
+        android:lines="2"
+        android:id="@+id/tv_title"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        tools:text="新常态聚新常态聚焦新常态态新常态聚焦新常态态新常态聚焦新常态态新常态聚焦新常态态新常态聚焦新常态态新常态聚焦新常态态焦新常态态 "
+        android:textColor="#242424"
+        android:textSize="14sp" />
+</LinearLayout>
+    <View
+        android:layout_below="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/subscribe_seperate_line" />
+</RelativeLayout>

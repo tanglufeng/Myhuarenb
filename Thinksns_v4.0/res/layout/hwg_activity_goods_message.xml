@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hwg_bg">
+
+    <View
+        android:id="@+id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/white"
+        android:visibility="gone"></View>
+
+    <RelativeLayout
+        android:id="@+id/hwg_goods_message_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:layout_below="@+id/statusbar"
+        android:background="@color/white"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/tljr_txt_country_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/hwg_text1"
+            android:textSize="?attr/TitleTextSize" />
+
+        <TextView
+            android:id="@+id/hwg_goods_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_txt_news_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/hwg_text1"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relative_back"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/tljr_click">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_hwg_detail_back_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/relative_share"
+            android:background="@drawable/tljr_click"
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:id="@+id/img_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/img_hwg_detail_collect_dark" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tljr_click">
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/img_hwg_detail_share_dark"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/hwg_text3" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_goods"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/hwg_goods_message_title"
+        android:visibility="invisible" />
+
+    <com.abcs.haiwaigou.view.DragLayout
+        android:id="@+id/draglayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/relative_bottom"
+        android:layout_below="@+id/hwg_goods_message_title"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/first"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <FrameLayout
+            android:id="@+id/second"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </com.abcs.haiwaigou.view.DragLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_network"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/hwg_goods_message_title"
+        android:background="#99000000"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="网络请求失败，请检查您的网络设置"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_hwg_more" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_shopcar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/click_bj"
+                android:clickable="true"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/shopcar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/margin_size2"
+                    android:src="@drawable/img_hwg_detail_cart" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="购物车"
+                    android:textColor="@color/noselect"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/car_num"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignEnd="@+id/textView"
+                    android:layout_alignRight="@+id/textView"
+                    android:layout_alignTop="@+id/shopcar"
+                    android:background="@drawable/img_tishi2"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_dianpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/click_bj"
+                android:clickable="true"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp">
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/hwg_text3" />
+
+                <ImageView
+                    android:id="@+id/img_dianpu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/margin_size3"
+                    android:src="@drawable/img_hwg_kefu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="客服"
+                    android:textColor="@color/noselect"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/t_addshopcar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/btn_login"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="加入购物车"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/hwg_text3" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

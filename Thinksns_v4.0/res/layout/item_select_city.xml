@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tljr_bj"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_catagory"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginRight="24dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:text="自动定位"
+        android:textColor="@color/tljr_text_tishi"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/line_tv_catagory"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/subscribe_seperate_line" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="14sp">
+
+        <ImageView
+            android:id="@+id/img_news_country"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_country_border"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_huaqiao_default" />
+
+        <TextView
+            android:id="@+id/notify_circle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/img_xiaoxitishi"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/tv_news_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_news_country"
+            android:text="中国"
+            android:textColor="@color/tljr_text_shense" />
+
+        <TextView
+            android:id="@+id/tv_news_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_news_country"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/img_news_country"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="描述"
+            android:textColor="@color/tljr_text_tishi" />
+
+        <TextView
+            android:id="@+id/tv_news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="16:11"
+            android:textColor="@color/tljr_text_tishi" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/subscribe_seperate_line" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/subscribe_seperate_line" />
+
+</LinearLayout>

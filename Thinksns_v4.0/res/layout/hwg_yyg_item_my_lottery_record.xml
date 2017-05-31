@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:id="@+id/relative_icon"
+            android:layout_centerVertical="true"
+            android:layout_width="100dp"
+            android:layout_height="75dp">
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gouwuka" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/t_money"
+                android:textSize="14dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/tljr_statusbarcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥100"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_isluck"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/img_yyg_isget"/>
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/relative_icon">
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:id="@+id/t_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="100元购物华人邦卡"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/t_all_need"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_title"
+                android:layout_marginBottom="2dp"
+                android:text="总需:100"
+                android:textColor="@color/tljr_gray" />
+
+            <LinearLayout
+                android:id="@+id/linear_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_all_need"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="幸运号码:"
+                    android:textColor="@color/hwg_text2" />
+
+                <TextView
+                    android:id="@+id/t_luckyNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t_title"
+                    android:text="19930829"
+                    android:textColor="@color/tljr_statusbarcolor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_canyu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_code"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本期参与:"
+                    android:textColor="@color/hwg_text2" />
+
+                <TextView
+                    android:id="@+id/t_canyu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t_title"
+                    android:text="25"
+                    android:textColor="@color/hwg_text2" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="right"
+                    android:text="查看TA的号码"
+                    android:textColor="@color/yyg_blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_canyu"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="揭晓时间:"
+                    android:textColor="@color/hwg_text2" />
+
+                <TextView
+                    android:id="@+id/t_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t_title"
+                    android:text="2016-07-25 20:45:12"
+                    android:textColor="@color/hwg_text2" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+
+                android:id="@+id/linear_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_time"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="奖品状态:"
+                    android:textColor="@color/hwg_text2" />
+
+                <TextView
+                    android:id="@+id/t_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t_title"
+                    android:text="等待商品派发"
+                    android:textColor="@color/yyg_text_yellow" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_state"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_hwg_yyg_duihuan"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/subscribe_seperate_line" />
+</LinearLayout>

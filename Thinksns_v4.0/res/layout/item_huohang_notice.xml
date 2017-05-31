@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/hwg_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/iv_notice_fxj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_titile"
+            tools:text="标题"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:gravity="left|center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="20dp"
+            android:id="@+id/tv_message"
+            tools:text="jacak,你好你好你好你好你好你好你好你好你好你好你好你好。。。"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:gravity="left|center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginRight="10dp"
+            tools:text="2012-12-12"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:gravity="left|center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_notice"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/iv_notice_red_dian"
+            android:layout_width="5dp"
+            android:layout_height="5dp" />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

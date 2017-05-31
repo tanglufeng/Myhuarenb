@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/hwg_bg"
+   >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tljr_click"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_local_left_red" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="城市地图"
+            android:textColor="@color/hwg_text1"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relative_gotomap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.baidu.mapapi.map.TextureMapView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:clickable="false" />
+
+       <!-- <com.abcs.hqbtravel.wedgt.ScrollBanner
+            android:visibility="gone"
+            android:layout_below="@+id/mapView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/scroll_banner"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            ></com.abcs.hqbtravel.wedgt.ScrollBanner>-->
+
+      <!--  <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/mapView"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>-->
+    </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lin_to_map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"></View>
+    </RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.abcs.haiwaigou.local.activity.CommunityActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/white">
+
+        <include layout="@layout/main_layout_titlebar_white" />
+
+        <RelativeLayout
+            android:id="@+id/relative_my"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的"
+                android:textColor="@color/hwg_text2"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:background="@color/white"
+        android:id="@+id/main_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_local_all"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/img_local_all"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="全部"
+            android:textColor="@drawable/main_text_selected_local"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/rb_local_friend"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/img_local_friends"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="交友"
+            android:textColor="@drawable/main_text_selected_local"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/rb_local_life"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/img_local_life"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="生活"
+            android:textColor="@drawable/main_text_selected_local"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/rb_local_sport"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/img_local_sport"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="运动"
+            android:textColor="@drawable/main_text_selected_local"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/rb_local_play"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/img_local_play"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="玩乐"
+            android:textColor="@drawable/main_text_selected_local"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/rb_local_outside"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/img_local_outside"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="户外"
+            android:textColor="@drawable/main_text_selected_local"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

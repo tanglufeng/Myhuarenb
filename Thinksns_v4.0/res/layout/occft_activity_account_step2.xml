@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj" >
+
+    <RelativeLayout
+        android:id="@+id/account_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/account"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/account_btn_back"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_title"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/img_shuxian2" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="160dp"
+                android:layout_height="3dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_shuxian1" />
+
+            <CheckBox
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/cb_yuandian"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/tljr_white"
+                android:textSize="10sp" />
+
+            <CheckBox
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/cb_yuandian"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/tljr_white"
+                android:textSize="10sp" />
+
+            <CheckBox
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/cb_yuandian"
+                android:button="@null"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/tljr_white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/account_step1"
+                android:textColor="@color/c_red_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/account_step2"
+                android:textColor="@color/c_red_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/account_step3"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@drawable/img_222fengexian" />
+
+        <TextView
+            android:id="@+id/tljr_txt_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="@string/account_step2_password"
+            android:textColor="@color/tljr_text_blue"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp" >
+
+            <EditText
+                android:id="@+id/tljr_et_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_yanzhengma"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textSize="0dp" >
+            </EditText>
+
+            <LinearLayout
+                android:id="@+id/tljr_grp_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="@string/account_step2_password_legend"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

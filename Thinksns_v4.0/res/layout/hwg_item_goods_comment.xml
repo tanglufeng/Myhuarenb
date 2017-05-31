@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/relative_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp">
+
+            <com.abcs.huaqiaobang.view.CircleImageView
+                android:id="@+id/img_user"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/my_arrow2"
+                android:src="@drawable/img_huaqiao_default" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/relative_user"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/linearLayout2"
+                android:singleLine="true"
+                android:id="@+id/t_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="华人邦海外购"
+                android:textColor="@color/default_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/t_user_name"
+                android:id="@+id/t_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="2014-01-12"
+                android:textColor="@color/default_text" />
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/roomRatingBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:stepSize="1" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/t_comment_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="10dp"
+        android:text="非常好，和描价实，价格便宜，送货师傅辛苦了，支持海外购！" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relative_pic1"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:src="@drawable/img_chanpin1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_pic2"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+
+            <ImageView
+
+                android:id="@+id/img_2"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:src="@drawable/img_chanpin1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_pic3"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+
+            <ImageView
+                android:id="@+id/img_3"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:src="@drawable/img_chanpin1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_pic4"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+
+            <ImageView
+                android:id="@+id/img_4"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:src="@drawable/img_chanpin1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_pic5"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+
+            <ImageView
+                android:id="@+id/img_5"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:src="@drawable/img_chanpin1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="商家回复："
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/t_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="58dp"
+            android:layout_marginRight="20dp"
+            android:text="非常好，和描价实，价格便宜，送货师傅辛苦了，支持海外购！" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

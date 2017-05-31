@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tljr_bjtitle"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_per_grp_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj" >
+
+        <include
+            android:id="@+id/tljr_per_btn_lfanhui"
+            layout="@layout/tljr_view_back" />
+
+        <TextView
+            android:id="@+id/tljr_per_txt_ltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人设置"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize"  />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/tljr_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tljr_btn_exit"
+        android:layout_below="@+id/tljr_per_grp_title"
+        android:background="@color/tljr_bjtitle" >
+
+        <LinearLayout
+            android:id="@+id/tljr_per_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/tljr_btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_login"
+        android:text="退出帐号"
+        android:textColor="@color/tljr_white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/bg_huiyuantedian"
+        android:id="@+id/relative_gaoerfu"
+        android:layout_width="96dp"
+        android:layout_margin="3dp"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img_third"
+            android:src="@drawable/gaoerfu"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_below="@+id/img_third"
+            android:id="@+id/text"
+            android:text="高尔夫"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

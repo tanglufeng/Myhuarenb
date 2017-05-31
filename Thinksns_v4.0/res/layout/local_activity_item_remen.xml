@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:background="@drawable/mainclick_selector"
+        android:id="@+id/item_country_name"
+        android:layout_margin="5dp"
+        android:padding="3dp"
+        android:textSize="18sp"
+        android:textColor="@color/smallFont"
+        tools:text="我是国家"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.abcs.hqbtravel.wedgt.MyGridView
+        android:id="@+id/item_mgv_city"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="6dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:columnWidth="65dp"
+        android:numColumns="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.abcs.hqbtravel.wedgt.MyGridView>
+</LinearLayout>

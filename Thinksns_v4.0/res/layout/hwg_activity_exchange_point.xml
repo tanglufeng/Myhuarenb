@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hwg_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/relative_title"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/TitleHeight">
+
+            <RelativeLayout
+                android:id="@+id/relative_back"
+                android:layout_width="?attr/TitleHeight"
+                android:layout_height="?attr/TitleHeight"
+                android:background="@drawable/click_bj">
+
+                <include layout="@layout/hqb_view_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="兑换中心"
+                android:textColor="@color/hwg_text1"
+                android:textSize="?attr/TitleTextSize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/relative_help"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="?attr/TitleHeight"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/click_bj">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_hwg_help" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_user"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/hwg_bg"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/my_hearbj" />
+
+        <com.abcs.huaqiaobang.view.CircleImageView
+            android:id="@+id/img_head"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/img_hwg_head_default" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_head">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/t_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="我的积分"
+                android:textColor="@color/hwg_text1"
+                android:textSize="18sp" />
+
+            <com.abcs.huaqiaobang.view.RiseNumberTextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/t_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/t_jifen"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_alignBottom="@+id/t_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/t_point"
+                android:gravity="bottom"
+                android:paddingBottom="3dp"
+                android:text="分"
+                android:textColor="@color/hwg_text1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/t_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_hwg_point_detial"
+                android:gravity="center"
+                android:text="积分说明"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_grp_all_title"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/linear_tab"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/exchange_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/white"
+                app:pstsDividerColor="@color/white"
+                app:pstsIndicatorColor="@color/colorPrimaryDark"
+                app:pstsIndicatorHeight="4dp"
+                app:pstsTabPaddingLeftRight="1dp"
+                app:pstsShouldExpand="true"
+                app:pstsUnderlineColor="@color/white">
+
+            </com.astuetz.PagerSlidingTabStrip>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/seperate_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/linear_tab"
+            android:background="@color/colorPrimaryDark" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_marginTop="10dp"
+            android:id="@+id/exchange_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_tab" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

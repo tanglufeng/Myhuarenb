@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bg_btn" />
+
+
+
+        <TextView
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/img_logo"
+            android:id="@+id/tv_cn_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="会员权益"
+            android:textColor="@color/default_text"
+            android:textSize="@dimen/text_more_big_size" />
+
+        <TextView
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_below="@+id/tv_cn_name"
+            android:layout_toRightOf="@+id/img_logo"
+            android:id="@+id/tv_en_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="会员权益"
+            android:textColor="@color/default_text"
+            android:textSize="@dimen/text_more_big_size" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

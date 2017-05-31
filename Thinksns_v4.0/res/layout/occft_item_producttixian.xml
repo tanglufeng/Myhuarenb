@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:background="@color/tljr_white">
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@color/tljr_c_red" />
+
+
+    <ImageView
+        android:id="@+id/item_product_bj"
+        android:layout_width="170dp"
+        android:layout_height="118dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/img_shuiyin3" />
+
+    <ImageView
+        android:id="@+id/img_jiesuan"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/main_txt_current_sellandbuy"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/img_jiesuanyinzhang"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/item_product_icon"
+        android:layout_width="104dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/item_product_icon_gain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/item_product_icon"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/tljr_c_red"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_regular_vip_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_product_icon_gain"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/item_product_icon_gain"
+        android:textColor="@color/tljr_c_red"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_product_icon_gain"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/item_regular_vip_value"
+        android:text="@string/fragment_main_current_private"
+        android:textColor="@color/tljr_text_default"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/main_txt_current_sellandbuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/tljr_text_tishi"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/myproduct_tag"
+        android:textColor="@color/tljr_text_tishi"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/main_txt_current_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/fragment_main_vip_guaranteed"
+        android:textColor="@color/tljr_text_default"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:layout_width="11dp"
+        android:layout_height="14dp"
+        android:layout_alignBottom="@+id/main_txt_current_tip"
+        android:layout_toLeftOf="@+id/main_txt_current_tip"
+        android:src="@drawable/img_baoxian" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/main_txt_current_sellandbuy"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ImageView01"
+        android:layout_below="@+id/item_product_icon"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/buyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myproduct_buycost"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/buytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/myproduct_buytime"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/myproduct_endtime"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/item_product_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ImageView01"
+        android:layout_below="@+id/item_product_icon"
+        android:layout_toRightOf="@+id/item_product_center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/yergain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/myproduct_yegain"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/benxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/myproduct_benxi"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/vipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/myproduct_vip"
+            android:textColor="@color/tljr_c_red"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <ImageView
+        android:layout_width="0.5dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+</RelativeLayout>

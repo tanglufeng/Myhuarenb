@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/liner_shui_root"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/liner_suilv"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/translucent_background_80"
+                android:id="@+id/tv_shuilv_title"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:text="税率"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/tv_shuilv_title"
+                android:id="@+id/tv_shuilv_title2"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp"
+                android:text="A(20%)\nB(10%)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_ne"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/liner_suilv"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/translucent_background_80"
+                android:id="@+id/tv_shuilv_ne"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="Netto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/tv_shuilv_ne"
+                android:id="@+id/tv_shuilv_ne2"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp"
+                android:text="A(20%)\nB(10%)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liner_M"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/liner_ne"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/translucent_background_80"
+                android:id="@+id/tv_shuilv_m"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="Mwst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/tv_shuilv_ne"
+                android:id="@+id/tv_shuilv_m2"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp"
+                android:text="A(20%)\nB(10%)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/liner_Br"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/liner_M"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/translucent_background_80"
+                android:id="@+id/tv_shuilv_br"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:text="Brutto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/tv_shuilv_ne"
+                android:id="@+id/tv_shuilv_br2"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp"
+                android:text="A(20%)\nB(10%)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="#e3e3e3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_shuilv_Gesa"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="Gesamt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/translucent_background_80"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_shuilv_Ge2"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="总计"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/tv_shuilv_Netto"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="Netto-Betrag:EUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_shuilv_Net2"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="Mwst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tv_shuilv_End2"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="EndBetrag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/tv_total_Netto"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="19.90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_total_Mwst"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="1.52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/red"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tv_total_Bru"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="19.56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/lin_top"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:background="#e3e3e3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></View>
+
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/liner_hdong2"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lin_bottom"
+        android:visibility="gone"
+        android:background="#e3e3e3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></View>
+
+</LinearLayout>

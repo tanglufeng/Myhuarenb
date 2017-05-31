@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hwg_bg">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.abcs.huaqiaobang.view.MainScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.abcs.haiwaigou.view.zjzbanner.LMBanners
+                    android:id="@+id/banners"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    app:canLoop="true"
+                    app:isVertical="false"
+                    app:auto_play="true"
+                    app:durtion="5000"
+                    app:scroll_duration="1000"
+                    app:indicator_select="@drawable/img_hwg_indicator_select"
+                    app:indicator_unselect="@drawable/img_hwg_indicator_unselect"
+                    app:horizontal_transitionEffect="accordion"
+                    app:indicator_position="bottom_mid">
+
+                </com.abcs.haiwaigou.view.zjzbanner.LMBanners>
+
+                <LinearLayout
+                    android:id="@+id/linear_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/linear_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </com.abcs.huaqiaobang.view.MainScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_top"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/img_hwg_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

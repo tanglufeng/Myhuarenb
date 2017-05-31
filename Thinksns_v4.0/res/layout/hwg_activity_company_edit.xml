@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abcs.haiwaigou.activity.CompanyEditActivity">
+
+    <LinearLayout
+        android:background="@drawable/hwg_shape_chongzhi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="修改绑定企业账号"
+            android:textColor="@color/hwg_text1"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/linear_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/img1"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="企业名称"
+                android:textColor="@color/hwg_text1"
+                android:textSize="15sp" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/et_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/t1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请输入您的企业名称"
+                android:padding="5dp"
+                android:textColor="@color/hwg_text1"
+                android:textColorHint="@color/tljr_text_tishi_light"
+                android:textCursorDrawable="@drawable/hwg_editext_cursor"
+                android:textSize="15sp" />
+
+            <requestFocus />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/subscribe_seperate_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear_company_code"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/linear_company_name"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="企业邀请码"
+                android:textColor="@color/hwg_text1"
+                android:textSize="15sp" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/et_company_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/t2"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请输入您的企业邀请码"
+                android:padding="5dp"
+                android:textColor="@color/hwg_text1"
+                android:textColorHint="@color/tljr_text_tishi_light"
+                android:textCursorDrawable="@drawable/hwg_editext_cursor"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/subscribe_seperate_line" />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="16sp"
+                android:id="@+id/t_cancel"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tljr_click"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/hwg_text2" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/subscribe_seperate_line" />
+
+            <TextView
+                android:textSize="16sp"
+                android:id="@+id/t_bind"
+                android:clickable="true"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tljr_click"
+                android:gravity="center"
+                android:text="立即绑定"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

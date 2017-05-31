@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:background="@drawable/corcur_white_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:id="@+id/iv_lolo"
+                android:src="@drawable/bg_huohang_pop3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+            <com.abcs.haiwaigou.view.AlignTextView
+                android:layout_below="@+id/iv_lolo"
+                android:gravity="center"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="13dp"
+                android:textColor="@color/bg_black"
+                android:textSize="16sp"
+                tools:text="jack,您您还您还您还还您还您还您还还还您还您还您还您还还您还您还您还还您您还您还您还您还您还您还您还您还还还您还您还您还您还还"
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="好，我知道了"
+            android:id="@+id/imge_close"
+            android:layout_margin="15dp"
+            android:background="@drawable/corcur_black_bg"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+
+</LinearLayout>

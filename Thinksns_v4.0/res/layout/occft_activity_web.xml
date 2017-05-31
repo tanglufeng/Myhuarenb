@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_web_top"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj" >
+
+        <TextView
+            android:id="@+id/tljr_txt_web_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/tljr_img_web_fanhui"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/tljr_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tljr_grp_web_top" />
+
+</RelativeLayout>

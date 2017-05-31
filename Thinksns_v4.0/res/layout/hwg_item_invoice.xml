@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_root"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/click_bj"
+    android:gravity="right"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_toLeftOf="@+id/t_content"
+        android:id="@+id/t_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="北大是大非"
+        android:textColor="@color/tljr_text_default"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/t_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/relative_delete"
+        android:gravity="center_vertical"
+        android:text="明细"
+        android:textColor="@color/tljr_text_default"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/relative_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="[删除]"
+            android:textColor="@color/tljr_statusbarcolor"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

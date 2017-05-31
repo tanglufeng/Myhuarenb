@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="163dp"
+    android:layout_height="230dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_country_border">
+
+
+        <LinearLayout
+            android:id="@+id/linear_tuijian_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img_top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_tuijian_goods_icon"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_chanpin1" />
+
+            <TextView
+                android:id="@+id/t_tuijian_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:singleLine="true"
+                android:text="古驰/GUCCI/女士/单包/海外"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/linear_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linear_count"
+                android:layout_marginLeft="9dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/t_tuijian_goods_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥30621.00"
+                    android:textColor="@color/tljr_statusbarcolor"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/t_tuijian_buy"
+            android:layout_width="144dp"
+            android:layout_height="34dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="9dp"
+            android:background="@color/tljr_statusbarcolor"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_mohu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99ffffff" />
+
+
+</RelativeLayout>

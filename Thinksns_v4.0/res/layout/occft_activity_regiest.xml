@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj">
+
+    <View
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_regiest_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:layout_below="@+id/status"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/tljr_img_regiest_back"
+            layout="@layout/hqb_view_back" />
+
+        <TextView
+            android:id="@+id/tljr_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="手机注册"
+            android:textColor="@color/hwg_text1"
+            android:textSize="?attr/TitleTextSize" />
+
+        <TextView
+            android:id="@+id/tljr_txt_regiest_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="普通注册"
+            android:textColor="@color/hwg_text1"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/subscribe_seperate_line" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/tljr_scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tljr_grp_regiest_title"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="我们将发送验证码到您的手机。" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/liner_quhao"
+                    android:gravity="center"
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="+86"
+                        android:id="@+id/tv_quhao"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:background="@drawable/img_yinh_back"
+                        android:layout_width="10dp"
+                        android:layout_height="7dp"/>
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:background="@color/bg_gray"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="手机号"
+                    android:textColor="@color/hwg_text1"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tljr_et_regiest_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:ems="11"
+                    android:gravity="left|center_vertical"
+                    android:hint="请填写注册手机号"
+                    android:inputType="phone"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/default_text"
+                    android:textColorHint="@color/tljr_text_tishi"
+                    android:textCursorDrawable="@drawable/edittextcursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/tljr_btn_regiest_regiest"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_login"
+                android:text="下一步"
+                android:textColor="@color/tljr_white"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

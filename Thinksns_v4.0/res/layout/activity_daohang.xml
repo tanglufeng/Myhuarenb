@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/inf"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img_hwg_back_gray" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="@dimen/dimen_40sp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="语音导航"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_mune_right"
+            android:textSize="@dimen/dimen_30sp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="筛选"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:layout_below="@+id/inf"
+        android:id="@+id/rv_daohang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_progress="@layout/view_progress" />
+
+</RelativeLayout>

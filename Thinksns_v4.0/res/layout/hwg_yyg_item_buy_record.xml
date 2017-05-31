@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+   >
+
+    <LinearLayout
+        android:id="@+id/linear_head"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="12dp"
+            android:background="#acacac" />
+
+        <com.abcs.huaqiaobang.view.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/img_yyg_default_head" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/linear_head"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/t_ip"
+            android:id="@+id/t_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text=""
+            android:textColor="@color/tljr_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/t_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="IP:40.10.23.01"
+            android:textColor="@color/tljr_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_name"
+            android:text="参与了("
+            android:textColor="@color/tljr_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/t_cishu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_name"
+            android:layout_toRightOf="@+id/t1"
+            android:text="5"
+            android:textColor="@color/tljr_statusbarcolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_name"
+            android:layout_toRightOf="@+id/t_cishu"
+            android:text=")次"
+            android:textColor="@color/tljr_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/t_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t_name"
+            android:layout_marginLeft="10dp"
+            android:text="2016-12-12 17:21:10"
+            android:textColor="@color/tljr_gray"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

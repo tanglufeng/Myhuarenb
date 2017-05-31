@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@color/tljr_statusbarcolor" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/t_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="国家及地区"
+                android:textColor="@color/default_text"
+                android:textSize="18dp" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/t_goods_subname"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"
+                android:layout_below="@+id/t_goods_name"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

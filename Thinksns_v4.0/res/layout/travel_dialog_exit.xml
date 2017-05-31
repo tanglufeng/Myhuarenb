@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tljr_shape_dialogbj"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tljr_txt_share_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="取消传图"
+            android:textColor="@color/tljr_text_shense"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/tljr_text_tishi"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/tljr_dialog_exit_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tljr_dialog_exit_fgx"
+            android:background="@drawable/tljr_click"
+            android:text="暂不传图"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/tljr_dialog_exit_fgx"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/tljr_text_tishi"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/tljr_dialog_exit_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tljr_dialog_exit_fgx"
+            android:background="@drawable/tljr_click"
+            android:text="继续传图"
+            android:textColor="@color/tljr_hq_zx_up"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

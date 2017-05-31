@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_qu_hao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hwg_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/hwg_bind_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/relative_back"
+            layout="@layout/hqb_view_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择国家和地区代码"
+            android:textColor="@color/hwg_text1"
+            android:textSize="?attr/TitleTextSize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/subscribe_seperate_line" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/ed_sercher"
+        android:hint="搜索"
+        android:paddingLeft="20dp"
+        android:background="@null"
+        android:layout_below="@+id/hwg_bind_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <ListView
+        android:layout_below="@+id/hwg_bind_title"
+        android:id="@+id/mylistview"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+
+       >
+
+    </ListView>
+
+    <com.abcs.haiwaigou.local.view.SideLetterBar
+        android:layout_below="@+id/hwg_bind_title"
+        android:id="@+id/side_letter_bar"
+        android:layout_width="@dimen/side_letter_bar_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_letter_overlay"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/overlay_bg"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

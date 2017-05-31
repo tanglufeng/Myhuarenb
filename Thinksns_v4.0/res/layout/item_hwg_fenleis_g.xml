@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/left_item_bg"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.abcs.hqbtravel.wedgt.MyGridView
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:id="@+id/item_mgv"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:scrollbars="none"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.abcs.hqbtravel.wedgt.MyGridView>
+
+    </LinearLayout>
+
+

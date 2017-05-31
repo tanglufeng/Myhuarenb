@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="5dp"
+            android:layout_margin="@dimen/dimen_15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_travel_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="@dimen/dimen_35sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="旅游助理"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_mune_right"
+            android:textSize="@dimen/dimen_30sp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="筛选"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</LinearLayout>

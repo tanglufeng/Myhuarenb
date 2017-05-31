@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        tools:targetApi="lollipop"
+        android:stateListAnimator="@drawable/lift_on_touch"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        android:background="@color/white"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_youji_dec"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/img_huaqiao_default"
+                android:layout_width="match_parent"
+                android:layout_height="138dp" />
+
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:id="@+id/liner_youji_tag"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_below="@+id/img_youji_dec"
+                android:id="@+id/tv_youji_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:textColor="@color/bg_black"
+                android:textSize="15sp"
+                android:text="维也纳艺术"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/tv_youji_title"
+                android:id="@+id/tv_youji_name"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:text="万晓明"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/tv_youji_title"
+                android:layout_toRightOf="@+id/tv_youji_name"
+                android:id="@+id/tv_youji_time"
+                android:layout_marginLeft="30dp"
+                android:textSize="13sp"
+                android:text="2016-6-5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_youji_title"
+                android:layout_alignStart="@+id/tv_youji_title">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_youji_numbers"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/img_yueduliang"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_youji_numbers"
+                    android:textSize="13sp"
+                    android:text="233"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

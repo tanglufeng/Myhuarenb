@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+            <com.abcs.sociax.t4.android.img.RoundImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/civ"
+                gravity="center"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="25dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+   
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_city4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:text="中国"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_english_city4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:maxLines="1"
+        tools:text="China"
+        android:textSize="12sp"
+        />
+</LinearLayout>

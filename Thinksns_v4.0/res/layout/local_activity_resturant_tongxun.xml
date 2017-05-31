@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.abcs.haiwaigou.local.activity.HireAndFindActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_layout_titlebar_white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/relative_top"
+        android:id="@+id/linear_root"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+       >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:scrollbars="none"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:listSelector="#00000000"
+            android:id="@+id/listview"
+            android:layout_weight="1.9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:fadingEdge="none"
+            android:background="@color/bg_ios"
+            android:verticalSpacing="1dp"
+            android:horizontalSpacing="1dp"
+            android:smoothScrollbar="true"
+            ptr:ptrMode="both"
+            ptr:ptrAnimationStyle="flip"/>
+
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/line"
+            android:background="@color/line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:scrollbars="none"
+            android:background="@color/hwg_bg"
+            android:id="@+id/listview_datas"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            app:layout_progress="@layout/view_progress"
+          />
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/content"-->
+            <!--android:layout_weight="5"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</FrameLayout>-->
+
+
+    </LinearLayout>
+</RelativeLayout>

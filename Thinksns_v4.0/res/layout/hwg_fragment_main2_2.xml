@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hwg_bg">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.abcs.huaqiaobang.view.MainScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager_baner"
+                        android:layout_width="match_parent"
+                        android:layout_height="165dp"
+                        android:background="#00000000" />
+
+                    <com.abcs.haiwaigou.view.CircleIndicator
+                        android:id="@+id/circle_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <com.abcs.haiwaigou.view.zjzbanner.LMBanners
+                    android:id="@+id/banners"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    app:canLoop="true"
+                    app:isVertical="false"
+                    app:auto_play="true"
+                    app:durtion="5000"
+                    app:scroll_duration="1000"
+                    app:indicator_select="@drawable/img_hwg_indicator_select"
+                    app:indicator_unselect="@drawable/img_hwg_indicator_unselect"
+                    app:horizontal_transitionEffect="accordion"
+                    app:indicator_position="bottom_mid">
+
+                </com.abcs.haiwaigou.view.zjzbanner.LMBanners>
+
+                  <!--      这里添加的是二级分类                -->
+                <LinearLayout
+                    android:id="@+id/fragment_main2_classification"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_card"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1">
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="#dedede" />
+
+                        <ImageView
+                            android:id="@+id/img_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/img_hwg_main_card" />
+
+                        <TextView
+                            android:id="@+id/t_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_card"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="电子礼品卡"
+                            android:textColor="@color/hwg_text1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t_card"
+                            android:layout_centerHorizontal="true"
+                            android:text="输入卡密充值"
+                            android:textColor="@color/hwg_text3"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relative_redbag"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_redbag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/img_hwg_main_passwod" />
+
+                        <TextView
+                            android:id="@+id/t_redbag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_redbag"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="领红包"
+                            android:textColor="@color/hwg_text1" />
+                        <ImageView
+                            android:layout_margin="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/img_hwg_main_tip" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t_redbag"
+                            android:layout_centerHorizontal="true"
+                            android:text="狂撒福利"
+                            android:textColor="@color/hwg_text3"
+                            android:textSize="12sp" />
+                        <TextView
+                            android:id="@+id/t_have_send"
+                            android:singleLine="true"
+                            android:layout_marginBottom="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text=""
+                            android:textColor="@color/tljr_statusbarcolor"
+                            android:textSize="10sp" />
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="#dedede" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relative_one"
+                        android:background="#e9e9e9"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/img_hwg_main_one" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/img_hwg_main_tiao" />
+
+                        <TextView
+                            android:id="@+id/t_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_one"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="一元幸运购"
+                            android:textColor="@color/hwg_text1" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:background="#dedede" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/relaitve_qiye"
+                        android:background="#e9e9e9"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_qiye"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/img_hwg_main_qiye" />
+
+                        <TextView
+                            android:id="@+id/t_qiye"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_qiye"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="企业入口"
+                            android:textColor="@color/hwg_text1" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/img_hwg_main_tiao" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/img_hwg_main1_recommend" />
+
+                        <LinearLayout
+                            android:id="@+id/linear_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/img_hwg_main1_brand" />
+
+                        <GridView
+                            android:id="@+id/grid_brand"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:horizontalSpacing="0dp"
+                            android:numColumns="4"
+                            android:verticalSpacing="0dp"
+                            android:stretchMode="columnWidth"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/img_hwg_main1_today_sale" />
+
+                        <LinearLayout
+                            android:id="@+id/linear_special"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </com.abcs.huaqiaobang.view.MainScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_top"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/img_hwg_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

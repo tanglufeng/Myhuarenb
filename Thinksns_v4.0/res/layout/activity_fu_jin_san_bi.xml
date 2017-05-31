@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abcs.hqbtravel.view.activity.FuJinSanBiActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/eew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        />
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:background="@drawable/travel_bgw"
+        android:id="@+id/eew"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_ola_time"
+            android:text="我的距离"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tv_locatio_time"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_peples"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/tv_lat"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/tv_lng"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:drawableTop="@drawable/near_wendu"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/tv_tips"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_peples"
+            android:text=""
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/near_locat"
+            android:textSize="15sp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ola_time"
+            android:layout_alignLeft="@+id/tv_ola_time"
+            android:layout_alignStart="@+id/tv_ola_time" />
+
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:text="关闭"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_width="60dp"
+            android:layout_height="40dp" />
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_tips"
+            >
+
+
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/near_bg"
+                android:layout_width="330dp"
+                android:layout_height="5dp" />
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_jindian"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:background="@drawable/near_sele_left"
+                    android:id="@+id/tv_resteratr"
+                    android:text="必吃"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:background="@drawable/near_left"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <TextView
+
+                android:background="@drawable/near_nosele_zhong"
+                android:id="@+id/tv_jindian"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:text="必玩"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/gray"
+                android:layout_width="90dp"
+                android:layout_height="35dp" />
+
+            <LinearLayout
+                android:id="@+id/liner_maid"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/tv_jindian"
+                android:layout_width="100dp"
+                android:layout_height="35dp">
+                <TextView
+                    android:background="@drawable/near_right"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp" />
+                <TextView
+                    android:background="@drawable/near_nosele_right"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_shop"
+                    android:text="必买"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/gray"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_abort"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/liner_maid"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_jin"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

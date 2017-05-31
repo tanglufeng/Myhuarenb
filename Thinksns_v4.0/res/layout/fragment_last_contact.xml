@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:divider="@color/devideline_listview"
+        android:dividerHeight="1px"
+        android:layout_height="wrap_content" >
+    </ListView>
+	<TextView
+        android:id="@+id/empty_tip_recommend_bind_tv"
+        style="@style/CCPBigGreyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="暂无最近联系人"
+        android:visibility="visible" />
+</RelativeLayout>
+

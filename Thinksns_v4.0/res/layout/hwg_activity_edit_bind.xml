@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj">
+
+    <RelativeLayout
+        android:id="@+id/hwg_bind_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/tljr_img_regiest_back"
+            layout="@layout/hqb_view_back" />
+
+        <TextView
+            android:id="@+id/t_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="绑定手机号"
+            android:textColor="@color/hwg_text1"
+            android:textSize="?attr/TitleTextSize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hwg_bind_title"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:layout_alignParentLeft="true"
+                android:id="@+id/liner_quhao"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="+86"
+                    android:id="@+id/tv_quhao"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:background="@drawable/img_yinh_back"
+                    android:layout_width="10dp"
+                    android:layout_height="7dp"/>
+                <TextView
+                    android:layout_margin="5dp"
+                    android:background="@color/bg_gray"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_toRightOf="@+id/liner_quhao"
+                android:id="@+id/tljr_ImageView03"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/btn_get_vcode"
+                android:src="@drawable/img_150fengexian" />
+
+            <EditText
+                android:layout_toRightOf="@+id/liner_quhao"
+                android:id="@+id/et_bind_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:ems="11"
+                android:gravity="left|center_vertical"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:textColor="@color/default_text"
+                android:textColorHint="@color/tljr_text_tishi"
+                android:textCursorDrawable="@drawable/edittextcursor"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_get_vcode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/et_bind_phone"
+                android:background="@drawable/btn_login"
+                android:gravity="center"
+                android:text="获取短信验证"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+
+            <ImageView
+                android:id="@+id/tljr_ImageView0"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/img_150fengexian" />
+
+            <EditText
+                android:id="@+id/et_vcode"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:ems="11"
+                android:gravity="left|center_vertical"
+                android:hint="请输入短信校检码"
+                android:inputType="phone"
+                android:textColor="@color/default_text"
+                android:textColorHint="@color/tljr_text_tishi"
+                android:textCursorDrawable="@drawable/edittextcursor"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_bind_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_login"
+            android:text="绑定手机"
+            android:textColor="@color/tljr_white"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear_bind_email"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hwg_bind_title"
+        android:layout_marginTop="30dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/relative_code"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linear_choose">
+
+
+            <ImageView
+                android:id="@+id/tljr_ImageView10"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/img_150fengexian" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:ems="11"
+                android:gravity="left|center_vertical"
+                android:hint="请输入邮箱"
+                android:inputType="text"
+                android:digits="@string/type_email"
+                android:textColor="@color/default_text"
+                android:textColorHint="@color/tljr_text_tishi"
+                android:textCursorDrawable="@drawable/edittextcursor"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_bind_email"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/relative_code"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_login"
+            android:text="绑定邮箱"
+            android:textColor="@color/tljr_white"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_edit_paypwd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hwg_bind_title"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:digits="@string/type_pwd"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:id="@+id/ed_paypwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_country_border"
+            android:gravity="center_vertical"
+            android:hint="请输入支付密码"
+            android:padding="5dp"
+            android:textColor="@color/tljr_text_default"
+            android:textColorHint="@color/tljr_text_tishi"
+            android:textCursorDrawable="@drawable/edittextcursor"
+            android:textSize="15sp" />
+
+        <EditText
+            android:digits="@string/type_pwd"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:id="@+id/ed_confirm_paypwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_country_border"
+            android:gravity="center_vertical"
+            android:hint="请确认支付密码"
+            android:padding="5dp"
+            android:textColor="@color/tljr_text_default"
+            android:textColorHint="@color/tljr_text_tishi"
+            android:textCursorDrawable="@drawable/edittextcursor"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_edit_paypwd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/relative_code"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_login"
+            android:text="修改支付密码"
+            android:textColor="@color/tljr_white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

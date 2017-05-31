@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rer"
+        android:layout_width="match_parent"
+        android:layout_height="105dp">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/img_jingdian1"
+            android:layout_width="match_parent"
+            android:layout_height="138dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

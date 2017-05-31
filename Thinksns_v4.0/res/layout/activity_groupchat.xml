@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"
+
+        >
+
+        <TextView
+            android:id="@+id/ownerid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="群组列表"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+       
+    
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selector_btn_back"
+            android:padding="15dp"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selector_btn_back"
+            android:padding="15dp"
+          
+            android:src="@drawable/more" />
+
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/groudlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/devideline_listview"
+        android:dividerHeight="1px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativelayout"
+     >
+    </ListView>
+    
+
+ </RelativeLayout>

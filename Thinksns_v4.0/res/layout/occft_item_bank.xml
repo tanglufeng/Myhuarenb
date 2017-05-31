@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tljr_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/img_yinhangkabeijing" >
+
+        <ImageView
+            android:id="@+id/item_bank_bj"
+            android:layout_width="fill_parent"
+            android:scaleType="fitXY"
+            android:layout_height="fill_parent"/>
+
+        <ImageView
+            android:id="@+id/item_bank_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/item_bank_icon" >
+
+            <TextView
+                android:id="@+id/item_bank_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6214 xxxx xxxx 9188"
+                android:textColor="@color/tljr_text_default"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_bank_number"
+                android:layout_marginTop="10dp"
+                android:text="招商银行储蓄卡"
+                android:textColor="@color/tljr_text_default"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/item_bank_onequota"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_bank_onequota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/item_bank_dayquotainfo"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/item_bank_dayquota"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_bank_dayquota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/item_bank_dayquotainfo"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/img_222fengexian" />
+
+</LinearLayout>

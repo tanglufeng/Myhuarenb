@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.abcs.haiwaigou.local.activity.HireAndFindActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/white">
+        <include
+            layout="@layout/main_layout_titlebar_white"/>
+        <RelativeLayout
+            android:id="@+id/relative_publish"
+            android:background="@drawable/tljr_click"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/hwg_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="免费发布"
+                    android:textSize="16sp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_local_publish"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/comment_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                app:pstsDividerColor="@color/white"
+                app:pstsTabPaddingLeftRight="10dp"
+                app:pstsIndicatorColor="@color/colorPrimaryDark"
+                app:pstsIndicatorHeight="4dp"
+                app:pstsShouldExpand="true"
+                app:pstsUnderlineColor="@color/white">
+
+            </com.astuetz.PagerSlidingTabStrip>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/seperate_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/subscribe_seperate_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</RelativeLayout>

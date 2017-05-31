@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/relative_user"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp">
+
+                <com.abcs.huaqiaobang.view.CircleImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_huaqiao_default" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/relative_user">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:singleLine="true"
+                    android:text="华侨帮海外购"
+                    android:textColor="@color/default_text"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_user_name"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/roomRatingBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2016-07-10"
+                    android:textColor="#666666"
+                    android:layout_marginRight="20dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+            <TextView
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:id="@+id/t_comment_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="4dp"
+                android:textColor="#666666"
+                android:text="地铁站出来就是,进入需要门派哦,激活就可以第二天再去观看,从这道那前面哟个水池第一张是凯旋门,第二张是泉水;地铁站出来就是,进入需要门派哦,激活就可以第二天再去观看,从这道那前面哟个水池第一张是凯旋门,第二张是泉水" />
+            <com.abcs.hqbtravel.wedgt.MyGridView
+                android:id="@+id/mygridview"
+                android:numColumns="3"
+                android:verticalSpacing="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                >
+            </com.abcs.hqbtravel.wedgt.MyGridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linear_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relative_pic1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/img_1"
+                    android:layout_width="210px"
+                    android:layout_height="210px"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_pic2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="110dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:layout_width="210px"
+                    android:layout_height="210px"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="1dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative_pic3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="110dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_3"
+                    android:layout_width="210px"
+                    android:layout_height="210px"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="1dp"
+                    />
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rela_gongjiz"
+                    android:layout_marginTop="60dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_gongjizhang"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:text="共5张"
+                        android:id="@+id/tv_gongjizhang"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

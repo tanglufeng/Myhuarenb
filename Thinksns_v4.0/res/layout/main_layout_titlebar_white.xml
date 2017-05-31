@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/TitleHeight">
+
+    <include
+        layout="@layout/hqb_view_back"/>
+    <TextView
+        android:id="@+id/t_title_name"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hwg_text1"
+        android:textSize="?attr/TitleTextSize"
+        android:text="标题"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/subscribe_seperate_line"/>
+</RelativeLayout>

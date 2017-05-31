@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_below="@+id/ff"
+        android:layout_marginTop="2dp"
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:id="@+id/img_fuqu1"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+        <ImageView
+            android:id="@+id/img_fuqu_logo"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/img_travelzguli_bg"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_d1"
+                android:src="@drawable/img_travel_bb"
+                android:scaleType="centerInside"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_house"
+                android:layout_toRightOf="@+id/img_d1"
+                android:gravity="center"
+                android:text="50"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/dimen_35sp"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_house1"
+                android:layout_toRightOf="@+id/tv_house"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="EUR"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/dimen_20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_house2"
+                android:layout_toRightOf="@+id/tv_house"
+                android:gravity="center"
+                android:text="小时"
+                android:textColor="@color/bg_white"
+                android:textSize="@dimen/dimen_20sp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/img_tracel_avatar_bg"
+        android:layout_below="@+id/img_fuqu1"
+        android:layout_alignRight="@+id/img_fuqu1"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="-40dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <com.abcs.huaqiaobang.view.CircleImageView
+            android:id="@+id/img_fuqu1_avatar"
+            android:src="@drawable/img_bimai"
+            android:layout_centerInParent="true"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+        <ImageView
+            android:layout_toRightOf="@+id/img_fuqu1_avatar"
+            android:layout_below="@+id/img_fuqu1_avatar"
+            android:layout_marginTop="-25dp"
+            android:layout_marginLeft="-25dp"
+            android:src="@drawable/img_travel_video"
+            android:scaleType="fitCenter"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_fuqu1_title"
+        android:gravity="center"
+        android:layout_below="@+id/img_fuqu1"
+        android:text="旅游助理"
+        android:textColor="@color/bg_black"
+        android:textSize="@dimen/dimen_35sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/ling_type"
+        android:layout_below="@+id/tv_fuqu1_title"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_fuqu1_location"
+            android:gravity="center"
+            android:text="旅游助理"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/line1"
+                android:layout_toRightOf="@+id/tv_fuqu1_location"
+                android:layout_width="1dp"
+                android:layout_centerVertical="true"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:background="#2b2b2b" />
+        <TextView
+            android:id="@+id/tv_fuqu1_type"
+            android:layout_toRightOf="@+id/line1"
+            android:gravity="center"
+            android:text="旅游助理"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+          <TextView
+              android:id="@+id/line2"
+              android:layout_toRightOf="@+id/tv_fuqu1_type"
+              android:layout_width="1dp"
+              android:layout_marginLeft="5dp"
+              android:layout_centerVertical="true"
+              android:layout_height="15dp"
+              android:background="#2b2b2b" />
+        <TextView
+            android:id="@+id/tv_fuqu1_dianpin"
+            android:layout_toRightOf="@+id/line2"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="旅游助理"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ff"
+            android:layout_below="@+id/ling_type"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+            <TextView
+                android:id="@+id/tv_fuqu1_name"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Anna"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/linerw"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/img_travel_sex2"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_fuqu1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp">
+
+                <TextView
+                    android:id="@+id/tv_fuqu1_isfamel"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img_travel_sexf"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+                <TextView
+                    android:id="@+id/tv_fuqu1_age"
+                    android:layout_toRightOf="@+id/tv_fuqu1_isfamel"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:text="25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_fuqu1_isvip"
+                android:layout_toRightOf="@+id/linerw"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:background="@drawable/img_travel_vip"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>

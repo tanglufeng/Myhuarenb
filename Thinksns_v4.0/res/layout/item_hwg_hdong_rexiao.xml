@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        card_view:cardPreventCornerOverlap="false"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@color/cardview_light_background"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="3dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="144dp">
+
+            <RelativeLayout
+                android:id="@+id/left"
+                android:layout_width="144dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/iv_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/left"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="144dp">
+
+                <TextView
+                    android:lineSpacingExtra="3dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/tv_title"
+                    android:gravity="left|center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="13sp"
+                    tools:text="荷兰荷兰牛奶荷兰牛奶荷兰牛奶荷兰牛奶荷兰牛奶荷兰牛奶荷兰牛奶荷兰牛奶牛奶"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:lineSpacingExtra="3dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/tv_dec"
+                    android:gravity="left|center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textSize="12sp"
+                    tools:text="荷兰荷兰牛奶荷兰牛奶荷兰牛奶荷兰牛奶荷兰牛奶荷兰牛奶荷兰牛奶荷兰牛奶牛奶"
+                    android:textColor="#666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginBottom="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/tv_price"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    tools:text="¥ 145"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12sp"
+                    android:id="@+id/tv_scale_num"
+                    android:gravity="center"
+                    tools:text="已售45"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_paiming"
+                android:background="@drawable/iv_hwg_rexiao_item_pai"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_pai_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv_tag"
+                android:src="@drawable/iv_hwg_rexiao_item_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

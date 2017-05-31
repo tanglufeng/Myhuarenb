@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_below="@+id/lingg"
+        android:id="@+id/relative_quanyi"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+
+
+        <TextView
+            android:id="@+id/tv_quanyi_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="会员权益"
+            android:textColor="@color/default_text"
+            android:textSize="@dimen/text_more_big_size" />
+
+        <ImageView
+            android:id="@+id/img_quanyi"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img_yinh_back" />
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@color/bar_grey" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative_hihe"
+        android:visibility="gone"
+        android:layout_below="@+id/relative_quanyi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_quan_yi"
+            android:layout_margin="15dp"
+            android:text=""
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

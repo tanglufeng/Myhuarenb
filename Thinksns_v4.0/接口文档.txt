@@ -1,0 +1,482 @@
+//新接口
+#define API_URL_New_weibo @"api.php?mod=Weibo&act=public_timeline"//推荐 分页max_id
+#define API_URL_Friend_weibo @"api.php?mod=Weibo&act=friends_timeline	"//关注 分页max_id
+#define API_URL_PinDao_weibo @"api.php?mod=Weibo&act=channels_timeline"//频道 分页max_id
+#define API_URL_Detail_weibo @"api.php?mod=Weibo&act=weibo_detail" //微博详情 分页max_id
+#define API_URL_SEARCH_topic @"api.php?mod=Weibo&act=search_topic" //话题列表 分页max_id key为空所有
+#define API_URL_SEARCH_at @"api.php?mod=Weibo&act=search_at" //@联系人 分页max_id  key为空所有
+#define API_URL_ADD_zan @"api.php?mod=Weibo&act=digg_weibo" //点赞 传feed_id
+#define API_URL_DEL_zan @"api.php?mod=Weibo&act=undigg_weibo" //取消赞 传feed_id
+#define API_URL_POST_Textweibo @"api.php?mod=Weibo&act=post_weibo" //发送文字微博 content from channel_id
+#define API_URL_POST_Photoweibo @"api.php?mod=Weibo&act=upload_photo" //发送照片微博 content
+#define API_URL_POST_Videoweibo @"api.php?mod=Weibo&act=upload_video" //发送视频微博
+#define API_URL_REPOST_weibo @"api.php?mod=Weibo&act=repost_weibo" //转发微博 content、feed_id、from
+#define API_URL_FAVORITE_weibo @"api.php?mod=Weibo&act=favorite_weibo" //收藏微博
+#define API_URL_UNFAVORITE_weibo @"api.php?mod=Weibo&act=unfavorite_weibo" //取消收藏微博
+#define API_URL_DENOUNCE_weibo @"api.php?mod=Weibo&act=denounce_weibo" //举报微博 reason feed_id from
+
+
+         [NSString stringWithFormat:@"%s%@",APIURL,@"mod=Oauth&act=send_register_code"],@"send_register_code",//获取注册验证码
+         [NSString stringWithFormat:@"%s%@",APIURL,@"mod=Oauth&act=check_register_code"],@"check_register_code",//检查注册验证码正确性
+         [NSString stringWithFormat:@"%s%@",APIURL,@"mod=Oauth&act=register_upload_avatar"],@"register_upload_avatar",//上传注册头像
+         [NSString stringWithFormat:@"%s%@",APIURL,@"mod=Oauth&act=register"],@"register",//注册
+         
+         [NSString stringWithFormat:@"%s%@",APIURL,@"mod=Oauth&act=send_findpwd_code"],@"send_findpwd_code",//获取重置密码验证码
+         [NSString stringWithFormat:@"%s%@",APIURL,@"mod=Oauth&act=check_password_code"],@"check_password_code",//检查重置密码验证码正确性
+         [NSString stringWithFormat:@"%s%@",APIURL,@"mod=Oauth&act=save_user_pwd"],@"save_user_pwd",//重置密码
+         [NSString stringWithFormat:@"%s%@",APIURL,@"mod=Oauth&act=authorize"],@"authorize",//登录认证
+		 //
+         [NSString stringWithFormat:@"%s%@",APIURL,@"mod=Weibo&act=upload_photo"],@"weibo_photo",//上传图片微博
+
+
+
+
+
+NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                    [[self.response objectForKey:@"data"] objectForKey:@"picurl"],@"avatar_url",
+                                    [[[self.response objectForKey:@"data"] objectForKey:@"picwidth"] stringValue],@"avatar_width",
+                                    [[[self.response objectForKey:@"data"] objectForKey:@"picheight"] stringValue],@"avatar_height",
+                                    self.phone,@"phone",
+                                    self.regCode,@"regCode",
+                                    self.registerView.nameTextField.text,@"uname",
+                                    self.registerView.passwordTextField.text,@"password",
+                                    [[NSUserDefaults standardUserDefaults] valueForKey:@"registerSex"],@"sex",
+                                    
+                                    nil];
+
+
+
+
+
+
+
+#define API_URL_REG @"api.php?mod=Oauth&act=send_register_code"//最新 分页max_id
+
+//新接口
+#define API_URL_New_weibo @"api.php?mod=Weibo&act=public_timeline"//最新 分页max_id
+#define API_URL_Friend_weibo @"api.php?mod=Weibo&act=friends_timeline"//好友 分页max_id
+#define API_URL_PinDao_weibo @"api.php?mod=Weibo&act=channels_timeline"//频道 分页max_id
+#define API_URL_Detail_weibo @"api.php?mod=Weibo&act=weibo_detail" //微博详情 分页max_id
+#define API_URL_SEARCH_topic @"api.php?mod=Weibo&act=search_topic" //话题列表 分页max_id key为空所有
+#define API_URL_SEARCH_at @"api.php?mod=Weibo&act=search_at" //@联系人 分页max_id  key为空所有
+#define API_URL_ADD_zan @"api.php?mod=Weibo&act=digg_weibo" //点赞 传feed_id
+#define API_URL_DEL_zan @"api.php?mod=Weibo&act=undigg_weibo" //取消赞 传feed_id
+#define API_URL_POST_Textweibo @"api.php?mod=Weibo&act=post_weibo" //发送文字微博 content from channel_id
+#define API_URL_POST_Photoweibo @"api.php?mod=Weibo&act=upload_photo" //发送照片微博 content
+#define API_URL_POST_Videoweibo @"api.php?mod=Weibo&act=upload_video" //发送视频微博
+#define API_URL_REPOST_weibo @"api.php?mod=Weibo&act=repost_weibo" //转发微博 content、feed_id、from
+#define API_URL_COMMENT_weibo @"api.php?mod=Weibo&act=comment_weibo" //评论微博 content、feed_id、from、 to_comment_id
+#define API_URL_FAVORITE_weibo @"api.php?mod=Weibo&act=favorite_weibo" //收藏微博
+#define API_URL_UNFAVORITE_weibo @"api.php?mod=Weibo&act=unfavorite_weibo" //取消收藏微博
+#define API_URL_DENOUNCE_weibo @"api.php?mod=Weibo&act=denounce_weibo" //举报微博 reason feed_id from
+
+
+//TA主页
+#define API_URL_USER @"api.php?mod=User&act=show" //TA信息
+#define API_URL_WEIBO_OTHER @"api.php?mod=Weibo&act=user_timeline" //TA微博列表
+#define API_URL_USER_Follower @"api.php?mod=User&act=user_follower" //粉丝列表 uid或者uname max_id分页
+#define API_URL_USER_Followering @"api.php?mod=User&act=user_following" //关注列表 uid或者uname max_id分页
+#define API_URL_WEIBO_COLLECT @"api.php?mod=Weibo&act=user_collections" //用户收藏微博列表
+#define API_URL_USER_Friend @"api.php?mod=User&act=user_friend" //好友列表 uid或者uname max_id分页
+
+#define API_URL_USER_Follow @"api.php?mod=User&act=follow" //添加关注 user_id
+#define API_URL_USER_UNFollow @"api.php?mod=User&act=unfollow" //取消关注 user_id
+#define API_URL_USER_Blacklist @"api.php?mod=User&act=user_blacklist" //黑名单列表
+#define API_URL_USER_ADDBlacklist @"api.php?mod=User&act=add_blacklist" //添加到黑名单列表
+#define API_URL_USER_REMOVEBlacklist @"api.php?mod=User&act=remove_blacklist" //解除黑名单
+
+//所有修改个人资料  比如 密码  昵称 地区等等  传参不同而已
+/*
+ 1、密码：新密码password  旧密码 old_password
+ */
+#define API_URL_USER_Modify @"api.php?mod=User&act=save_user_info"
+
+#define API_URL_USER_Privacy @"api.php?mod=User&act=user_privacy" //获取隐私设置
+#define API_URL_USER_SETPrivacy @"api.php?mod=User&act=save_user_privacy" //隐私设置 0为所有人 1是关注的人
+#define API_URL_USER_CanMessage @"api.php?mod=Message&act=can_send_message" //是否可以发私信
+#define API_URL_FEED_List @"api.php?mod=User&act=get_feedback_type" //意见反馈类型
+#define API_URL_ADD_Feed @"api.php?mod=User&act=add_feedback" //意见反馈
+
+//发现
+#define API_URL_Gift_All @"api.php?mod=Gift&act=gift_all" //所有礼物
+#define API_URL_Gift_My @"api.php?mod=Gift&act=gift_my" //我的礼物
+#define API_URL_Gift_Detail @"api.php?mod=Gift&act=gift_detail" //礼物详情 id
+/**
+ * 赠送礼物
+ * @param string $uids 用户ID，多个用户ID之间用逗号隔开
+ * @param string $sendInfo 附加信息
+ * @param integer $sendWay 发送方式 1-所有人都能看见你的名字、赠送的礼物和附加消息
+ *                        		   2-只有接收礼物的人能看见你的名字和附加消息
+ *                        		   3-接收礼物的人只能看见你的附加消息，不显示你的名字
+ * @param integer $gift_id 礼物ID
+ * @return 状态+提示
+ */
+#define API_URL_Gift_Send @"api.php?mod=Gift&act=send_gift" //赠送礼物 用户uids,(逗号隔开)   sendinfo(附加信息)  sendWay(发送方式)
+#define API_URL_Gift_exchange @"api.php?mod=Gift&act=exchange" //兑换积分 gift_id
+//
+#define API_URL_Gift_TA @"api.php?mod=User&act=user_gift" //TA的礼物 user_id 或者uname
+#define API_URL_PHOTO_TA @"api.php?mod=User&act=user_photo" //TA的相册 user_id 或者uname
+#define API_URL_VIDEO_TA @"api.php?mod=User&act=user_video" //TA的相册 user_id 或者uname
+
+
+
+#define API_URL_USER_ZANList @"api.php?mod=Weibo&act=weibo_diggs" //赞列表  feed_id max_id分页
+
+#define API_URL_USER_Follow @"api.php?mod=User&act=follow" //添加关注 user_id
+#define API_URL_USER_UNFollow @"api.php?mod=User&act=unfollow" //取消关注 user_id
+#define API_URL_USER_Blacklist @"api.php?mod=User&act=user_blacklist" //黑名单列表
+#define API_URL_USER_ADDBlacklist @"api.php?mod=User&act=add_blacklist" //添加到黑名单列表
+#define API_URL_USER_REMOVEBlacklist @"api.php?mod=User&act=remove_blacklist" //解除黑名单
+
+ /**
+ * 修改用户信息
+ * @param string $uname 用户名
+ * @param integer $sex 性别(1-男,2-女)
+ * @param string $intro 个人简介
+ * @param string $city_names 地区名称(格式:'省 市 县'，例:'河北 廊坊市 固安县')
+ * @param string $city_ids 地区ID(格式:'省ID,市ID,县ID'，例:'130000,131000,131022')
+ * @param string $password 新密码
+ * @param string $old_password 旧密码
+ * @param string $tags 标签(多个标签之间用逗号隔开)
+ */
+#define API_URL_USER_Modify @"api.php?mod=User&act=save_user_info"
+
+#define API_URL_USER_Privacy @"api.php?mod=User&act=user_privacy" //获取隐私设置
+#define API_URL_USER_SETPrivacy @"api.php?mod=User&act=save_user_privacy" //隐私设置 0为所有人 1是关注的人
+#define API_URL_USER_CanMessage @"api.php?mod=Message&act=can_send_message" //是否可以发私信
+#define API_URL_FEED_List @"api.php?mod=User&act=get_feedback_type" //意见反馈类型
+#define API_URL_ADD_Feed @"api.php?mod=User&act=add_feedback" //意见反馈
+
+//发现
+#define API_URL_Gift_All @"api.php?mod=Gift&act=gift_all" //所有礼物
+#define API_URL_Gift_My @"api.php?mod=Gift&act=gift_my" //我的礼物
+#define API_URL_Gift_Detail @"api.php?mod=Gift&act=gift_detail" //礼物详情 id
+/**
+ * 赠送礼物
+ * @param string $uids 用户ID，多个用户ID之间用逗号隔开
+ * @param string $sendInfo 附加信息
+ * @param integer $sendWay 发送方式 1-所有人都能看见你的名字、赠送的礼物和附加消息
+ *                        		   2-只有接收礼物的人能看见你的名字和附加消息
+ *                        		   3-接收礼物的人只能看见你的附加消息，不显示你的名字
+ * @param integer $gift_id 礼物ID
+ * @return 状态+提示
+ */
+#define API_URL_Gift_Send @"api.php?mod=Gift&act=send_gift" //赠送礼物 用户uids,(逗号隔开)   sendinfo(附加信息)  sendWay(发送方式)
+#define API_URL_Gift_exchange @"api.php?mod=Gift&act=exchange" //兑换积分 gift_id
+//
+#define API_URL_Gift_TA @"api.php?mod=User&act=user_gift" //TA的礼物 user_id 或者uname
+#define API_URL_PHOTO_TA @"api.php?mod=User&act=user_photo" //TA的相册 user_id 或者uname
+#define API_URL_VIDEO_TA @"api.php?mod=User&act=user_video" //TA的视频 user_id 或者uname
+#define API_URL_MY_Scroce @"api.php?mod=Credit&act=Credit_my" //TA的相册 user_id 或者uname
+
+
+//第三方登录
+/*
+	type 帐号类型  sina  qq 
+	type_uid 第三方用户标识
+	access_token 
+ */
+#define API_URL_Other_Login @"api.php?mod=Oauth&act=get_other_login_info"
+#define API_URL_Other_Bind @"api.php?mod=User&act=user_bind" //帐号是否已绑定
+#define API_URL_Other_Bind_Other @"api.php?mod=User&act=bind_other" //绑定 传type  = sina、qzone、weixin  /type_uid/access_token。后面2个从shareSDK获取
+#define API_URL_Other_UNBind @"api.php?mod=User&act=unbind" //解绑 传type  = sina、qzone、weixin
+#define API_URL_Other_REG @"api.php?mod=Oauth&act=bind_new_user"//第三方登录未绑定完善资料  uname password
+
+#define API_URL_DEL_weibo @"api.php?mod=Weibo&act=del_weibo" //删除微博 feed_id
+#define API_URL_WEIBO_Mentions @"api.php?mod=Weibo&act=user_mentions" //提到我的
+
+
+
+
+
+
+#define API_URL_DEL_weibo @"api.php?mod=Weibo&act=del_weibo" //删除微博 feed_id
+#define API_URL_WEIBO_Mentions @"api.php?mod=Weibo&act=user_mentions" //提到我的 max_id
+#define API_URL_WEIBO_Diggs @"api.php?mod=Weibo&act=user_diggs_to_me" //提到我的 max_id
+#define API_URL_WEIBO_Comments @"api.php?mod=Weibo&act=user_comments_to_me" //提到我的 max_id
+#define API_URL_WEIBO_CommentList @"api.php?mod=Weibo&act=weibo_comments" //微博评论列表 max_id
+
+//签到
+#define API_URL_WEIBO_Checkin @"api.php?mod=Checkin&act=checkin" //执行签到
+#define API_URL_WEIBO_CheckInfo @"api.php?mod=Checkin&act=get_check_info" //签到信息
+
+
+
+//刘鹏新增接口
+#define API_URL_FindPerson_Search @"api.php?mod=FindPeople&act=search_user"//找人-搜索,传入key（关键词）,max_id（上次返回最后一人id）,count（返回数量）,感兴趣的人直接传空即可
+#define API_URL_FindPerson_Near @"api.php?mod=FindPeople&act=search_by_distinct"//找人-附近,传入经纬度  --ok
+#define API_URL_FindPerson_Area @"api.php?mod=FindPeople&act=get_user_city"//找人-地区,地区传空即可
+#define API_URL_FindPerson_Area_Result @"api.php?mod=FindPeople&act=search_by_city"//找人-地区结果,传入city_id（地区id）,max_id（上次返回最后一人id）  --ok
+#define API_URL_FindPerson_Tally @"api.php?mod=FindPeople&act=get_user_tags"//找人-标签,标签传空即可
+#define API_URL_FindPerson_Tally_Result @"api.php?mod=FindPeople&act=search_by_tag"//找人-标签结果,tag_id,,max_id
+#define API_URL_FindPerson_Authentication @"api.php?mod=FindPeople&act=get_user_verify"//找人-认证,认证传空即可
+#define API_URL_FindPerson_Authentication_Result @"api.php?mod=FindPeople&act=search_by_verify"//找人-认证,按照认证搜索用户,传入verify_id（认证id）,max_id（上次返回最后一人id）
+#define API_URL_FindPerson_AddressBook @"api.php?mod=FindPeople&act=search_by_tel"//找人-通讯录,传入string（手机号中间使用,隔开的字符串）
+
+
+
+#define API_URL_DEL_weibo @"api.php?mod=Weibo&act=del_weibo" //删除微博 feed_id
+#define API_URL_WEIBO_Mentions @"api.php?mod=Weibo&act=user_mentions" //提到我的 max_id
+#define API_URL_WEIBO_Diggs @"api.php?mod=Weibo&act=user_diggs_to_me" //提到我的 max_id
+#define API_URL_WEIBO_Comments @"api.php?mod=Weibo&act=user_comments_to_me" //提到我的 max_id
+#define API_URL_WEIBO_CommentList @"api.php?mod=Weibo&act=weibo_comments" //微博评论列表 max_id
+
+//签到
+#define API_URL_WEIBO_Checkin @"api.php?mod=Checkin&act=checkin" //执行签到
+#define API_URL_WEIBO_CheckInfo @"api.php?mod=Checkin&act=get_check_info" //签到信息
+
+#define API_URL_User_Send_Code @"api.php?mod=User&act=send_bind_code" //绑定手机号验证码
+#define API_URL_User_Phone @"api.php?mod=User&act=do_bind_phone" //绑定手机号
+#define API_URL_User_UNPhone @"api.php?mod=User&act=unbind" //绑定手机号
+
+//api.php?mod=Weibo&act=recommend_timeline
+#define API_URL_WEIBO_Recommend @"api.php?mod=Weibo&act=recommend_timeline" //推荐
+#define API_URL_PinDao_New @"api.php?mod=Channel&act=get_all_channel"//频道 分页max_id
+#define API_URL_PinDao_CaoZuo @"api.php?mod=Channel&act=channel_follow"//取消关注type=0，添加=1 channel_category_id
+#define API_URL_PinDao_List @"api.php?mod=Channel&act=channel_detail"//频道详情列表 channel_category_id
+//
+#define API_URL_Area_List @"api.php?mod=User&act=get_area_list"//修改个人资料地区
+
+
+//刘鹏新增接口
+#define API_URL_FindPerson_Search @"api.php?mod=FindPeople&act=search_user"//找人-搜索,传入key（关键词）,max_id（上次返回最后一人id）,count（返回数量）,感兴趣的人直接传空即可
+#define API_URL_FindPerson_Near @"api.php?mod=FindPeople&act=search_by_distinct"//找人-附近,传入经纬度
+#define API_URL_FindPerson_Area @"api.php?mod=FindPeople&act=get_user_city"//找人-地区,地区传空即可
+#define API_URL_FindPerson_Area_Result @"api.php?mod=FindPeople&act=search_by_city"//找人-地区结果,传入city_id（地区id）,max_id（上次返回最后一人id）
+#define API_URL_FindPerson_Tally @"api.php?mod=FindPeople&act=get_user_tags"//找人-标签,标签传空即可
+#define API_URL_FindPerson_Tally_Result @"api.php?mod=FindPeople&act=search_by_tag"//找人-标签结果,
+#define API_URL_FindPerson_Authentication @"api.php?mod=FindPeople&act=get_user_verify"//找人-认证,认证传空即可
+#define API_URL_FindPerson_Authentication_Result @"api.php?mod=FindPeople&act=search_by_verify"//找人-认证,按照认证搜索用户,传入verify_id（认证id）,max_id（上次返回最后一人id）
+#define API_URL_FindPerson_AddressBook @"api.php?mod=FindPeople&act=search_by_tel"//找人-通讯录,传入string（手机号中间使用,隔开的字符串）
+
+#define API_URL_TopicDetail @"api.php?mod=Weibo&act=topic_timeline"//微博-话题详情,传入topic_name（话题名称）,max_id（上次返回最后一条微博id）,type（微博类型,预留字段传空即可）
+
+
+//未读消息
+http://dev.thinksns.com/t4/api.php?mod=Message&act=unreadcount&oauth_token=09b9eb8653a5c77755ed18a0eb7a2ef5&oauth_token_secret=616a4d4613d45d822e1aa5433c0b1d97&format=test
+
+
+//聊天接口
+#define API_URL_CHAT_FRIEND @"api.php?mod=User&act=user_friend_by_letter" //朋友列表,不需要传参
+
+
+
+
+
+#define API_URL_CREATE_GROUPCHAT @"api.php?mod=Message&act=createList" //创建群聊 from_uid title member
+#define API_URL_GET_LISTMEMBER @"api.php?mod=Message&act=get_list_info" //获取群聊人员 list_id
+
+WebSocket实现聊天功能
+
+--------------------------------------------------------------------------------
+
+WebSocket地址：
+ws://dev.thinksns.com:7272
+当连接到服务器后
+ws.onopen
+先执行登录操作
+data = {"type":"login","from_uid":from_uid,"from_uname":from_uname,"oauth_token":"登录系统服务器的时候的token"}
+ws.send(data);
+系统返回消息
+{"type":"login","status":"1","client_id":"client_id","from_uid":"from_uid"} 
+client_id 是设备唯一标识
+
+
+心跳同步
+
+--------------------------------------------------------------------------------
+
+服务器端会发送一个 ping
+{"type":"ping"}
+返回服务器一个pong
+data = {"type":"pong"}
+ws.send(data);
+如果30秒内没有心跳，重新登录
+如果无法登录，或30秒内无返回消息，重新链接服务器
+
+
+向某人发消息
+
+--------------------------------------------------------------------------------
+
+room_id 就是TS消息表的list_id，两个人的对话有个固定的房间room_id，如果第一次发信息，没有room_id，从用户返回信息里补全
+data = {"type":"say", "room_id": room_id, "msgtype": "text", "from_uname": "from_uname","from_uid": "from_uid", "to_uname": "to_uname","to_uid": "to_uid","content":"哈喽~"}
+ws.send(data);
+
+
+用户向你发消息
+{"type":"say", "from_client_id":client_id, "to_client_id":client_id, "room_id": room_id, "msgtype": "text", "from_uname": "from_uname","from_uid": "from_uid", "to_uname": "to_uname","to_uid": "to_uid","content":"哈喽~","time":time}
+
+
+向某人发图片消息
+
+--------------------------------------------------------------------------------
+
+通过接口上传图片，获取attach_id，image_url，image_width，image_height
+Message/upload_photo 上传图片
+{"type":"say", "room_id": room_id, "msgtype": "image", "from_uname": "from_uname","from_uid": "from_uid", "to_uname": "to_uname","to_uid": "to_uid","content":"[照片]","attach_id":"123123","image_url":"http://aaaaa/aa.img","image_width":"200","image_height":"300"}
+ws.send(data);
+
+
+向某人发语音消息
+
+--------------------------------------------------------------------------------
+
+通过接口上传图片，获取attach_id，voice_url，length
+Message/upload_voice 上传语音
+{"type":"say", "room_id": room_id, "msgtype": "voice", "from_uname": "from_uname","from_uid": "from_uid", "to_uname": "to_uname","to_uid": "to_uid","content":"[语音]","attach_id":"123123","length":"30","voice_url":"http://aaaaa/aa.mp3"}
+ws.send(data);
+
+
+向某人发名片
+
+--------------------------------------------------------------------------------
+
+{"type":"say", "room_id": room_id, "msgtype": "card", "from_uname": "from_uname","from_uid": "from_uid", "to_uname": "to_uname","to_uid": "to_uid","content":"[名片]","card_uid":"123","card_uname":"海虾","card_intro":"智士软件创始人"}
+ws.send(data);
+
+
+向某人发地理位置
+
+--------------------------------------------------------------------------------
+
+{"type":"say", "room_id": room_id, "msgtype": "position", "from_uname": "from_uname","from_uid": "from_uid", "to_uname": "to_uname","to_uid": "to_uid","content":"[位置]","poi_lat":"11.11","poi_lng":"22.22","poi_name":"北京海淀西二旗","poi_image":"http://aaa.aa.jpg"}
+ws.send(data);
+
+
+向某人发链接
+
+--------------------------------------------------------------------------------
+
+{"type":"say", "room_id": room_id, "msgtype": "link", "from_uname": "from_uname","from_uid": "from_uid", "to_uname": "to_uname","to_uid": "to_uid","content":"[链接]","link_title":"这是一个链接","link_url":"http://www.baidu.com","link_intro":"简介","link_image":"http://aaa.aa.jpg"}
+ws.send(data);
+
+
+历史记录的问题
+
+--------------------------------------------------------------------------------
+
+登录后直接返回用户未读信息
+
+
+多人群聊的问题
+
+--------------------------------------------------------------------------------
+
+群聊时，to_uid不传，room_id必传
+单聊时，to_uid必传，room_id可选
+
+
+创建群聊
+
+--------------------------------------------------------------------------------
+
+{"type":"group", "act":"createList", "from_uid": from_uid, "members": "123,321,333"}
+ws.send(data);
+选择多个人创建对话
+创建人：form_uid
+群聊成员：多人用逗号分割
+
+
+群聊加人
+
+--------------------------------------------------------------------------------
+
+{"type":"group", "act":"addUser", "list_id": "list_id", "uid": "uid"}
+ws.send(data);
+成功
+{"type":"group","act":"addUser","status":"1","list_id":"'.$list_id.',"uid":"'.$uid.'"}
+失败
+{"type":"group","act":"createList","status":"0"}
+
+
+群聊减人
+
+--------------------------------------------------------------------------------
+
+{"type":"group", "act":"moveUser", "list_id": "list_id", "uid": "uid"}
+ws.send(data);
+成功
+{"type":"group","act":"createList","status":"1","list_id":"'.$list_id.'"}
+失败
+{"type":"group","act":"createList","status":"0"}
+
+
+群聊改名
+
+--------------------------------------------------------------------------------
+
+{"type":"group", "act":"changeTitle",  "list_id": list_id, "title": "群聊标题"}
+ws.send(data);
+成功
+{"type":"group","act":"delUser","status":"1","list_id":"'.$list_id.',"uid":"'.$uid.'"}
+失败
+{"type":"group","act":"createList","status":"0"}
+
+
+
+
+异步的消息发送
+
+--------------------------------------------------------------------------------
+
+网页发到客户端，需要载入聊天服务器的接口
+
+
+
+周维明 14:30:16
+//mod=Message&act=unreadcount
+#define API_URL_UNREAD_MESSAGE @"api.php?mod=Message&act=unreadcount" //未读消息数
+
+//mod=FindPeople&act=top_ad
+#define API_URL_Find_AD @"api.php?mod=FindPeople&act=top_ad" //广告
+#define API_URL_YiPinDao_New @"api.php?mod=Channel&act=get_user_channel"//频道 分页max_id
+
+#define API_URL_JiFen_Rank @"api.php?mod=FindPeople&act=rank_score"//积分排行
+#define API_URL_XunZhang_Rank @"api.php?mod=FindPeople&act=rank_medal"//积分排行
+//
+#define API_URL_XunZhang_List @"api.php?mod=User&act=get_user_medal"//用户勋章列表  uname
+
+#define API_URL_MyTag_List @"api.php?mod=Tag&act=tag_my"//用户tag
+#define API_URL_ALL_List @"api.php?mod=Tag&act=tag_all"//所有tag
+#define API_URL_Add_List @"api.php?mod=Tag&act=addTag"//添加tag name
+#define API_URL_delete_List @"api.php?mod=Tag&act=deleteTag"//删除tag  tag_id
+
+#define API_URL_Topic_List @"api.php?mod=Weibo&act=all_topic"//话题列表 分页max_id
+#define API_URL_Check_Rank @"api.php?mod=Checkin&act=rank" //获取签到排名
+
+
+
+//微吧
+#define API_URL_Weiba_list @"api.php?mod=Weiba&act=weiba_detail"//圈子列表
+#define API_URL_Weiba_ALLlist @"api.php?mod=Weiba&act=all_wieba"//全部微吧列表
+#define API_URL_Weiba_recommend_topic @"api.php?mod=Weiba&act=recommend_topic"//推荐帖子
+#define API_URL_Weiba_ALLTuiJianTieZilist @"api.php?mod=Weiba&act=recommend_all"//热门推荐帖子列表 max_id  post_id
+#define API_URL_Weiba_ALLLIST @"api.php?mod=Weiba&act=post_all"//圈子简介,传weiba_id
+
+#define API_URL_Weiba_detail @"api.php?mod=Weiba&act=detail"//圈子简介,传weiba_id
+#define API_URL_Weiba_follow @"api.php?mod=Weiba&act=doFollowWeiba"//关注圈子,传weiba_id
+#define API_URL_Weiba_unfollow @"api.php?mod=Weiba&act=unFollowWeiba"//取消关注圈子,传weiba_id
+#define API_URL_Weiba_CircleDetail @"api.php?mod=Weiba&act=post_detail"//帖子详情,传文章id,(post_id)
+#define API_URL_Weiba_zan @"api.php?mod=Weiba&act=add_post_digg"//赞帖子,(post_id)
+#define API_URL_Weiba_unzan @"api.php?mod=Weiba&act=del_post_digg"//取消赞帖子,(post_id)
+#define API_URL_Weiba_favorite @"api.php?mod=Weiba&act=favorite"//收藏帖子,传post_id,weiba_id,post_uid
+#define API_URL_Weiba_unfavorite @"api.php?mod=Weiba&act=unfavorite"//取消收藏帖子post_id,weiba_id,post_uid
+
+#define API_URL_Weiba_CommentList @"api.php?mod=Weiba&act=weiba_comments"//帖子评论列表 feed_id和max_id(上次返回最后一评论的comment_id)
+#define API_URL_WEIBA_COMMENT @"api.php?mod=Weiba&act=comment_post" //评论微博 content、post_id、from、 to_comment_id
+//
+#define API_URL_WEIBA_DIGGEST @"api.php?mod=Weiba&act=digest_all" //精华列表 weiba_id   max_id
+
+#define API_URL_WEIBA_DIGGLISTS @"api.php?mod=Weiba&act=digg_lists" //帖子赞列表 post_id   max_id
+//
+#define API_URL_WEIBA_Search @"api.php?mod=Weiba&act=search_topic" //帖子赞列表 post_id   max_id
+#define API_URL_WEIBA_Post @"api.php?mod=Weiba&act=add_post" //发布文字帖子 weiba_id content title attach_ids
+#define API_URL_WEIBA_OneDetail @"api.php?mod=Weiba&act=post_one" //获取某条帖子详情  post_id
+
+
+
+
+
+
+

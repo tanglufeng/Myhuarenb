@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/seperate"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/white"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/seperate"
+        android:id="@+id/inf"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/img_hwg_back_gray" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="?attr/TitleTextSize"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="必吃"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_below="@+id/tv_title"
+            android:textSize="@dimen/dimen_20sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_mune_right"
+            android:textSize="?attr/TitleTextSize"
+            android:layout_margin="@dimen/dimen_15dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="筛选"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:visibility="gone"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:listSelector="#00000000"
+        android:background="@color/travel_bg"
+        android:gravity="center"
+        android:id="@+id/gridview_select"
+        android:layout_below="@+id/inf"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        >
+
+    </GridView>
+
+    <View
+        android:layout_below="@+id/gridview_select"
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:layout_marginTop="1dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_below="@+id/gridview_select"
+        android:id="@+id/rv_bichi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_progress="@layout/view_progress"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

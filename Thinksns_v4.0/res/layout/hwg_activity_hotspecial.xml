@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hwg_bg"
+    android:clipToPadding="false">
+
+    <View
+        android:id="@+id/seperate"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:background="@color/white"
+        />
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_below="@+id/seperate"
+        android:id="@+id/relative_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:minHeight="?attr/actionBarSize">
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/subscribe_seperate_line"/>
+        <RelativeLayout
+            android:id="@+id/relative_back"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/tljr_click">
+
+            <include
+                android:id="@+id/tljr_img_news_back"
+                layout="@layout/hqb_view_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/t_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="?attr/TitleTextSize"
+            android:textColor="@color/hwg_text1"/>
+
+
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_title">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/hwg_bg"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0.1px"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <ImageView
+        android:layout_above="@+id/relative_cart"
+        android:id="@+id/img_all_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/c_buy_button"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_all_buy"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/c_up_button"
+        android:visibility="invisible" />
+    <RelativeLayout
+        android:id="@+id/relative_cart"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/img_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_hwg_hot_cart"
+            android:visibility="visible" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/car_num"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="right|top"
+            android:background="@drawable/img_tishi2"
+            android:gravity="center"
+            android:text="11"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:layout_alignTop="@+id/img_cart"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

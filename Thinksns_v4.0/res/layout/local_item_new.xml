@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:id="@+id/relative_root"
+    android:background="@drawable/mainclick_selector"
+    android:clickable="true">
+
+
+    <TextView
+        android:gravity="left|top"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tv_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_toRightOf="@+id/rl_new"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lines="3"
+        android:text="第四届中国财经峰会举行 聚焦新常态 "
+        android:textColor="@color/tljr_text_default2"
+        android:layout_centerVertical="true"
+        android:textSize="16.0sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_new"
+        android:layout_width="wrap_content"
+        android:layout_height="82.0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/img_new"
+            android:layout_width="110.0dip"
+            android:layout_height="70.0dip"
+            android:src="@drawable/img_huaqiao_default" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/subscribe_seperate_line" />
+
+</RelativeLayout>

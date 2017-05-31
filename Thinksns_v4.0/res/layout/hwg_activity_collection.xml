@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_statusbarcolor">
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_goods_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tljr_txt_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的收藏"
+            android:textColor="@color/hwg_text1"
+            android:textSize="?attr/TitleTextSize" />
+
+        <TextView
+            android:id="@+id/tljr_hqss_news_titlebelow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tljr_txt_news_title"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="8dp" />
+
+        <RelativeLayout
+            android:id="@+id/relative_back"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/tljr_click">
+
+            <include
+                android:id="@+id/tljr_img_news_back"
+                layout="@layout/hqb_view_back" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true"/>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relative_edit"
+            android:layout_alignParentRight="true"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/t_edit"
+                android:textColor="@color/tljr_statusbarcolor"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/tljr_grp_goods_title"
+        android:layout_above="@+id/linear_bottom"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/android_layout_bg"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0.1px"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarSize="3dp"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/relative_network"
+        android:layout_below="@+id/tljr_grp_goods_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#99000000">
+        <TextView
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="网络请求失败，请检查您的网络设置"/>
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/img_hwg_more"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_null"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_no_data" />
+
+        <TextView
+            android:id="@+id/tv_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="目前还没有收藏哦~"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_null2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:text="去到处逛逛吧~"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:visibility="visible"
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+        <CheckBox
+            android:id="@+id/btn_check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:button="@drawable/btn_check"
+            android:paddingLeft="10dp"
+            android:text="全选"
+            android:textColor="@color/default_text"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/btn_add"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_login"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="加入购物车"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/btn_delete"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_login"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

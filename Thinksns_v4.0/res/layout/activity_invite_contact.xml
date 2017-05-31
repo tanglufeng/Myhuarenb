@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup1"
+        android:layout_below="@+id/relativeLayout1" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#666666"
+        android:layout_below="@+id/vp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <RadioButton
+            android:id="@+id/last_contact"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:gravity="center"
+            android:textColor="@drawable/selector_text_color"
+            android:text="最近联系" />
+
+        <RadioButton
+            android:id="@+id/list_contact"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+             android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@drawable/selector_text_color"
+            android:text="联系人列表" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/action_bg" >
+
+        <ImageView
+            android:id="@+id/bt_creatMeeting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selector_btn_back"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:src="@drawable/add" />
+        <TextView
+            android:id="@+id/tv_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/str_check_num"
+            android:textColor="#09BB06"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/tv_checked_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selector_btn_back"
+            android:padding="15dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="选择联系人"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@drawable/mainclick_selector"
+        android:id="@+id/lin_gnei"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="80dp"
+        android:layout_height="40dp">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/smallFont"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/item_country_name"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            tools:text="我是国家"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:gravity="center"
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="15dp" />
+    </LinearLayout>
+
+
+    <com.abcs.hqbtravel.wedgt.MyGridView
+        android:id="@+id/item_mgv_city"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="6dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:columnWidth="65dp"
+        android:numColumns="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.abcs.hqbtravel.wedgt.MyGridView>
+</LinearLayout>

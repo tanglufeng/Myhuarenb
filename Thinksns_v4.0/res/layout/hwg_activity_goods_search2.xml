@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hwg_bg"
+   >
+    <!--<include-->
+    <!--android:id="@+id/overlayHeader"-->
+    <!--layout="@layout/hwg_head_goods_list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+    <RelativeLayout
+        android:id="@+id/relative_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/layout_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/relative_search"
+            android:layout_toRightOf="@+id/relative_back"
+            android:background="@drawable/search_bg"
+            android:visibility="visible">
+
+            <EditText
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/img_clear"
+                android:singleLine="true"
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_size15"
+                android:background="@null"
+                android:hint="搜索海外购商品"
+                android:textColor="@color/tljr_text_default"
+                android:textColorHint="@color/tljr_text_tishi"
+                android:textCursorDrawable="@drawable/edittextcursor"
+                android:imeOptions="actionSearch"
+                android:textSize="14sp">
+
+            </EditText>
+            <ImageView
+                android:id="@+id/img_clear"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_selector"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_back"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/tljr_click">
+
+            <include
+                android:id="@+id/tljr_img_news_back"
+                layout="@layout/tljr_view_back" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_search"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/tljr_click">
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tljr_click"
+                android:src="@drawable/img_serach" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <com.abcs.huaqiaobang.view.MainScrollView
+        android:layout_below="@+id/relative_title"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="热门搜索"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textColor="@color/hwg_text1"/>
+
+            <com.abcs.hqbtravel.wedgt.MyGridView
+                android:id="@+id/hotrecyclerView"
+                android:numColumns="4"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:horizontalSpacing="5dip"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:listSelector="@android:color/transparent"
+                android:layout_marginBottom="10dp"
+                ></com.abcs.hqbtravel.wedgt.MyGridView>
+
+          <!--  <android.support.v7.widget.RecyclerView
+                android:id="@+id/hotrecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/hwg_bg"/>
+            <TextView
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="历史搜索"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textColor="@color/hwg_text1"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hwg_bg"/>
+
+            <com.abcs.hqbtravel.wedgt.MyListView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                ></com.abcs.hqbtravel.wedgt.MyListView>
+
+
+            <!--<RelativeLayout-->
+                <!--android:descendantFocusability="blocksDescendants"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/recyclerView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/hwg_bg"-->
+                    <!--android:cacheColorHint="#00000000"-->
+                    <!--android:divider="@null"-->
+                    <!--android:dividerHeight="0.1px"-->
+                    <!--android:fadingEdge="none"-->
+                    <!--android:listSelector="#00000000"-->
+                    <!--&gt;</android.support.v7.widget.RecyclerView>-->
+            <!--</RelativeLayout>-->
+
+
+            <TextView
+                android:id="@+id/t_clear"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="清空历史搜索"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/img_hwg_kuang_dark"/>
+        </LinearLayout>
+    </com.abcs.huaqiaobang.view.MainScrollView>
+
+
+</RelativeLayout>

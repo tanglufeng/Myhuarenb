@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/bg_white"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/bg_white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relative_search"
+                android:layout_width="?attr/TitleHeight"
+                android:layout_height="match_parent"
+                android:background="@drawable/tljr_click">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/img_ss" />
+
+            </RelativeLayout>
+            <RadioGroup
+                android:background="@drawable/btn_bgg"
+                android:id="@+id/radioGroup"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_goods"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/hwg_left_selector"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:text="品类"
+                    android:textColor="#333333"
+                    android:textSize="?attr/TitleTextSize" />
+
+                <RadioButton
+                    android:id="@+id/rb_qingshe"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/hwg_middle_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="活动"
+                    android:textColor="#333333"
+                    android:textSize="?attr/TitleTextSize" />
+
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/rb_dudao"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/yyg_middle_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="独到"
+                    android:textColor="@color/white"
+                    android:textSize="?attr/TitleTextSize" />
+                <RadioButton
+                    android:id="@+id/rb_wanle"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/hwg_right_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="发现"
+                    android:textColor="#333333"
+                    android:textSize="?attr/TitleTextSize" />
+
+
+            </RadioGroup>
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative_cart"
+                android:layout_width="?attr/TitleHeight"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/tljr_click">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/img_gwcard" />
+
+                <TextView
+                    android:id="@+id/car_num"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right|top"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/img_xiaoxitishi"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_height="1dp"
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"></View>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:background="@color/hwg_bg"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+    </FrameLayout>
+
+</LinearLayout>

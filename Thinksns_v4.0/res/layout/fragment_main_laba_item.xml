@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/tljr_white">
+
+        <ImageView
+            android:id="@+id/main_img_speaker"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img_laba" />
+
+        <com.abcs.huaqiaobang.view.AutoScrollTextView
+            android:id="@+id/main_txt_speaker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/main_img_speaker"
+            android:inputType="text"
+            android:text="欢迎西班牙商会入驻华侨理财。狂发红包！先到先得！"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+
+</LinearLayout>

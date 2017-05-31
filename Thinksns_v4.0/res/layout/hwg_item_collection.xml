@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="@color/white">
+
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:id="@+id/btn_check"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_check"
+            android:button="@null" />
+        <RelativeLayout
+            android:layout_toRightOf="@+id/btn_check"
+            android:id="@+id/relative_goods_icon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp">
+
+            <ImageView
+                android:id="@+id/image11"
+                android:layout_width="96dp"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@color/bar_grey" />
+
+            <ImageView
+                android:id="@+id/image112"
+                android:layout_width="96dp"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:src="@color/bar_grey" />
+
+            <ImageView
+                android:id="@+id/image111"
+                android:layout_width="0.5dp"
+                android:layout_height="96dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitXY"
+                android:src="@color/bar_grey" />
+
+            <ImageView
+                android:id="@+id/image2111"
+                android:layout_width="0.5dp"
+                android:layout_height="96dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@color/bar_grey" />
+
+            <ImageView
+                android:id="@+id/img_goods_icon"
+                android:layout_width="96dp"
+
+                android:layout_height="96dp"
+                android:layout_margin="1dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/relative_goods_icon">
+
+            <TextView
+                android:layout_toLeftOf="@+id/img_delete"
+                android:lines="2"
+                android:ellipsize="end"
+                android:id="@+id/t_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estee Lauder雅诗兰黛红石榴 鲜亮幻彩泡沫洁面乳 125ml"
+                android:textColor="@color/hwg_text2"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/img_hwg_delete" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/t_goods_works"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_goods_name"
+                android:layout_marginTop="3dp"
+                android:text="实力眼霜 再生修复"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/linear_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="@color/tljr_statusbarcolor" />
+
+                <TextView
+                    android:id="@+id/t_goods_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="361.00"
+                    android:textColor="@color/tljr_statusbarcolor"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linear_price"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="销量："
+                    android:textColor="@color/hwg_text2" />
+
+
+                <TextView
+                    android:id="@+id/t_goods_sales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@color/hwg_text2"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

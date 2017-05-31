@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+                android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="?attr/TitleBGColor"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_title">
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_hwg_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        >
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:id="@+id/ll_hwg_top"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/TitleHeight"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_hwg_change"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/tgt"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="澳洲"
+                    android:textColor="@color/font" />
+
+                <ImageView
+                    android:id="@+id/tgt"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_hwg_change" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="6"
+                android:background="@drawable/img_hwg_ser_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_toLeftOf="@+id/search"
+                    android:id="@+id/img_search_down"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_hwg_main_top_search" />
+
+                <EditText
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:hint="搜索商品 分类"
+                    android:textColorHint="@color/font"
+                    android:textSize="@dimen/dimen_24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_cart"
+                android:layout_width="?attr/TitleHeight"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/tljr_click">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/img_hwg_bug" />
+
+                <TextView
+                    android:id="@+id/car_num"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right|top"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/img_xiaoxitishi"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone"
+                   />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/rl_hwg_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/linear_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/main_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                app:pstsDividerColor="@color/white"
+                app:pstsTabPaddingLeftRight="10dp"
+                app:pstsIndicatorColor="@color/colorPrimaryDark"
+                app:pstsIndicatorHeight="4dp"
+                app:pstsShouldExpand="true"
+                app:pstsUnderlineColor="@color/white">
+            </com.astuetz.PagerSlidingTabStrip>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/seperate_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/linear_tab"
+            android:background="@color/subscribe_seperate_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_tab" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tljr_shape_dialogbj"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/tljr_dialog_exit_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:text="确定退出图灵金融？"
+        android:textColor="@color/tljr_text_shense"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/tljr_text_tishi"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/tljr_dialog_exit_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tljr_dialog_exit_fgx"
+            android:background="@drawable/tljr_click"
+            android:text="取消"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/tljr_dialog_exit_fgx"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/tljr_text_tishi"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/tljr_dialog_exit_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tljr_dialog_exit_fgx"
+            android:background="@drawable/tljr_click"
+            android:text="确定"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

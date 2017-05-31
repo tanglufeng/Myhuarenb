@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/btn_check"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_check"
+                android:button="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/img_goods"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="12dp"
+                 />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img_delete"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="潮诺聚合物苹果移动电源5s充电宝10000毫安以上通用三星小米 金色 天书"
+                    android:textColor="@color/hwg_text2"
+                    android:textSize="15sp" />
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/relative_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_goods_name"
+                    android:layout_below="@+id/tv_goods_name"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_goods_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_toRightOf="@+id/btn_cart_add"
+                        android:text="￥99.00"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+                    <!--<ImageView-->
+                    <!--android:id="@+id/img_delete"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:gravity="right"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:src="@drawable/img_delete_icon"/>-->
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_good_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/btn_cart_reduce2"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/btn_shopping_cart_product_num_reduce" />
+
+                    <EditText
+                        android:id="@+id/btn_cart_num_edit2"
+                        android:layout_width="55dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/btn_shopping_cart_product_num_edit"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btn_cart_add2"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/btn_shopping_cart_product_num_add" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_delete"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/tljr_statusbarcolor"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="删"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="除"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

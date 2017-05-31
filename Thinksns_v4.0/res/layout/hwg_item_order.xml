@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/hwg_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/img_goods"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="12dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/t_goods_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="潮诺聚合物苹果移动电源5s充电宝10000毫安以上通用三星小米 金色 天书"
+                    android:textColor="@color/hwg_text2"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/t_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥99.00"
+                    android:textColor="@color/hwg_text2"
+                    android:textSize="16sp" />
+                <TextView
+                    android:textColor="@color/hwg_text2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16sp"
+                    android:layout_toLeftOf="@+id/t_refund_return"
+                    android:id="@+id/t_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X1" />
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible"
+                    android:id="@+id/t_refund_return"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/tljr_statusbarcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="[退款/退货]"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/seperate"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1px"
+            android:background="@color/subscribe_seperate_line" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 这个是按下时的效果 -->
+    <item android:drawable="@drawable/img_spinner_up" android:state_selected="true"/>
+    <!-- 以下为正常状态的效果 -->
+    <item android:drawable="@drawable/img_spinner_down" android:state_selected="false"/>
+    <item android:drawable="@drawable/img_spinner_down" android:state_enabled="true"></item>
+</selector>

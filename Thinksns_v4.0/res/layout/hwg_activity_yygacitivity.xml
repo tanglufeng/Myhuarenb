@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abcs.haiwaigou.yyg.activity.YYGActivity">
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/seperate"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/tljr_statusbarcolor"/>
+    <RelativeLayout
+        android:id="@+id/relative_title"
+        android:layout_below="@+id/seperate"
+        android:background="@color/tljr_statusbarcolor"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight">
+        <RelativeLayout
+            android:id="@+id/relative_back"
+            android:background="@drawable/tljr_click"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent">
+            <include layout="@layout/tljr_view_back"/>
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_goods"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/yyg_left_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="商品"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/rb_lottery"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/yyg_middle_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="揭晓"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/rb_my"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/yyg_right_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@color/white" />
+
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/relative_my"
+            android:layout_alignParentRight="true"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:background="@drawable/tljr_click">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_hwg_yyg_msg"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_title">
+
+    </FrameLayout>
+</RelativeLayout>

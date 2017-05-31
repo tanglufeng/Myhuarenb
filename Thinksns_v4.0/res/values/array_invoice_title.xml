@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="invoice_title_array">
+        <item>个人</item>
+        <item>公司</item>
+    </string-array>
+
+    <string-array name="refund_type">
+        <item>仅退款</item>
+        <item>退货退款</item>
+    </string-array>
+
+    <string-array name="refund_reason">
+        <item>请选择退款原因</item>
+        <item>不能按时发货</item>
+        <item>认为是假货</item>
+        <item>保质期不符</item>
+        <item>商品破损、有污渍</item>
+        <item>效果不好不喜欢</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="refund_return">
+        <item>请选择退货退款原因</item>
+        <item>不能按时发货</item>
+        <item>认为是假货</item>
+        <item>保质期不符</item>
+        <item>商品破损、有污渍</item>
+        <item>效果不好不喜欢</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="hot_select">
+        <item>默认排序</item>
+        <item>按销量升序</item>
+        <item>按销量降序</item>
+        <item>按价格升序</item>
+        <item>按价格降序</item>
+        <item>按人气升序</item>
+        <item>按人气降序</item>
+    </string-array>
+
+    <string-array name="deliver_company">
+        <item>请选择快递</item>
+        <item>顺丰快递</item>
+        <item>圆通快递</item>
+        <item>韵达快递</item>
+        <item>中通快递</item>
+        <item>包裹平邮</item>
+        <item>传喜物流</item>
+        <item>CCES</item>
+        <item>德邦物流</item>
+        <item>DHL快递</item>
+        <item>大田物流</item>
+        <item>EMS</item>
+        <item>EMS国际</item>
+        <item>凡客如风达</item>
+        <item>FedEx(国际)</item>
+        <item>飞康达</item>
+        <item>共速达</item>
+        <item>港中能达</item>
+        <item>挂号信</item>
+        <item>华宇物流</item>
+        <item>汇通快递</item>
+        <item>佳吉快运</item>
+        <item>急先达</item>
+        <item>佳怡物流</item>
+        <item>快捷速递</item>
+        <item>龙邦快递</item>
+        <item>联昊通</item>
+        <item>联邦快递</item>
+        <item>全日通</item>
+        <item>全峰快递</item>
+        <item>全一快递</item>
+        <item>申通快递</item>
+        <item>速尔快递</item>
+        <item>天地华宇</item>
+        <item>天天快递</item>
+        <item>TNT快递</item>
+        <item>USPS</item>
+        <item>UPS快递</item>
+        <item>新蛋物流</item>
+        <item>希伊艾斯</item>
+        <item>信丰物流</item>
+        <item>新邦物流</item>
+        <item>邮政包裹</item>
+        <item>优速快递</item>
+        <item>中铁快运</item>
+        <item>宅急送</item>
+        <item>中邮物流</item>
+    </string-array>
+
+    <string-array name="bank_array">
+        <item>请选择提现账户</item>
+        <item>中国工商银行</item>
+        <item>中国农业银行</item>
+        <item>中国银行</item>
+        <item>中国建设银行</item>
+        <item>中国邮政储蓄银行</item>
+        <item>平安银行</item>
+        <item>民生银行</item>
+        <item>中国光大银行</item>
+        <item>广东发展银行</item>
+        <item>中信实业银行</item>
+        <item>兴业银行</item>
+        <item>华夏银行</item>
+        <item>交通银行</item>
+        <item>招商银行</item>
+        <item>上海浦东发展银行</item>
+        <item>支付宝</item>
+        <item>其他</item>
+    </string-array>
+</resources>

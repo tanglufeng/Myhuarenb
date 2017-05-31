@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F3EE"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tljr_statusbarcolor">
+        <RelativeLayout
+            android:id="@+id/relative_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                layout="@layout/tljr_view_back"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="修改登录密码"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:paddingRight="10dp"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_edit_pwd_kuang">
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_edit_pwd_lock"/>
+        <EditText
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img1"
+            android:maxLength="20"
+            android:id="@+id/tljr_mdy_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@null"
+            android:digits="@string/type_limit"
+            android:hint="请输入原密码"
+            android:inputType="textPassword"
+            android:textColor="@color/tljr_balck"
+            android:textColorHint="@color/tljr_text_tishi"
+            android:textCursorDrawable="@drawable/edittextcursor">
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/img_edit_pwd_kuang">
+
+        <RelativeLayout
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_edit_pwd_lock"/>
+            <EditText
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img2"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:id="@+id/tljr_mdy_n_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:digits="@string/type_limit"
+                android:hint="新密码(6-12位英文数字组合)"
+                android:inputType="textPassword"
+                android:textColor="@color/tljr_balck"
+                android:textColorHint="@color/tljr_text_tishi"
+                android:textCursorDrawable="@drawable/edittextcursor" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_edit_pwd_xian"/>
+        <RelativeLayout
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_edit_pwd_lock"/>
+            <EditText
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img3"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:id="@+id/tljr_mdy_n_rpwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:digits="@string/type_limit"
+                android:hint="请确认新密码"
+                android:inputType="textPassword"
+                android:textColor="@color/tljr_balck"
+                android:textColorHint="@color/tljr_text_tishi"
+                android:textCursorDrawable="@drawable/edittextcursor" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_click"
+            android:text="取消"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_click"
+            android:text="确定"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

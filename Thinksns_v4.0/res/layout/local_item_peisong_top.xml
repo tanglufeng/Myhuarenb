@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.abcs.haiwaigou.local.activity.HireAndFindActivity">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/liner_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/re_back"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/iv_back_red" />
+        </RelativeLayout>
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:singleLine="true"
+            android:layout_marginRight="5dp"
+            android:text="我的店"
+            android:gravity="center"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:id="@+id/tv_name"
+            android:layout_width="65dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tv_xiala"
+            android:background="@drawable/img_peisong_xiala"
+            android:layout_width="wrap_content"
+            android:layout_height="20px" />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/red"
+            android:text="仟惠仁"
+            android:gravity="center"
+            android:id="@+id/tv_title"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/relat_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/bg_blue_corner"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp">
+            <TextView
+                android:id="@+id/tv_ou_yuan"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="€0.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/iv_peisong_search"
+            android:id="@+id/iv_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:id="@+id/lintive_setting"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/iv_peisong_setting"
+                    android:id="@+id/iv_setting"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_mess_num"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    tools:text="124"
+                    android:padding="1dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_red_dian"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

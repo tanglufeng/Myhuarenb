@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/hwg_bg"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp">
+    <LinearLayout
+        android:id="@+id/linear_root"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:id="@+id/img_pinpai"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:scaleType="fitXY"/>
+        <RelativeLayout
+
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="29dp">
+            <TextView
+                android:textColor="@color/tljr_statusbarcolor"
+                android:layout_toLeftOf="@+id/t3"
+                android:id="@+id/t_saled"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="790"/>
+            <TextView
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/t2"
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="件已售"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/t_remain"
+                android:id="@+id/t2"
+                android:textColor="@color/tljr_statusbarcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仅剩"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/t1"
+                android:id="@+id/t_remain"
+                android:textColor="@color/tljr_statusbarcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/t1"
+                android:textColor="@color/tljr_statusbarcolor"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小时"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

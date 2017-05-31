@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="app_name">华人邦</string>-->
+    <string name="version_info">当前版本0.1.0</string>
+    <string name="about_thinksns">关于华人圈</string>
+    <string name="area_one">华人圈</string>
+    <!--意见反馈提示语-->
+    <string name="feedback_description">请在这里填写您对产品的意见和建议，我们将不断改进，谢谢支持!</string>
+</resources>

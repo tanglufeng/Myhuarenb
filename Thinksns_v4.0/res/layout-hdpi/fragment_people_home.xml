@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+        <!--应用栏-->
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/titleBarBackground"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/relative_back"
+                android:background="@drawable/tljr_click"
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_back"/>
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/iv_title_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/titleBarMargin"
+                android:paddingLeft="@dimen/titleBarMargin"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_weiba_search"
+                android:scaleType="centerInside"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/homeBarDividerLineHeight"
+                android:layout_alignParentBottom="true"
+                android:background="@color/homeBarDividerLineColor"/>
+
+        </RelativeLayout>
+        <!--选项栏-->
+        <RelativeLayout
+            android:id="@+id/rl_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/tab_background">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/titleBarDivideLineColor"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1dp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible">
+                    <RadioButton
+                        android:id="@+id/rb_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/bottom_border_blue"
+                        android:button="@null"
+                        android:text="附近"
+                        android:textColor="@color/themeColor"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25dp"
+                        android:background="@null"
+                        android:button="@null"
+                        android:text="推荐"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:checked="false"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

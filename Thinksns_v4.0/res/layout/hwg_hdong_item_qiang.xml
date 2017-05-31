@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_root"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/img_icon"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/gouwuka"/>
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/t_title"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                android:maxLines="2"
+                android:textSize="13sp"
+                tools:text="春春雨蜂蜜春雨蜂蜜春雨蜂蜜春雨蜂蜜春雨蜂蜜春雨蜂蜜春雨蜂蜜春雨蜂蜜春雨蜂蜜春雨蜂蜜雨蜂蜜"/>
+
+            <TextView
+                android:layout_above="@+id/t_price"
+                android:id="@+id/t_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                tools:text="¥120"
+                android:textColor="#e1223e"
+                />
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/t_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="¥10"
+                android:textColor="#666666"
+                />
+
+            <LinearLayout
+                android:id="@+id/liner_pro"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/t_count"
+                    android:textColor="#666666"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="紧剩156件"/>
+                <ProgressBar
+                    android:layout_centerVertical="true"
+                    android:id="@+id/goods_prograss"
+                    style="@style/ProgressBar_yyg"
+                    android:layout_width="60dp"
+                    android:layout_height="8dp"
+                    android:layout_below="@+id/t_all_need"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_buy"
+                android:background="@drawable/bg_hdong_qiangg"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@+id/liner_pro"
+                android:layout_width="60dp"
+                android:layout_height="30dp">
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</LinearLayout>

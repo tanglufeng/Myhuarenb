@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/rela_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textSize="21sp"
+            android:id="@+id/tv"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="精选活动" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:background="#e0e0e0"
+            android:layout_width="30dp"
+            android:layout_height="1dp" />
+    </LinearLayout>
+    <com.abcs.hqbtravel.wedgt.MyListView
+        android:listSelector="#00000000"
+        android:cacheColorHint="#00000000"
+        android:id="@+id/item_lv_area"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.abcs.hqbtravel.wedgt.MyListView>
+
+</LinearLayout>

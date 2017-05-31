@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="match_parent"
+              >
+    <GridView
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/grid_gg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </GridView>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_null"
+        android:layout_centerInParent="true"
+        android:text="抱歉，暂无数据！"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

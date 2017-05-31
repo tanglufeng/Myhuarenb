@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj">
+
+    <RelativeLayout
+        android:id="@+id/grp_regiest_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj">
+
+        <TextView
+            android:id="@+id/tljr_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/fragment_regular"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/regular_btn_back"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/current_grp"
+        android:layout_below="@+id/grp_regiest_title">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/info_grp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/TitleBj"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/tlink"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@color/xian_gray" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="?attr/TitleBj"
+                        android:gravity="center"
+                        android:text="昨日收益(元)"
+                        android:textColor="@color/tljr_white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/Investmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0.00"
+                    android:textColor="@color/tljr_white"
+                    android:textSize="36dp" />
+
+                <TextView
+                    android:id="@+id/leiji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c_gray_text"
+                    android:textSize="12dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/xian1"
+                        android:layout_width="0.5dp"
+                        android:layout_height="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/xian_gray" />
+
+                    <TextView
+                        android:id="@+id/yitougeshu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toLeftOf="@+id/xian1"
+                        android:gravity="center"
+                        android:textColor="@color/c_gray_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/yitoujinqian"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@+id/xian1"
+                        android:gravity="center"
+                        android:textColor="@color/c_gray_text"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/tljr_white">
+
+                <View
+                    android:id="@+id/zjfgx"
+                    android:layout_width="0.1dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/img_222fengexian" />
+
+                <TextView
+                    android:id="@+id/qigoujine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/zjfgx"
+                    android:gravity="center"
+                    android:text="起购金额(元)\n--"
+                    android:textColor="@color/tljr_text_tishi" />
+
+                <TextView
+                    android:id="@+id/touziqixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/zjfgx"
+                    android:gravity="center"
+                    android:text="投资期限(天)\n--"
+                    android:textColor="@color/tljr_text_tishi" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@drawable/img_222fengexian" />
+
+            <TextView
+                android:id="@+id/txt_shuoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/shuoming"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/special_shuoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/special_shuoming"
+                android:textColor="@color/orange" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/img_222fengexian" />
+
+            <RelativeLayout
+                android:id="@+id/vip"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/img_guibinzhuanxiang"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lilv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="利率+1.0%"
+                    android:textColor="@color/c_red_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/current_grp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/TitleBj"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/turnout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/xian2"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/turnout"
+            android:textColor="@color/c_gray_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/xian2"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/xian_gray" />
+
+        <TextView
+            android:id="@+id/turnin"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/xian2"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/turnin"
+            android:textColor="@color/c_gray_text"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

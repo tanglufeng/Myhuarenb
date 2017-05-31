@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relative_top"
+        android:layout_width="160dp"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/gouwuka" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/t_total_money"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/tljr_statusbarcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="¥100"/>
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:id="@+id/img_isluck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_hwg_yyg_luck"/>
+    </RelativeLayout>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_isbuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_yyg_isbuy"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_isget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_yyg_isget"/>
+
+    <TextView
+        android:id="@+id/t_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="第1期100元华人邦购物卡"
+        android:textColor="@color/hwg_text1"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/relative_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_name"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linear_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/img_yyg_count_time" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_count"
+                android:text="即将揭晓"
+                android:textColor="@color/tljr_statusbarcolor"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_count"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.abcs.haiwaigou.yyg.view.MyTextView
+                android:id="@+id/t_count_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="@color/tljr_statusbarcolor"
+                android:textSize="28sp" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=":"-->
+            <!--android:textColor="@color/tljr_statusbarcolor"-->
+            <!--android:textSize="28sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/t_second"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="07"-->
+            <!--android:textColor="@color/tljr_statusbarcolor"-->
+            <!--android:textSize="28sp" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=":"-->
+            <!--android:textColor="@color/tljr_statusbarcolor"-->
+            <!--android:textSize="28sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/t_msecond"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="25"-->
+            <!--android:textColor="@color/tljr_statusbarcolor"-->
+            <!--android:textSize="28sp" />-->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_undo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_name"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获奖者："
+                android:textColor="@color/hwg_text2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/t_winner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="华人邦"
+                android:textColor="@color/yyg_blue"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="幸运号码："
+                android:textColor="@color/hwg_text2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/t_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19930829"
+                android:textColor="@color/tljr_statusbarcolor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="参与次数："
+                android:textColor="@color/hwg_text2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/t_joins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20人次"
+                android:textColor="@color/hwg_text2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="揭晓时间："
+                android:textColor="@color/hwg_text2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/t_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06-12 15:12"
+                android:textColor="@color/hwg_text2"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

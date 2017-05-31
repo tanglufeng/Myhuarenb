@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:psts="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/titleBarBackground"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:background="@drawable/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="华友会"
+            android:layout_centerInParent="true"
+            android:textColor="@color/bg_black"
+            android:textSize="?attr/TitleTextSize"/>
+
+        <ImageView
+            android:id="@+id/img_more"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_hqss_jiahao"
+            android:scaleType="centerInside"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/homeBarDividerLineHeight"
+            android:layout_alignParentBottom="true"
+            android:background="@color/homeBarDividerLineColor"/>
+
+    </RelativeLayout>
+
+    ////////////////////
+    <LinearLayout
+        android:layout_below="@+id/rl_top"
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:background="@color/titleBarBackground"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/img_back"/>
+
+            <ImageView
+                android:id="@+id/iv_title_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="朋友圈"
+                android:textSize="@dimen/dimen_size_18"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+            <!--发布按钮-->
+            <ImageView
+                android:id="@+id/iv_create"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="@dimen/titleBarMargin"
+                android:layout_marginLeft="@dimen/titleBarMargin"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tv_new_solid"
+                android:visibility="gone"
+                android:scaleType="centerInside"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/homeBarDividerLineHeight"
+                android:layout_alignParentBottom="true"
+                android:background="@color/homeBarDividerLineColor"/>
+
+        </RelativeLayout>
+        <!-- 导航条 -->
+        <RelativeLayout
+            android:id="@+id/ll_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tab_background">
+
+            <View
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/homeBarDividerLineHeight"
+                android:layout_alignBottom="@+id/tabs"
+                android:layout_marginBottom="0.5dp"
+                android:background="@color/homeBarDividerLineColor"
+                android:visibility="visible"/>
+
+            <com.astuetz.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_height"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:textColor="@color/tab_text_color"
+                android:textSize="@dimen/tab_text_size"
+                psts:pstsDividerColor="@android:color/transparent"
+                psts:pstsIndicatorColor="@color/blue"
+                psts:pstsIndicatorHeight="@dimen/tab_indicator_height"
+                psts:pstsShouldExpand="true"
+                psts:pstsTabPaddingLeftRight="12dp"
+                psts:pstsUnderlineColor="@android:color/transparent"/>
+
+
+        </RelativeLayout>
+
+        <!--向上偏移0.1dp-->
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/ll_top"
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:id="@+id/ib_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:padding="10dp"
+        android:src="@drawable/tv_new_solid"
+        android:visibility="gone"/>
+</RelativeLayout>

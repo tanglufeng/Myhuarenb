@@ -1,0 +1,49 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 1.0风格 -->
+    <style name="MyThemeNight" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="StatusBarColor">@color/tljr_pro_red</item>
+        <item name="TitleHeight">50dip</item>
+        <item name="TitleTextSize">18sp</item>
+        <item name="TitleTextColor">@color/tljr_white</item>
+        <item name="TitleBj">@drawable/img_dingtiao</item>
+        <item name="android:textColor">@color/default_text</item>
+        <item name="SearchIcon">@drawable/img_sousuoicon</item>
+        <item name="BackIcon">@drawable/img_fanhui</item>
+        <item name="avatarbj">@drawable/img_touxiang1</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="TitleBGColor">@color/tljr_statusbarcolor</item>
+        <item name="android:windowActionBar">false</item>
+
+    </style>
+
+    <style name="MyThemeDefault" parent="AppTheme">
+        <item name="StatusBarColor">@color/tljr_balck</item>
+        <item name="TitleHeight">50dip</item>
+        <item name="TitleTextSize">18sp</item>
+        <item name="TitleBj">@drawable/img_biaotilan</item>
+        <item name="SearchIcon">@drawable/btn_chazhao</item>
+        <item name="BackIcon">@drawable/btn_fanhui</item>
+        <item name="SettingIcon">@drawable/img_shezhi</item>
+        <item name="leidasaomiao">@drawable/leidasaomiao</item>
+        <item name="leidasaoguang">@drawable/leidasaoguang</item>
+        <item name="tianjiazuhe">@drawable/btn_tianjiazuhe</item>
+        <item name="flushIcon">@drawable/img_shuaxin</item>
+        <item name="avatarbj">@drawable/img_touxiang</item>
+        <item name="synchronizeIcon">@drawable/img_yunduantongbu11</item>
+        <item name="synchronizeIcon1">@drawable/img_yunduantongbu22</item>
+        <item name="arrowDown">@drawable/img_xialajiantou</item>
+        <item name="addGroup">@drawable/img_tianjia11</item>
+        <item name="calculator">@drawable/img_jisuanqi1</item>
+        <item name="TitleTextColor">@color/tljr_text_blue</item>
+        <item name="TitleTishiTextColor">@color/tljr_text_tishi</item>
+        <item name="Black">@color/tljr_text_default</item>
+        <item name="GRAY">@color/tljr_text_tishi</item>
+        <item name="tab_left">@drawable/tableft</item>
+        <item name="tab_right">@drawable/tabright</item>
+        <item name="tab_color">@color/tljr_txt_checkwhite</item>
+        <item name="BackClick">@drawable/tljr_back</item>
+    </style>
+
+
+</resources>

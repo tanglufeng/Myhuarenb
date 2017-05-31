@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_root"
+    android:background="@drawable/mainclick_selector"
+    android:clickable="true">
+
+<LinearLayout
+    android:id="@+id/item"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_margin="10px"
+        android:id="@+id/t_dain"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_hwg_indicator_select"
+        android:layout_width="10px"
+        android:layout_height="10px"
+        />
+    <TextView
+        android:layout_marginRight="15px"
+        android:layout_toRightOf="@+id/t_dain"
+        android:gravity="left|center_vertical"
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        tools:text="第四届中国财经峰会举行 聚焦新常聚焦新常态聚焦新常态聚焦新常态态 "
+        android:textColor="#242424"
+        android:textSize="14sp" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="2px"
+    android:layout_below="@+id/item"
+    android:id="@+id/item2"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_margin="10px"
+        android:id="@+id/t_dain2"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_hwg_indicator_select"
+        android:layout_width="10px"
+        android:layout_height="10px"
+        />
+    <TextView
+        android:layout_marginRight="15px"
+        android:layout_toRightOf="@+id/t_dain"
+        android:gravity="left|center_vertical"
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        tools:text="第四届中国财经峰会举行 聚焦新常聚焦新常态聚焦新常态聚焦新常态态 "
+        android:textColor="#242424"
+        android:textSize="14sp" />
+</LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_below="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/subscribe_seperate_line" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/TitleHeight"
+                xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:id="@+id/linner_ttop"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight">
+
+        <RelativeLayout
+            android:layout_marginRight="5dp"
+            android:id="@+id/relati_chang"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_toLeftOf="@+id/tgt"
+                android:layout_marginRight="3dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_city"
+                android:layout_centerVertical="true"
+                android:textColor="@color/bg_white"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/tgt"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="15dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/img_changcity"
+                android:layout_height="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="30dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_top_zhenxuan"
+                android:layout_centerInParent="true"
+                android:textSize="?attr/TitleTextSize"
+                android:textColor="#333333"
+                android:text="华人邦臻选"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/liner_top_zhenxuan"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/img_sercher_bg"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+              >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/img_search_down"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="18dp"
+                    android:src="@drawable/img_sercher"
+                    android:layout_height="18dp" />
+                <EditText
+                    android:hint="景点/美食"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center|left"
+                    android:textColorHint="@color/gray04"
+                    android:textSize="@dimen/dimen_24dp"
+                    android:id="@+id/search"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/cesu"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="25dp"
+            android:src="@drawable/img_cesu"
+            android:layout_height="25dp" />
+        <ImageView
+            android:id="@+id/gotomap"
+            android:layout_width="25dp"
+            android:src="@drawable/img_kefus"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/linner_ttop"
+        android:layout_alignParentBottom="true"
+        android:background="#e8e8e8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></TextView>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="banner_array">
+        <item>@drawable/banner02</item>
+        <item>@drawable/banner02</item>
+        <item>@drawable/banner02</item>
+        <item>@drawable/banner02</item>
+    </string-array>
+
+    <string-array name="banner_array2">
+        <item>@drawable/img_chanpin1</item>
+        <item>@drawable/img_chanpin1</item>
+        <item>@drawable/img_chanpin1</item>
+        <item>@drawable/img_chanpin1</item>
+        <item>@drawable/img_chanpin1</item>
+    </string-array>
+
+    <string-array name="banner_zhanshi">
+        <item>@drawable/img_beijing</item>
+        <item>@drawable/img_beijing</item>
+        <item>@drawable/img_beijing</item>
+        <item>@drawable/img_beijing</item>
+    </string-array>
+
+</resources>

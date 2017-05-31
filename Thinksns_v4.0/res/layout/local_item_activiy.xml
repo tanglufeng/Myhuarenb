@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/mainclick_selector"
+    android:clickable="true">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_local_huangye"
+            android:id="@+id/img_icon"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_icon"
+           >
+
+            <TextView
+                android:id="@+id/t_title"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="123123112312312wqweq312312312wqweq312312312wqweq32wqweq3"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/t_title"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/t_jubanfang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray"
+                    android:text="活动时间: "
+                    android:textSize="14sp" />
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/t_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3月12"
+                    android:textColor="@color/text_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="2dp"
+                android:layout_above="@+id/lin_bottom"
+                android:gravity="center_vertical"
+                android:id="@+id/line_tag"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:paddingBottom="2dp"
+                android:paddingRight="2dp"
+                android:id="@+id/lin_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_loca_dian" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:id="@+id/t_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/img_location"
+                    tools:text="新华网"
+                    android:textColor="@color/hwg_text3"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/subscribe_seperate_line" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/local_item_detail">
+
+        <RelativeLayout
+            android:id="@+id/local_item_dettail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/local_detail_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="刘会长(35年本地生活)"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/local_detail_tv_city_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="奥地利"
+                        />
+
+                    <TextView
+                        android:id="@+id/local_detail_tv_city_partner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:text="国家合伙人"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/local_detail_iv_shiming"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/shiming"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/local_detail_tv_shiming"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:text="实名认证"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/local_detail_iv_guanfang"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/shouquan"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/local_detail_tv_guanfang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:text="官方授权"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/local_item_detail_caontain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/local_item_dettail_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="4dp"
+                >
+                <TextView
+                    android:id="@+id/local_item_detail_tv_contain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:textSize="14sp"
+                    android:text="发布好大会哦是返回的金卡和空间的哈量较大囧囧否欧卡普空否大师级的垃圾"
+                    />
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/local_item_detail_tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="4"
+                    android:ellipsize="end"
+                    android:text="地址:深圳市大厦AA深圳市福田区海松大厦AA"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/local_item_iv_weixin"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/erweixin"
+                android:layout_marginLeft="7dp"
+                android:layout_gravity="right"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginBottom="20px"
+            android:layout_below="@id/local_item_detail_caontain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/local_detail_phone_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone"
+                    android:visibility="visible"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:textSize="16sp"
+                        android:textColorLink="@color/orange"
+                        android:autoLink="phone"
+                        android:id="@+id/local_detail_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#f84a3c"
+                        android:text="321808416"
+                        />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:textSize="16sp"
+                        android:textColorLink="@color/orange"
+                        android:id="@+id/local_detail_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#f84a3c"
+                        android:layout_marginTop="2dp"
+                        android:text="321808416"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                >
+                <ImageView
+                    android:id="@+id/local_detail_weixin_tb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/weixin"
+                    android:visibility="visible"
+                    />
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/local_detail_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:textColor="#00b900"
+                    android:text="hfiwuiuwrio"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/local_detail_bg_head"
+        android:background="@drawable/img_tracel_avatar_bg"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        >
+
+        <com.abcs.huaqiaobang.view.CircleImageView
+            android:id="@+id/local_detail_civ_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/local_detail_close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/close"
+        />
+
+
+
+</RelativeLayout>

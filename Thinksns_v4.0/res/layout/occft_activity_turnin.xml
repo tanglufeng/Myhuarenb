@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/turnin_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/turnin"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <include
+            android:id="@+id/turnout_btn_back"
+            layout="@layout/tljr_view_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/turnin_title"
+        android:background="?attr/TitleBj"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tljr_shape_circlebj">
+
+            <ImageView
+                android:id="@+id/turnout_img_arrow"
+                android:layout_width="73dp"
+                android:layout_height="7dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_xijiantou" />
+
+            <TextView
+                android:id="@+id/activity_turnout_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/turnout_img_arrow"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-3dp"
+                android:textColor="@color/tljr_text_tishi"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/turnout_img_arrow"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="@string/activity_turnout_string2"
+                android:textColor="@color/tljr_text_tishi"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/activity_turnout_icon"
+                android:layout_width="74dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/turnout_img_arrow"
+               />
+
+            <TextView
+                android:id="@+id/activity_turnout_cardname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/turnout_img_arrow"
+                android:gravity="center"
+                android:text="招商银行\n储蓄卡(9188)"
+                android:textColor="@color/tljr_text_default"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line_img"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rl_banner"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:id="@+id/all_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line_img"
+        android:background="@color/tljr_white"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_turnout_string1"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/activity_turnout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="请输入金额"
+            android:inputType="numberSigned"
+            android:textColor="@color/tljr_text_default"
+            android:textCursorDrawable="@drawable/edittextcursor"
+            android:textSize="14sp"></EditText>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/all_rl"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <ImageView
+        android:id="@+id/img_line3"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/img_line2"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:id="@+id/activity_turnout_check"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/img_line3"
+        android:background="@color/tljr_white"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/activity_turnout_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_turn_from"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/activity_turnout_txt_cardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/activity_turnout_to"
+            android:text="招商银行储蓄卡(9188)"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_youjiantou" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_line4"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/activity_turnout_check"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tishi"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/img_line4"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_turnin_string1"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line5_img"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rl_tishi"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:id="@+id/rl_to"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line5_img"
+        android:background="@color/tljr_white"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_turn_to"
+            android:textColor="@color/tljr_text_default"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/activity_turnout_icon1"
+            android:layout_width="67dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+             />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_line6"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rl_to"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <RelativeLayout
+        android:id="@+id/rl_jiaoshao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/img_line6"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/activity_turnout_string4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_turnin_string2"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/activity_turnin_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activity_turnout_string4"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/activity_turnout_string4"
+            android:text="@string/activity_turnout_string5"
+            android:textColor="@color/tljr_text_blue"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/activity_turnout_getgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_turnout_string4"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_turnin_string3"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_xieyi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_jiaoshao"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <CheckBox
+            android:id="@+id/acount_step3_cb"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/checkbox"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_step1_agree"
+            android:textColor="@color/tljr_text_tishi"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/activity_turnin_txt_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_turnin_protocol"
+            android:textColor="@color/tljr_text_blue"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_turnout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linear_xieyi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/img_yuananniu"
+        android:text="@string/activity_turnin_string4"
+        android:textColor="@color/tljr_white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/China_PingAn_insurance_full_guarantee"
+        android:textColor="@color/default_text" />
+
+
+</RelativeLayout>

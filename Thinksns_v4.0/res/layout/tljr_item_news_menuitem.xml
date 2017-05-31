@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tljr_item_news_listview_menuitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_c_green"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tljr_tv_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/tljr_tv_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5" />
+
+    <ImageView
+        android:id="@+id/iv_news_zan"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/img_zan" />
+
+    <ImageView
+        android:id="@+id/iv_news_collect"
+            android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/img_shoucang" />
+    
+</LinearLayout>

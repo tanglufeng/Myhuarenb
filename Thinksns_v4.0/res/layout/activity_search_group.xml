@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/orange"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/bt_creatMeeting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android1:visibility="gone"
+            android:background="@drawable/selector_btn_back"
+            android:padding="15dp"
+            android:src="@drawable/more" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selector_btn_back"
+            android:padding="15dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="查找"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/searchfriendid"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android1:layout_below="@+id/relativelayout"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/img_quedingkuang"
+        android:text="好友ID查询"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/searchgroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android1:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/img_quedingkuang"
+        android:text="好友名称模糊查询"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+
+        android1:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android1:background="#dedede"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/mach"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android1:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:drawableLeft="@drawable/img_chazhao"
+            android:hint="ID/名称"
+            android:paddingLeft="12dp" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_register_bg"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ListView
+
+        android:id="@+id/grouplistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearlayout"
+        android:divider="#d9d9d9"
+        android:dividerHeight="1px">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/empty_tip_recommend_bind_tv"
+        style="@style/CCPBigGreyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="暂无搜索结果"
+        android:visibility="visible" />
+</RelativeLayout>

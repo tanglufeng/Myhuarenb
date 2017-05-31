@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_current"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:visibility="gone"
+    android:background="@color/tljr_white">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/tljr_c_yellow" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="118dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/img_shuiyin2" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/img_dingqitiyan" />
+
+    <TextView
+        android:id="@+id/main_txt_current_sellandbuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="30dp"
+        android:text="已售出--万      已有--人购买"
+        android:textColor="@color/tljr_text_tishi"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/main_txt_current_sellandbuy"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView01"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/fragment_main_current_highgain"
+        android:textColor="@color/tljr_text_default"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView03"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/fragment_main_current_highservice"
+        android:textColor="@color/tljr_text_default"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ImageView01"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/fragment_main_current_guaranteed"
+        android:textColor="@color/tljr_text_default"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:layout_width="11dp"
+        android:layout_height="14dp"
+        android:layout_alignBottom="@+id/TextView04"
+        android:layout_toLeftOf="@+id/TextView04"
+        android:src="@drawable/img_baoxian" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView04"
+        android:layout_alignRight="@+id/TextView04"
+        android:layout_marginBottom="5dp"
+        android:text="@string/fragment_main_current_private"
+        android:textColor="@color/tljr_text_default"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/main_txt_current_gain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView01"
+        android:layout_alignRight="@+id/TextView01"
+        android:layout_marginBottom="5dp"
+        android:text="@string/value_default"
+        android:textColor="@color/tljr_c_red"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+</RelativeLayout>

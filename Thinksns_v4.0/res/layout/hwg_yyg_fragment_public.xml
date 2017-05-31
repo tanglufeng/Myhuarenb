@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/hwg_bg"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="0.1px"
+            android:fadingEdge="none"
+            android:listSelector="#00000000" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/t_refresh"
+        android:visibility="gone"
+        android:textColor="@color/hwg_text2"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/img_hwg_kuang_dark"
+        android:text="点击刷新"
+        android:layout_width="90dp"
+        android:layout_height="40dp" />
+
+    <include
+        layout="@layout/empty_layout"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+
+    <RelativeLayout
+
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+        <CheckBox
+            android:id="@+id/btn_check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:button="@drawable/btn_check"
+            android:paddingLeft="10dp"
+            android:text="全选"
+            android:textColor="@color/default_text"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/btn_delete"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_login"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+</RelativeLayout>

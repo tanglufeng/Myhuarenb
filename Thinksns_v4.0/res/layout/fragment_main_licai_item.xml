@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_regular"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:visibility="gone"
+    android:background="@color/tljr_white">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/tljr_c_red" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="118dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/img_shuiyin3" />
+
+    <ImageView
+        android:id="@+id/ImageView022"
+        android:layout_width="120dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/img_dingqilicai" />
+
+    <TextView
+        android:id="@+id/main_txt_regular_sellandbuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="30dp"
+        android:text="已售出--万      已有--人购买"
+        android:textColor="@color/tljr_text_tishi"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/ImageView011"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/main_txt_regular_sellandbuy"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_222fengexian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ImageView011"
+        android:layout_below="@+id/ImageView022"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/main_regular_check1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="@string/fragment_main_regular_threemonth"
+                android:textColor="@color/tljr_text_default" />
+
+            <TextView
+                android:id="@+id/main_txt_regular_threemonth_gain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/textView4"
+                android:gravity="center"
+                android:text="@string/value_default"
+                android:textColor="@color/tljr_c_red"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+        <RelativeLayout
+            android:id="@+id/main_regular_check2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="@string/fragment_main_regular_sixmonth"
+                android:textColor="@color/tljr_text_default" />
+
+            <TextView
+                android:id="@+id/main_txt_regular_sixmonth_gain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/textView5"
+                android:gravity="center"
+                android:text="@string/value_default"
+                android:textColor="@color/tljr_c_red"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+        <RelativeLayout
+            android:id="@+id/main_regular_check3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="@string/fragment_main_regular_oneyear"
+                android:textColor="@color/tljr_text_default" />
+
+            <TextView
+                android:id="@+id/main_txt_regular_oneyear_gain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/textView6"
+                android:gravity="center"
+                android:text="@string/value_default"
+                android:textColor="@color/tljr_c_red"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

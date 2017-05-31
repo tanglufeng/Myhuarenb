@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        tools:targetApi="lollipop"
+        android:stateListAnimator="@drawable/lift_on_touch"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="6dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="false"
+        android:background="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/ret"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:src="@drawable/img_huaqiao_default"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_above="@+id/tv_english"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textColor="@color/bg_white"
+                android:id="@+id/tv_youji_cn"
+                android:text="决定散发"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:singleLine="true"
+                android:textColor="@color/bg_white"
+                android:id="@+id/tv_english"
+                android:layout_marginTop="2dp"
+                android:layout_centerInParent="true"
+                android:text="landon"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:singleLine="true"
+                android:textColor="@color/bg_white"
+                android:id="@+id/tv_yuyin_numbers"
+                android:layout_marginTop="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tv_english"
+                android:text="landon"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/tv_yuyin_numbers"
+                android:drawableTop="@drawable/download"
+                android:singleLine="true"
+                android:textColor="@color/bg_white"
+                android:id="@+id/tv_yuyin_sizes"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/dibiao"
+                android:layout_width="15dp"
+                android:layout_height="20dp" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>

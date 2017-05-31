@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rer"
+        android:layout_width="match_parent"
+        android:layout_height="105dp">
+
+        <ImageView
+            android:layout_marginBottom="2dp"
+            android:scaleType="centerInside"
+            android:id="@+id/img_jingdian1"
+            android:src="@drawable/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/small_play"
+            android:layout_width="17dp"
+            android:layout_height="17dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_name_jingdian1"
+        android:gravity="center"
+        android:layout_below="@+id/rer"
+        android:text="旅游助理"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abcs.haiwaigou.yyg.activity.MyYYGActivity">
+
+    <View
+        android:id="@+id/seperate"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/tljr_statusbarcolor"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relative_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:layout_below="@+id/seperate"
+        android:background="@color/tljr_statusbarcolor">
+
+        <RelativeLayout
+            android:id="@+id/relative_back"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:background="@drawable/tljr_click">
+
+            <include layout="@layout/tljr_view_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的幸运购"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_title"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="云购余额"
+                android:textColor="@color/hwg_text2"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.abcs.huaqiaobang.view.RiseNumberTextView
+                android:id="@+id/t_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:text="0.00"
+                android:textColor="@color/hwg_text2"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/yyg_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            app:pstsDividerColor="@color/white"
+            app:pstsIndicatorColor="@color/colorPrimaryDark"
+            app:pstsIndicatorHeight="4dp"
+            app:pstsShouldExpand="true"
+            app:pstsTabPaddingLeftRight="10dp"
+            app:pstsUnderlineColor="@color/white">
+
+        </com.astuetz.PagerSlidingTabStrip>
+
+        <View
+            android:id="@+id/seperate_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/linear_tab"
+            android:background="@color/subscribe_seperate_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/yyg_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_tab" />
+    </LinearLayout>
+</RelativeLayout>

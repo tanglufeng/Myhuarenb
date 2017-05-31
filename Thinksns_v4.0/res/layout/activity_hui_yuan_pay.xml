@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hui_yuan_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context="com.abcs.huaqiaobang.activity.HuiYuanPayActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="@color/result_view">
+
+        <include
+            android:id="@+id/tljr_per_btn_lfanhui"
+            layout="@layout/tljr_view_back" />
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <TextView
+            android:id="@+id/tljr_per_txt_ltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="充值"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:background="@drawable/img_pays_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <TextView
+            android:id="@+id/tv_pay_price"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:text="充值金额"
+            android:textColor="#666666"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/bg_textt"
+                android:id="@+id/tv_pay_bai"
+                android:text="100"
+                android:textColor="@color/textcloor"
+                android:layout_width="70dp"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_pay_bai"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/bg_textt"
+                android:id="@+id/tv_pay_wubai"
+                android:text="500"
+                android:textColor="#666666"
+                android:layout_width="70dp"
+                android:layout_height="35dp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_pay_wubai"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/bg_textt"
+                android:id="@+id/tv_pay_qian"
+                android:text="1000"
+                android:textColor="#666666"
+                android:layout_width="70dp"
+                android:layout_height="35dp"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_pay_qian"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/bg_textt"
+                android:id="@+id/tv_pay_wuqian"
+                android:text="5000"
+                android:textColor="#666666"
+                android:layout_width="70dp"
+                android:layout_height="35dp"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="自定义金额:"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edit_price"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:hint="请输入金额"
+                android:inputType="number"
+                android:background="@null"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:gravity="left|center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="选择支付方式"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_wx"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+
+
+        <ImageView
+            android:id="@+id/img_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_wx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_wx"
+            android:gravity="center_vertical"
+            android:text="微信支付"
+            android:textColor="@color/default_text"
+            android:textSize="@dimen/text_more_big_size" />
+
+        <CheckBox
+            android:id="@+id/wx_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/hwg_pay_select_vip"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/image2211"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@color/bar_grey" />
+    </RelativeLayout>
+
+   <RelativeLayout
+        android:id="@+id/relative_yl"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/yh_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/hwg_pay_select_vip"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_yl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/img_yinhang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_yl"
+            android:gravity="center_vertical"
+            android:text="银行卡快捷支付"
+            android:textColor="@color/default_text"
+            android:textSize="@dimen/text_more_big_size" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img_hwg_gd" />
+
+        <ImageView
+            android:id="@+id/image22161"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@color/bar_grey" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_zfb"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/zfb_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/hwg_pay_select_vip"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_zfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/zfb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/img_zfb"
+            android:gravity="center_vertical"
+            android:text="支付宝"
+            android:textColor="@color/default_text"
+            android:textSize="@dimen/text_more_big_size" />
+
+
+        <ImageView
+            android:id="@+id/image22131"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@color/bar_grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_size5"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/tv_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/img_paynow"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

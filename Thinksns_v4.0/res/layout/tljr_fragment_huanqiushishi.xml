@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/statusbar"
+            android:visibility="gone"
+            android:layout_height="25dp"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@+id/statusbar"
+            android:layout_height="?attr/TitleHeight">
+            <TextView
+                android:id="@+id/tljr_txt_news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/fragment_huanqiushishi"
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="?attr/TitleTextSize" />
+
+            <TextView
+                android:id="@+id/tljr_hqss_news_titlebelow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tljr_txt_news_title"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="?attr/TitleTextColor"
+                android:textSize="8dp" />
+
+            <ImageView
+                android:id="@+id/find_date"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/tljr_click"
+                android:padding="12dp"
+                android:src="@drawable/img_rili" />
+
+            <ImageView
+                android:id="@+id/tljr_hqss_underline"
+                android:layout_width="?attr/TitleHeight"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/tljr_click"
+                android:padding="10dp"
+                android:src="@drawable/img_lixian"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/tljr_hqss_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tljr_grp_news_title"
+        android:background="@color/tljr_bj">
+
+        <RelativeLayout
+            android:id="@+id/content_frame_hqss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/tljr_lv_content_huanqiushishi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+
+                <FrameLayout
+                    android:id="@+id/tljr_flame_add_channel"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/img_hqss_jiahaobeijing"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/tljr_btn_add_channel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tljr_click_black"
+                        android:padding="5dp"
+                        android:src="@drawable/img_hqss_jiahao" />
+                </FrameLayout>
+
+
+                <com.abcs.huaqiaobang.tljr.news.tabs.PagerSlidingTabStrip
+                    android:id="@+id/hqss_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/tljr_flame_add_channel"
+                    android:background="@drawable/tljr_click"
+                    android:fillViewport="false" />
+                <!--    android:background="@drawable/background_tabs"   -->
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/hqss_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/seperate_line" />
+
+                <View
+                    android:id="@+id/seperate_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/hqss_tabs"
+                    android:background="@color/subscribe_seperate_line" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!--
+    -
+    
+      <FrameLayout
+        android:id="@+id/tljr_flame_add_channel"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/img_hqss_jiahaobeijing"
+      
+        android:layout_below="@id/tljr_grp_news_title" >
+ 
+        <Button
+            android:id="@+id/tljr_btn_add_channel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            
+            android:background="@drawable/img_hqss_jiahao" />
+    </FrameLayout>
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tljr_listview_selector"
+    android:paddingTop="2.0dip"
+    android:paddingBottom="2.0dip">
+
+
+    <TextView
+        android:id="@+id/t_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relative_img"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_toRightOf="@+id/relative_img"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lines="2"
+        android:text="第四届中国财经峰会举行 聚焦新常态 "
+        android:textColor="@color/tljr_text_default2"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/t_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/t_title"
+        android:layout_below="@+id/t_title"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="4dp"
+        android:lines="1"
+        android:text=""
+        android:textColor="@color/gray_light"
+
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/t_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/t_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="12.0dip"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text="5天前"
+        android:textColor="#ffaaaaaa"
+        android:textSize="12.0sp" />
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/subscribe_seperate_line"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_img"
+        android:layout_marginLeft="12dp"
+        android:layout_width="100.0dip"
+        android:layout_height="83.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="100.0dip"
+            android:layout_height="83.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_huaqiao_default" />
+
+    </RelativeLayout>
+</RelativeLayout>

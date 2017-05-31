@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="370dp"
+        android:layout_height="373dp"
+        android:background="@drawable/hwg_yyg_msg_background">
+
+        <LinearLayout
+            android:id="@+id/linear_middle"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hwg_yyg_gxnzj"/>
+            <TextView
+                android:singleLine="true"
+                android:layout_margin="3dp"
+                android:textColor="#FDE5A1"
+                android:id="@+id/t_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期号:10121012"/>
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/t_name"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="#B05905"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:background="@drawable/hwg_yyg_img_cd"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hwg_yyg_img_btn"
+            android:layout_below="@+id/linear_middle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+
+
+        <ImageView
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hwg_yyg_img_cancel"
+            android:id="@+id/img_cancel" />
+    </RelativeLayout>
+</RelativeLayout>

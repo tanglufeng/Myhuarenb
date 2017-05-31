@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.abcs.haiwaigou.activity.MyCardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hwg_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:background="@drawable/img_hwg_maycard_bg"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/relative_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/TitleHeight">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_back"
+                        android:layout_width="?attr/TitleHeight"
+                        android:layout_height="?attr/TitleHeight"
+                        android:background="@drawable/tljr_click">
+
+                        <include layout="@layout/tljr_view_back" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="我的卡包"
+                        android:textColor="@color/white"
+                        android:textSize="?attr/TitleTextSize" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relative_zong"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/linear_bottom"
+                    android:layout_below="@+id/relative_title"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:focusable="true">
+
+                    <com.abcs.huaqiaobang.view.RiseNumberTextView
+                        android:id="@+id/t_zong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:duplicateParentState="true"
+                        android:text="0.00"
+                        android:textColor="@drawable/text_selected"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_zong"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:duplicateParentState="true"
+                        android:text="总资产"
+                        android:textColor="@drawable/text_selected"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_chongzhi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <com.abcs.huaqiaobang.view.RiseNumberTextView
+                            android:id="@+id/t_chongzhi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:duplicateParentState="true"
+                            android:text="0.00"
+                            android:textColor="@drawable/text_selected"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t_chongzhi"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:duplicateParentState="true"
+                            android:text="充值卡"
+                            android:textColor="@drawable/text_selected"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_hwg_card_fenge" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_yucun"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <com.abcs.huaqiaobang.view.RiseNumberTextView
+                            android:id="@+id/t_yucun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:duplicateParentState="true"
+                            android:text="0.00"
+                            android:textColor="@drawable/text_selected"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t_yucun"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:duplicateParentState="true"
+                            android:text="预存款"
+                            android:textColor="@drawable/text_selected"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_hwg_card_fenge" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_point"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <com.abcs.huaqiaobang.view.RiseNumberTextView
+                            android:id="@+id/t_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:duplicateParentState="true"
+                            android:text="0"
+                            android:textColor="@drawable/text_selected"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t_point"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:duplicateParentState="true"
+                            android:text="积分"
+                            android:textColor="@drawable/text_selected"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!--<RelativeLayout-->
+            <!--android:visibility="visible"-->
+            <!--android:id="@+id/relative_recharge"-->
+            <!--android:background="@drawable/click_bj"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp">-->
+            <!--<ImageView-->
+            <!--android:id="@+id/img_recharge"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/img_hwg_rechargecard"/>-->
+            <!--<TextView-->
+            <!--android:textColor="@color/hwg_text2"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/img_recharge"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="充值卡充值"/>-->
+            <!--<ImageView-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:src="@drawable/img_hwg_gd"/>-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+            <!--android:visibility="visible"-->
+            <!--android:id="@+id/relative_cash"-->
+            <!--android:background="@drawable/click_bj"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp">-->
+            <!--<ImageView-->
+            <!--android:id="@+id/img_cash"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/img_hwg_cash"/>-->
+            <!--<TextView-->
+            <!--android:textColor="@color/hwg_text2"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/img_cash"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="预存款提现"/>-->
+            <!--<ImageView-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:src="@drawable/img_hwg_gd"/>-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/relative_coupon"-->
+            <!--android:background="@drawable/click_bj"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp">-->
+            <!--<ImageView-->
+            <!--android:id="@+id/img_coupon"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/img_hwg_coupon"/>-->
+            <!--<TextView-->
+            <!--android:textColor="@color/hwg_text2"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/img_coupon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="我的优惠券"-->
+            <!--android:id="@+id/textView13" />-->
+            <!--<ImageView-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:src="@drawable/img_hwg_gd"-->
+            <!--android:id="@+id/imageView7" />-->
+            <!--<TextView-->
+            <!--android:id="@+id/t_vouncher_num"-->
+            <!--android:layout_width="17dp"-->
+            <!--android:layout_height="17dp"-->
+            <!--android:layout_gravity="right|top"-->
+            <!--android:background="@drawable/img_yuandian"-->
+            <!--android:gravity="center"-->
+            <!--android:text="99+"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="10sp"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_above="@+id/imageView7"-->
+            <!--android:layout_toRightOf="@+id/textView13"-->
+            <!--android:layout_toEndOf="@+id/textView13" />-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/relative_exchange"-->
+            <!--android:background="@drawable/click_bj"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp">-->
+            <!--<ImageView-->
+            <!--android:id="@+id/img_exchange"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/img_hwg_exchange"/>-->
+            <!--<TextView-->
+            <!--android:textColor="@color/hwg_text2"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/img_exchange"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="积分兑换中心"/>-->
+            <!--<ImageView-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:src="@drawable/img_hwg_gd"/>-->
+            <!--</RelativeLayout>-->
+            <RelativeLayout
+                android:id="@+id/relative_bank"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/click_bj"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_bank"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/img_hwg_bank" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_bank"
+                    android:text="我的银行卡"
+                    android:textColor="@color/hwg_text2"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/img_hwg_gd" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/relative_recharge"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/img_cz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/img_hwg_card_chongzhi" />
+
+                    <TextView
+                        android:id="@+id/t_cz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_cz"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="充值中心"
+                        android:textColor="@color/hwg_text1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_cz"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:text="安全保障"
+                        android:textColor="@color/hwg_text3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/hwg_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_cash"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/img_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/img_hwg_card_tixian" />
+
+                    <TextView
+                        android:id="@+id/t_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_tx"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="预存款提现"
+                        android:textColor="@color/hwg_text1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_tx"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:text="极速到账"
+                        android:textColor="@color/hwg_text3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/hwg_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_exchange"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/img_zf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/img_hwg_card_jifen" />
+
+                    <TextView
+                        android:id="@+id/t_zf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_zf"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="积分中心"
+                        android:textColor="@color/hwg_text1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_zf"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:text="兑换好礼"
+                        android:textColor="@color/hwg_text3"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/img_hwg_card_new" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/relative_coupon"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/img_yh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/img_hwg_card_youhui" />
+
+                    <TextView
+                        android:id="@+id/t_vouncher_num"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="right|top"
+                        android:background="@drawable/img_yuandian"
+                        android:gravity="center"
+                        android:text="99+"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <TextView
+                        android:id="@+id/t_yh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_yh"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:text="我的优惠券"
+                        android:textColor="@color/hwg_text1"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_yh"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:text="满减优惠"
+                        android:textColor="@color/hwg_text3"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/hwg_bg" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:visibility="invisible"></RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/hwg_bg" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:visibility="invisible"></RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

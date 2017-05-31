@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+     
+    
+    
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" 
+        android:orientation="vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp"
+         >
+
+     
+
+        <TextView
+            android:id="@+id/tljr_tv_news_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textColor="#333333"
+            android:layout_marginTop="5dp"
+            android:textSize="22dp" />
+        
+        <TextView
+        android:id="@+id/tljr_tv_news_date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" 
+        android:text="2015-07-21"
+        android:textColor="#838B8B"
+        android:layout_below="@+id/tljr_tv_news_title2"
+        android:layout_marginTop="3dp"
+        android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tljr_tv_news_source2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tljr_tv_news_date2"
+            android:layout_alignBottom="@+id/tljr_tv_news_date2"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/tljr_tv_news_date2"
+            android:paddingLeft="5dp"
+            android:text="来源:"
+            android:textColor="#838B8B"
+            android:textSize="14dp" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tljr_tv_news_content2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerVertical="true"
+         
+        android:text="内容"
+        android:textColor="#000000"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="5dp" 
+        android:paddingBottom="15dp"
+        android:textSize="16dp" />
+
+    
+
+</RelativeLayout>
+
+ 

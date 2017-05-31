@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_xialakuang"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/btn_DIRECT"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:background="@drawable/selector_click_back"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_wangluodianhua" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv"
+            android:background="@null"
+            android:clickable="false"
+            android:text="网络电话"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_Meeting"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:text="创建会议"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#aaaaaa"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/addfriends"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:text="添加好友"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#aaaaaa"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/creategroup"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:text="创建群组"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#aaaaaa"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/searchgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:text="搜索群组"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#aaaaaa"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/refreshfriends"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:text="刷新好友"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#aaaaaa"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/QR_Code"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:background="@drawable/selector_click_back">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_cartsaoyisao" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv1"
+            android:gravity="left|center_vertical"
+            android:background="@null"
+            android:clickable="false"
+            android:text="扫一扫"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

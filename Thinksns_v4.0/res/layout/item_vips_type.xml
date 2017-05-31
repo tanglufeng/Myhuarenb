@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+              android:background="@color/hwg_bg"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+       android:padding="10dp"
+        android:layout_marginBottom="1dp"
+        android:layout_below="@+id/rl_title"
+        android:id="@+id/rl_putongka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/click_bj">
+
+        <TextView
+            android:id="@+id/tv_type_kai_puto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img_information"
+            android:text="普通会员卡"
+            android:textColor="@color/hwg_text1"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_instr"
+            android:layout_below="@+id/tv_type_kai_puto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img_information"
+            android:text="身份特征"
+            android:textColor="@color/hwg_text1"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img_vip_too" />
+
+        <ImageView
+            android:id="@+id/img_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_vip_putong"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"/>
+
+    </RelativeLayout>
+
+    </LinearLayout>

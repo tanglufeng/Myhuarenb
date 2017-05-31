@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/re_qianggou"
+        android:layout_width="match_parent"
+        android:layout_height="187dp">
+
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/kk"
+                android:layout_width="1dp"
+                android:layout_height="1dp">
+
+            </View>
+            <TextView
+                android:layout_toRightOf="@+id/kk"
+                android:layout_above="@+id/liner_center"
+                android:layout_marginBottom="15dp"
+                android:textColor="#333333"
+                android:text="限时抢购"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_toRightOf="@+id/kk"
+                android:id="@+id/liner_center"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_t_hour"
+                    android:textSize="22sp"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="40dp"
+                    android:background="@drawable/bg_hdong_qiangguo"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:textColor="@color/bg_black"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_t_min"
+                    android:textSize="22sp"
+                    android:text="00"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="40dp"
+                    android:background="@drawable/bg_hdong_qiangguo"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:textColor="@color/bg_black"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_t_second"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="40dp"
+                    android:background="@drawable/bg_hdong_qiangguo"
+                    android:text="00"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_toRightOf="@+id/kk"
+                android:id="@+id/tv_activity_nexttime"
+                android:layout_below="@+id/liner_center"
+                android:layout_marginTop="16dp"
+                android:textColor="#333333"
+                android:text="下一场 13:00 开始"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <ImageView
+                android:id="@+id/iv_activity_qiangguo"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="90dp"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:background="@drawable/bg_hdong_yuan"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="1dp"
+                        android:textColor="@color/red"
+                        android:text="¥"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/tv_activity_price"
+                        android:textColor="@color/red"
+                        android:text="1177"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_centerInParent="true"
+            android:id="@+id/line5"
+            android:layout_width="1dp"
+            android:layout_height="1dp"></View>
+        <View
+            android:layout_alignParentBottom="true"
+            android:background="#f0f0f0"
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/liner_activity"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_weekday_new"
+                    android:drawableLeft="@drawable/bg_hdong_hui"
+                    android:drawableRight="@drawable/bg_hdong_hui"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="24dp"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/bg_black"
+                    android:text="每周上新"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:background="@color/bg_black"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"></View>
+                <TextView
+                    android:id="@+id/tv_activity_list_o"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/bg_black"
+                    android:text="Dose"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:background="@color/bg_black"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"></View>
+
+                <ImageView
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/iv_activty_list_o"
+                    android:background="@null"
+                    android:adjustViewBounds="true"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_toRightOf="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_above="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_activity_jingxuan"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginTop="24dp"
+                        android:textColor="#1c1c1c"
+                        android:text="精选特卖"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_activity_jingxuan_des"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@+id/tv_activity_jingxuan"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="#999999"
+                        android:text="发现品质生活测试"
+                        android:gravity="left|center_vertical"
+                        android:textSize="12sp"
+                        android:maxLines="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/iv_activty_list_jingxuan"
+                        android:background="@null"
+                        android:adjustViewBounds="true"
+                        android:layout_width="70dp"
+                        android:layout_height="75dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tv_activity_remen"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="11dp"
+                        android:layout_marginTop="24dp"
+                        android:textColor="#1c1c1c"
+                        android:text="热门品牌"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_activity_remen_des"
+                        android:layout_marginLeft="15dp"
+                        android:layout_below="@+id/tv_activity_remen"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="#999999"
+                        android:text="发现品质生活"
+                        android:gravity="left|center_vertical"
+                        android:textSize="12sp"
+                        android:maxLines="2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/iv_activty_list_remen"
+                        android:background="@null"
+                        android:adjustViewBounds="true"
+                        android:layout_width="70dp"
+                        android:layout_height="75dp" />
+                </RelativeLayout>
+                <View
+                    android:background="#f0f0f0"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"></View>
+
+            </RelativeLayout>
+
+            <View
+                android:background="#f0f0f0"
+                android:layout_centerInParent="true"
+                android:id="@+id/line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp">
+            <RelativeLayout
+                android:layout_toLeftOf="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_activity_paihang"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#1c1c1c"
+                    android:text="排行榜"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_activity_paihang_des"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/tv_activity_paihang"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#999999"
+                    android:text="发现品质生活"
+                    android:gravity="left|center_vertical"
+                    android:textSize="12sp"
+                    android:maxLines="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_activty_list_paihang"
+                    android:background="@null"
+                    android:adjustViewBounds="true"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_toRightOf="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_activity_guojiaguan"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#1c1c1c"
+                    android:text="国家馆"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_activity_guojiaguan_des"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/tv_activity_guojiaguan"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#999999"
+                    android:text="发现品质生活"
+                    android:gravity="left|center_vertical"
+                    android:textSize="12sp"
+                    android:maxLines="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/iv_activty_list_guojiaguan"
+                    android:background="@null"
+                    android:adjustViewBounds="true"
+                    android:layout_width="70dp"
+                    android:layout_height="75dp" />
+            </RelativeLayout>
+            <View
+                android:background="#f0f0f0"
+                android:layout_centerInParent="true"
+                android:id="@+id/line3"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></View>
+            <View
+                android:layout_alignParentTop="true"
+                android:background="#f0f0f0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_activty_list_f"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="165dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/rela_bg"
+        android:layout_width="match_parent"
+        android:layout_height="78dp">
+        <TextView
+            android:textSize="21sp"
+            android:id="@+id/tv"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="精选活动" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:background="#e0e0e0"
+            android:layout_width="30dp"
+            android:layout_height="1dp" />
+    </LinearLayout>
+
+</LinearLayout>

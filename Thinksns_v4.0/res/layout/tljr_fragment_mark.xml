@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<!-- 
+    <TextView
+        android:id="@+id/tljr_hqss_dingyue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text=" 点击订阅" />
+ -->
+
+ 
+ 
+   <FrameLayout
+        android:id="@+id/tljr_grp_news_frame333"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  >
+
+        <RelativeLayout
+            android:id="@+id/content_frame222"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+ 
+ 
+   <com.abcs.huaqiaobang.tljr.zrclistview.ZrcListView
+                    android:id="@+id/tljr_zListView_mark" 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:dividerHeight="0.1px"
+                      />
+      </RelativeLayout>
+    </FrameLayout>
+ <FrameLayout  
+        
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+   	android:background="#00000000"
+ 
+>
+    
+    <TextView
+     android:id="@+id/mark_top_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+		android:paddingTop="3dp"
+		android:paddingBottom="3dp"
+		android:paddingLeft="3dp"
+        android:text=""
+      android:background="#00000000"
+        android:textSize="15sp" />
+ 
+
+</FrameLayout> 
+      
+ 
+    
+    
+    
+</RelativeLayout>
+ 
+ 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/seperate"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/white"/>
+    <RelativeLayout
+        android:layout_below="@+id/seperate"
+        android:id="@+id/inf"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img_hwg_back_gray" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="?attr/TitleTextSize"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="语音导航"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_mune_right"
+            android:textSize="@dimen/dimen_30sp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="筛选"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:text=""
+        android:textColor="@color/bg_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:layout_below="@+id/inf"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:id="@+id/rv_daohang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_progress="@layout/view_progress" />
+
+</RelativeLayout>

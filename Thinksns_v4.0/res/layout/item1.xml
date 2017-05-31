@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="#E0E0E0"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:text="A"
+        android:textColor="#454545" />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp" >
+
+       <LinearLayout
+           android:id="@+id/linearLayout1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_toRightOf="@+id/avatar"
+           android:orientation="vertical" >
+
+           <TextView
+               android:id="@+id/name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="群组名字"
+               android:layout_marginLeft="10dp"
+               android:textColor="#010101"
+               android:textSize="18sp" />
+
+           <TextView
+               android:id="@+id/groupid"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="13558428262"
+               android:textColor="#999999"
+               android:visibility="gone"
+               android:textSize="15sp" />
+       </LinearLayout>
+
+       <ImageView
+           android:id="@+id/flag"
+           android:layout_width="10dp"
+           android:layout_height="10dp"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:src="@drawable/user"
+           android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/item_cb"
+            style="@style/custom_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginLeft="5dp"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical" />
+
+       <com.abcs.huaqiaobang.ytbt.util.CircleImageView
+           android:id="@+id/avatar"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@+id/item_cb"
+           android:src="@drawable/user" />
+   </RelativeLayout>
+   
+</LinearLayout>

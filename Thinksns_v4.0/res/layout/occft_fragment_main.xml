@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj"
+    android:orientation="vertical">
+
+
+    <com.abcs.huaqiaobang.view.MainScrollView
+        android:id="@+id/main_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tljr_bj"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </com.abcs.huaqiaobang.view.MainScrollView>
+
+    <RelativeLayout
+        android:id="@+id/tljr_grp_sy_title"
+        android:layout_width="fill_parent"
+        android:layout_height="?attr/TitleHeight">
+
+        <TextView
+            android:id="@+id/tljr_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+
+        <ImageView
+            android:id="@+id/tljr_login"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:background="@drawable/tljr_click"
+            android:padding="10dp"
+            android:src="@drawable/img_dengluicon" />
+
+        <ImageView
+            android:id="@+id/occft_help"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tljr_click"
+            android:padding="10dp"
+            android:src="@drawable/img_bangzhu" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/occft_help">
+
+            <TextView
+                android:id="@+id/notify_circle"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignRight="@+id/hq_shuoshuo"
+                android:background="@drawable/textview_circlestyle"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/hq_shuoshuo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+
+                android:src="@drawable/img_liaotianicon" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/tljr_grp_sy_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/tljr_click"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/tljr_touxiang"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="?attr/avatarbj" />
+
+            <ImageView
+                android:id="@+id/tljr_tx"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/img_avatar" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tljr_tx"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/tljr_mingiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="5"
+                    android:singleLine="true"
+                    android:text="登录"
+                    android:textColor="?attr/TitleTextColor"
+                    android:textSize="14dp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

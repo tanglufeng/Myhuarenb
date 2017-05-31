@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/subscribe_bg"
+  >
+      <include
+            android:id="@+id/tljr_item_news_top_mark"
+            layout="@layout/tljr_item_news_top_mark"
+            />
+      
+      <RelativeLayout  
+          android:layout_below="@+id/tljr_item_news_top_mark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  >
+      
+    <ImageView
+        android:id="@+id/mark_avatar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/img_avatar" />
+
+    <TextView
+        android:id="@+id/mark_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mark_avatar"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/mark_avatar"
+        android:textColor="@color/tljr_text_tishi"
+        android:text="Healthcare Re" />
+
+    <TextView
+        android:id="@+id/mark_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mark_avatar"
+        android:layout_below="@+id/mark_avatar"
+        android:textColor="@color/tljr_text_comment_content"
+        android:lines="3"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:text="新财富、水晶球请支持中泰医药孙坚团队三季度高增长延续，积极关注" />
+
+      <View
+          android:id="@+id/seperate_line"
+          style="@style/subscribe_seperate_line"
+          android:layout_alignRight="@+id/mart_date"
+          android:layout_alignLeft="@+id/mark_avatar"
+          android:layout_below="@+id/mark_title" />
+
+      <TextView
+          android:id="@+id/mart_date"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/mark_author"
+           android:layout_marginRight="15dp"
+          android:layout_alignParentRight="true"
+          android:text="1小时前"
+          android:textColor="@color/tljr_text_tishi"
+          android:textSize="10sp" />
+</RelativeLayout>
+</RelativeLayout>

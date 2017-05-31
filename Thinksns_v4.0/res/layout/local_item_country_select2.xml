@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@+id/t_pingyin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="A"
+        android:textColor="@color/local_gray"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linear_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="36dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+
+            android:id="@+id/t_country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:textStyle="bold"
+            android:text="热门城市"
+            android:textColor="@color/local_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/t_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/local_gray"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/img_go" />
+    </LinearLayout>
+
+
+    <com.abcs.hqbtravel.wedgt.MyGridView
+        android:id="@+id/gridview_hot_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:horizontalSpacing="12dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:paddingLeft="16dp"
+        android:paddingRight="36dp"
+        android:scrollbars="none"
+        android:verticalSpacing="12dp" />
+</LinearLayout>

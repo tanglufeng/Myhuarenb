@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/noselected_bg">
+
+    <RelativeLayout
+        android:id="@+id/rela_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/line_bg"
+            android:background="@drawable/img_left_g"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:id="@+id/tv_title"
+                android:textSize="16sp"
+                android:textColor="@color/bg_gray_deep"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="暹罗广场" />
+            <ImageView
+                android:layout_marginBottom="1dp"
+                android:id="@+id/tv_icon"
+                android:src="@drawable/a_5"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginBottom="2dp"
+            android:textSize="12sp"
+            android:id="@+id/tv_en_name"
+            android:textColor="@color/gray07"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="暹罗广场" />
+
+    </RelativeLayout>
+    <View
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</LinearLayout>

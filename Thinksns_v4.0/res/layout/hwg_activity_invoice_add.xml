@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/modifyheaderview"
+            android:gravity="center"
+            android:text="新增发票信息"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/t_inv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/click_bj"
+                    android:gravity="center"
+                    android:text="发票抬头："
+                    android:textColor="@color/tljr_text_default" />
+
+                <Spinner
+                    android:id="@+id/spinner_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:entries="@array/invoice_title_array">
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_company"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/t_company_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/click_bj"
+                    android:gravity="center"
+                    android:text="公司名称："
+                    android:textColor="@color/tljr_text_default" />
+
+                <EditText
+                    android:id="@+id/et_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/bg_country_border"
+                    android:ems="11"
+                    android:gravity="left|center_vertical"
+                    android:hint="请输入公司名称"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/default_text"
+                    android:textColorHint="@color/tljr_text_tishi"
+                    android:textCursorDrawable="@drawable/edittextcursor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/subscribe_seperate_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/t_inv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/click_bj"
+                android:gravity="center"
+                android:text="发票内容："
+                android:textColor="@color/tljr_text_default" />
+
+            <Spinner
+                android:id="@+id/spinner_content"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:entries="@array/invoice_content_array">
+
+            </Spinner>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login"
+            android:text="保存"
+            android:textColor="@color/tljr_white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

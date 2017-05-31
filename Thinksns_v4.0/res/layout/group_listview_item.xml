@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <com.abcs.huaqiaobang.ytbt.util.CircleImageView
+        android:id="@+id/gridview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/msgtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="今天   14：15"
+        android:textColor="#d0d0d0"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/gridview"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="群组名字"
+            android:textColor="#010101"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/groupid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="群组ID"
+            android:textColor="#999999"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_numOK"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_register_bg"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="进入"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+</RelativeLayout>

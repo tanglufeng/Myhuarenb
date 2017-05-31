@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_img_shape"
+            android:id="@+id/img_logo"
+            android:src="@drawable/img_bichi"
+            android:scaleType="fitXY"
+            android:layout_width="132dp"
+            android:layout_height="132dp" />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_alignParentTop="true"
+                android:textColor="#16a2ed"
+                android:id="@+id/tv_titles"
+                android:gravity="center"
+                android:text="中亚那个咖啡馆"
+                android:layout_marginBottom="20dp"
+                android:textSize="@dimen/dimen_40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_pinfen"
+                android:drawableLeft="@drawable/img_travel_vip"
+                android:drawablePadding="@dimen/dimen_5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="4.6km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="10dp"
+                android:id="@+id/tv_tourist_content"
+                android:layout_below="@+id/tv_titles"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#999999"
+                android:text="意境和大家而案发大啊方"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:background="@color/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    </LinearLayout>

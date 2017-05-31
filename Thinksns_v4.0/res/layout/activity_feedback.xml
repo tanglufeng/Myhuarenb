@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.abcs.huaqiaobang.activity.FeedbackActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/TitleHeight"
+        android:background="?attr/TitleBj">
+
+        <include
+            android:id="@+id/tljr_per_btn_lfanhui"
+            layout="@layout/tljr_view_back" />
+
+        <TextView
+            android:id="@+id/tljr_per_txt_ltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="?attr/TitleTextColor"
+            android:textSize="?attr/TitleTextSize" />
+    </RelativeLayout>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/feedback"
+        android:layout_width="345dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/rl_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_theme"
+        android:gravity="top"
+        android:hint="请输入问题或意见"
+        android:textColor="@color/default_text"
+        android:textColorHint="@color/tljr_text_tishi"
+        android:textCursorDrawable="@drawable/edittextcursor" />
+
+    <EditText
+        android:id="@+id/use_phone"
+        android:inputType="phone"
+        android:layout_width="345dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_theme"
+        android:hint="请填写您的联系方式(可选)"
+        android:textColor="@color/default_text"
+        android:textColorHint="@color/tljr_text_tishi"
+        android:textCursorDrawable="@drawable/edittextcursor" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="345dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/use_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_login"
+        android:text="提交"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

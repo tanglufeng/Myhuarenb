@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <com.abcs.huaqiaobang.ytbt.util.CircleImageView
+        android:src="@drawable/user"
+        android:id="@+id/avatar"
+        android:layout_height="50dp"
+        android:layout_width="50dp"/>
+  
+
+   
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="65dp"
+        android:orientation="vertical" >
+
+        <TextView     
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="群组名字"
+            android:textColor="#010101"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/groupid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13558428262"
+            android:textColor="#999999"
+            android:textSize="15sp" />
+    </LinearLayout>
+  <ImageView
+      android:visibility="gone"
+      android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+        android:src="@drawable/user"
+        android:id="@+id/flag"
+        android:layout_height="10dp"
+        android:layout_width="10dp" />
+</RelativeLayout>

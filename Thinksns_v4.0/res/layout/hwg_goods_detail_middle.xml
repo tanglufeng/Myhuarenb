@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_size10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:id="@+id/relative_storage"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_size5"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_size3">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="库存"
+                android:textSize="@dimen/text_big_size" />
+
+            <TextView
+                android:id="@+id/t_storage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_size15"
+                android:text=""
+                android:textSize="@dimen/text_big_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_size3"
+                android:text="件"
+                android:textSize="@dimen/text_big_size" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_top23"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+        <ImageView
+            android:id="@+id/img_bottom23"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_size10"
+            android:layout_marginRight="@dimen/margin_size10"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/relative_freight"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_size5"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_size3">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费"
+                android:textSize="@dimen/text_big_size" />
+
+            <TextView
+                android:id="@+id/t_freight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_size15"
+                android:text="¥0.01"
+                android:textSize="@dimen/text_big_size" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_size10"
+            android:layout_marginRight="@dimen/margin_size10"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/relative_select"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_size5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_size3">
+
+            <TextView
+
+                android:id="@+id/t_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已选"
+                android:textSize="@dimen/text_big_size" />
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_size15"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btn_cart_reduce"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/btn_shopping_cart_product_num_reduce" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/btn_cart_num_edit"
+                    android:layout_width="55dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/btn_shopping_cart_product_num_edit"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/default_text"
+                    android:textCursorDrawable="@drawable/edittextcursor"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_cart_add"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/btn_shopping_cart_product_num_add" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_top3"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_send_to"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_size5"
+            android:layout_toLeftOf="@+id/jiantou"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_size3">
+
+
+            <TextView
+                android:id="@+id/t_send_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送至"
+                android:textSize="@dimen/text_big_size" />
+
+            <TextView
+                android:id="@+id/t_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_size15"
+                android:text="请选择收货地址"
+                android:textSize="@dimen/text_big_size" />
+            <!--<TextView-->
+            <!--android:id="@+id/t_province"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="@dimen/margin_size15"-->
+            <!--android:text="广东"-->
+            <!--android:textSize="@dimen/text_big_size" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/t1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/padding_size5"-->
+            <!--android:text=">"-->
+            <!--android:textSize="@dimen/text_big_size" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/t_city"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="深圳"-->
+            <!--android:textSize="@dimen/text_big_size" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/t2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/padding_size5"-->
+            <!--android:text=">"-->
+            <!--android:textSize="@dimen/text_big_size" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/t_area"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="福田区"-->
+            <!--android:textSize="@dimen/text_big_size" />-->
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/jiantou"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/img_gengduojiantou" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_top2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+        <ImageView
+            android:id="@+id/img_bottom2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_size10"
+            android:layout_marginRight="@dimen/margin_size10"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_222fengexian" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relative_select"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="43dp"-->
+    <!--android:background="@color/white">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginLeft="@dimen/margin_size5"-->
+    <!--android:layout_toLeftOf="@+id/jiantou2"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="@dimen/padding_size3">-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/t_selected"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="已选"-->
+    <!--android:textSize="@dimen/text_big_size" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/t_color"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/margin_size15"-->
+    <!--android:text="白色"-->
+    <!--android:textSize="@dimen/text_big_size" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/t_count"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="@dimen/padding_size5"-->
+    <!--android:text="1"-->
+    <!--android:textSize="@dimen/text_big_size" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/t3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="件"-->
+    <!--android:textSize="@dimen/text_big_size" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/jiantou2"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/img_gengduojiantou" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_bottom3"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginLeft="@dimen/margin_size10"-->
+    <!--android:layout_marginRight="@dimen/margin_size10"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/img_222fengexian" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relative_service"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="90dp"-->
+    <!--android:background="@color/white">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="@dimen/margin_size5"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/margin_size10"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="@dimen/padding_size3">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/t_service"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="服务"-->
+    <!--android:textSize="@dimen/text_big_size" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/t_service_info"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/margin_size15"-->
+    <!--android:text="由意大利Gucci海外专营店直接销售和发货，并提供售后服务（商品来源意大利）"-->
+    <!--android:textSize="@dimen/text_big_size" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="@dimen/padding_size3">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/t_tishi"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="提示"-->
+    <!--android:textSize="@dimen/text_big_size" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/t_tishi_info"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/margin_size15"-->
+    <!--android:text="特殊商品，不支持7天退货"-->
+    <!--android:textSize="@dimen/text_big_size" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_bottom4"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/img_222fengexian" />-->
+
+    <!--</RelativeLayout>-->
+</LinearLayout>

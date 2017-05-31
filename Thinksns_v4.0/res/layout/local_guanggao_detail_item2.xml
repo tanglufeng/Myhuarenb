@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/translucent_background_50">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/local_item_detail">
+
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/local_detail_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="华人邦客服"
+            android:textSize="20sp" />
+
+        <LinearLayout
+
+            android:id="@+id/local_item_detail_caontain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/local_detail_tv_name"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/local_item_detail_tv_contain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray07"
+                    tools:text="刊登广告招聘、招工找工、生意转让、房屋买卖、加入黄页、社团活动、商会接待等各项事务请联系本客服。"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/local_item_iv_weixin"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/qr_cs"
+                android:layout_gravity="right"
+                />
+        </LinearLayout>
+
+
+        <View
+            android:background="@color/line"
+            android:layout_below="@+id/local_item_detail_caontain"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="13dp"
+            android:layout_below="@id/local_item_detail_caontain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone"
+                />
+            <TextView
+                android:id="@+id/tv_weixin_hao"
+                android:layout_marginLeft="5dp"
+                android:textSize="13sp"
+                android:textColorLink="@color/gray07"
+                android:autoLink="phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray07"
+                android:text="0755-32838341"
+                />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/weixin"
+                android:id="@+id/tv_weixin_hao2"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray07"
+                android:text="huaqiaobang"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(单击复制)"
+                android:textColor="@color/tljr_text_shense"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/local_detail_bg_head"
+        android:background="@drawable/img_tracel_avatar_bg"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        >
+
+        <com.abcs.huaqiaobang.view.CircleImageView
+            android:src="@drawable/huarenbang_logo"
+            android:id="@+id/local_detail_civ_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/local_detail_close"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/close"
+        />
+
+
+
+</RelativeLayout>

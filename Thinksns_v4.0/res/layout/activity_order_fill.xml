@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/inf"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:padding="5dp"
+            android:layout_margin="@dimen/dimen_15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_travel_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/dimen_40sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="订单填写"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/inf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_tor_title"
+                    android:textSize="18sp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/bg_black"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="神猴野外飞梭，亚洲岁刺激哈"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_dettials"
+                    android:textColor="#0d7de2"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:text="详情"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_type1"
+                    android:textColor="#0d7de2"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:background="@drawable/img_kuang"
+                    android:padding="5dp"
+                    android:text="3.5小时+接送"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@+id/tv_type1"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tv_type2"
+                    android:gravity="center"
+                    android:textColor="#555555"
+                    android:background="@drawable/img_to_noselected"
+                    android:padding="5dp"
+                    android:text="3.5小时(不含接送)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_type3"
+                    android:textColor="#555555"
+                    android:background="@drawable/img_to_noselected"
+                    android:layout_below="@+id/tv_type1"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentLeft= "true"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:text="3小时（不含接送）"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/tv_type4"
+                    android:textColor="#555555"
+                    android:background="@drawable/img_to_noselected"
+                    android:layout_toRightOf="@+id/tv_type3"
+                    android:layout_below="@+id/tv_type2"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="1小时+接送"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:background="@color/bg_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="使用日期"
+                    android:textColor="@color/bg_black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:text="2016-09-23"
+                    android:textColor="#aaaaaa"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_toselect_date"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/img_go"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:background="@color/bg_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+
+                <TextView
+                    android:id="@+id/tv_cren"
+                    android:text="成人"
+                    android:textColor="@color/bg_black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_money_bg"
+                    android:layout_below="@+id/tv_cren"
+                    android:text="￥"
+                    android:textColor="@color/red"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_toRightOf="@+id/tv_money_bg"
+                    android:layout_below="@+id/tv_cren"
+                    android:text="721"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/ret_price_jian"
+                        android:background="@drawable/img_left_bg"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="35dp">
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/img_jian"
+                            android:layout_width="17dp"
+                            android:layout_height="3dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tv_price_number"
+                        android:background="@drawable/img_center_bg"
+                        android:gravity="center"
+                        android:text="2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="35dp" />
+                    <LinearLayout
+                        android:id="@+id/ret_price_jia"
+                        android:background="@drawable/img_right_bg"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_height="35dp">
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/img_jia"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:background="@color/bg_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:text="填写出行人的信息"
+                android:background="#eeeff1"
+                android:textSize="17dp"
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <TextView
+                android:background="@color/bg_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:text="联系人"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:hint="请填写姓名"
+                    android:textColor="#c7c7cd"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <TextView
+                android:background="@color/bg_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_phone_name"
+                    android:layout_centerVertical="true"
+                    android:text="电话"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/tv_phone_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="+86"
+                    android:drawableRight="@drawable/img_down"
+                    android:drawablePadding="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:hint="请填写手机号码"
+                    android:textColor="#c7c7cd"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <TextView
+                android:background="@color/bg_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:text="紧急联系人"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:hint="请填写姓名"
+                    android:textColor="#c7c7cd"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <TextView
+                android:background="@color/bg_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/tv_phone_name2"
+                    android:layout_centerVertical="true"
+                    android:text="电话"
+                    android:textColor="#4c4c4c"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/tv_phone_name2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="+86"
+                    android:drawableRight="@drawable/img_down"
+                    android:drawablePadding="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:hint="请填写手机号码"
+                    android:textColor="#c7c7cd"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <TextView
+                android:background="@color/bg_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            
+            <TextView
+                android:layout_marginTop="50dp"
+                android:background="@drawable/img_pay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

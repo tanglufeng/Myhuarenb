@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="?attr/TitleHeight"
+            android:background="@color/white"
+           >
+
+        <TextView
+            android:id="@+id/tljr_txt_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="限时购"
+            android:textColor="@color/hwg_text1"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/relative_back"
+            android:layout_width="?attr/TitleHeight"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/tljr_click">
+
+            <include
+                android:id="@+id/tljr_img_news_back"
+                layout="@layout/hqb_view_back" />
+        </RelativeLayout>
+        </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/top"
+        android:layout_marginTop="45dp"
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/midle"
+        android:layout_below="@+id/top"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#b2b2b2" />
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:visibility="gone"
+               android:id="@+id/re_qiang1"
+               android:gravity="center_vertical"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               >
+
+               <TextView
+                   android:id="@+id/tv_bottom_qiang_ing1"
+                   android:textSize="16sp"
+                   android:textColor="#4d4d4d"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   tools:text="00:00"
+                   />
+
+
+               <TextView
+                   android:layout_centerHorizontal="true"
+                   android:textSize="12sp"
+                   android:id="@+id/txt_yikaiqiang_one"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   tools:text="已开抢"
+                   android:textColor="#4d4d4d"
+                   android:layout_below="@+id/tv_bottom_qiang_ing1"
+                   />
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:visibility="gone"
+               android:id="@+id/re_qiang2"
+               android:gravity="center_vertical"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               >
+
+               <TextView
+                   android:id="@+id/tv_bottom_qiang_ing2"
+                   android:textSize="16sp"
+                   android:textColor="#4d4d4d"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   tools:text="00:00"
+                   />
+
+
+               <TextView
+                   android:layout_centerHorizontal="true"
+                   android:textSize="12sp"
+                   android:id="@+id/txt_yikaiqiang_two"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   tools:text="已开抢"
+                   android:textColor="#4d4d4d"
+                   android:layout_below="@+id/tv_bottom_qiang_ing2"
+                    />
+           </RelativeLayout>
+           <RelativeLayout
+               android:visibility="gone"
+               android:id="@+id/re_qiang3"
+               android:gravity="center_vertical"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               >
+
+               <TextView
+                   android:id="@+id/tv_bottom_qiang_ing3"
+                   android:textSize="16sp"
+                   android:textColor="#4d4d4d"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   tools:text="00:00"
+                   />
+
+
+               <TextView
+                   android:layout_centerHorizontal="true"
+                   android:textSize="12sp"
+                   android:id="@+id/txt_yikaiqiang_three"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   tools:text="已开抢"
+                   android:textColor="#4d4d4d"
+                   android:layout_below="@+id/tv_bottom_qiang_ing3"
+                  />
+           </RelativeLayout>
+           <RelativeLayout
+               android:visibility="gone"
+               android:id="@+id/re_qiang4"
+               android:gravity="center_vertical"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               >
+
+               <TextView
+                   android:id="@+id/tv_bottom_qiang_ing4"
+                   android:textSize="16sp"
+                   android:textColor="#4d4d4d"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   tools:text="00:00"
+                   />
+
+
+               <TextView
+                   android:layout_centerHorizontal="true"
+                   android:textSize="12sp"
+                   android:id="@+id/txt_yikaiqiang_four"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   tools:text="已开抢"
+                   android:textColor="#4d4d4d"
+                   android:layout_below="@+id/tv_bottom_qiang_ing4"
+                   />
+           </RelativeLayout>
+           <RelativeLayout
+               android:visibility="gone"
+               android:id="@+id/re_qiang5"
+               android:gravity="center_vertical"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               >
+
+               <TextView
+                   android:id="@+id/tv_bottom_qiang_ing5"
+                   android:textSize="16sp"
+                   android:textColor="#4d4d4d"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   tools:text="00:00"
+                   />
+
+
+               <TextView
+                   android:layout_centerHorizontal="true"
+                   android:textSize="12sp"
+                   android:id="@+id/txt_yikaiqiang_five"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   tools:text="已开抢"
+                   android:textColor="#4d4d4d"
+                   android:layout_below="@+id/tv_bottom_qiang_ing5"
+                   />
+           </RelativeLayout>
+           <RelativeLayout
+               android:visibility="gone"
+               android:id="@+id/re_qiang6"
+               android:gravity="center_vertical"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               >
+
+               <TextView
+                   android:id="@+id/tv_bottom_qiang_ing6"
+                   android:textSize="16sp"
+                   android:textColor="#4d4d4d"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   tools:text="00:00"
+                   />
+
+
+               <TextView
+                   android:layout_centerHorizontal="true"
+                   android:textSize="12sp"
+                   android:id="@+id/txt_yikaiqiang_sive"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   tools:text="已开抢"
+                   android:textColor="#4d4d4d"
+                   android:layout_below="@+id/tv_bottom_qiang_ing6"
+                   />
+           </RelativeLayout>
+           <RelativeLayout
+               android:visibility="gone"
+               android:id="@+id/re_qiang7"
+               android:gravity="center_vertical"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               >
+
+               <TextView
+                   android:id="@+id/tv_bottom_qiang_ing7"
+                   android:textSize="16sp"
+                   android:textColor="#4d4d4d"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerHorizontal="true"
+                   tools:text="00:00"
+                   />
+
+
+               <TextView
+                   android:layout_centerHorizontal="true"
+                   android:textSize="12sp"
+                   android:id="@+id/txt_yikaiqiang_seven"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   tools:text="已开抢"
+                   android:textColor="#4d4d4d"
+                   android:layout_below="@+id/tv_bottom_qiang_ing7"
+                   />
+           </RelativeLayout>
+       </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tljr_bj">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#fff" >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/personal_img_1"
+                android:background="@color/subscribe_seperate_line" />
+            <ImageView
+                android:id="@+id/personal_img_1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/img_shengyin" />
+
+            <TextView
+                android:layout_toRightOf="@+id/personal_img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="新消息声音"
+                android:layout_marginLeft="15dp"
+                android:textSize="17sp" />
+
+            <ToggleButton
+                android:id="@+id/btn_sound"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/switch_btn"
+                android:checked="true"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#fff" >
+            <ImageView
+                android:id="@+id/personal_img_2"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/img_zhendong" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/personal_img_2"
+                android:background="@color/subscribe_seperate_line" />
+
+            <TextView
+                android:layout_toRightOf="@+id/personal_img_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="新消息震动"
+                android:textSize="17sp" />
+
+            <ToggleButton
+                android:id="@+id/btn_shake"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/switch_btn"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/my_rl_guanyuwomen"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/click_bj"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/more_img_women"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/guanyuwm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/more_img_women"
+                android:text="关于我们"
+                android:textColor="@color/default_text"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/gengduo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/more_img_women"
+                android:background="@color/subscribe_seperate_line" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/my_rl_help"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/click_bj"
+            android:clickable="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/more_img_help"
+                android:background="@color/subscribe_seperate_line" />
+
+            <ImageView
+                android:id="@+id/more_img_help"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/yinanbangz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/more_img_help"
+                android:text="疑难帮助"
+                android:textColor="@color/default_text"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/gengduo" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/my_rl_yijian"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/click_bj"
+            android:clickable="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/more_img_yijian"
+                android:background="@color/subscribe_seperate_line" />
+
+            <ImageView
+                android:id="@+id/more_img_yijian"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/fankui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/more_img_yijian"
+                android:text="意见反馈"
+                android:textColor="@color/default_text"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/gengduo" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/my_rl_share"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/click_bj"
+            android:clickable="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/more_img_share"
+                android:background="@color/subscribe_seperate_line" />
+
+            <ImageView
+                android:id="@+id/more_img_share"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/fenxiang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/more_img_share"
+                android:text="分享APP"
+                android:textColor="@color/default_text"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/gengduo" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/my_rl_update"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/click_bj">
+
+            <ImageView
+                android:id="@+id/more_img_update"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/update" />
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/more_img_update"
+                android:text="检查更新"
+                android:textColor="@color/default_text"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_vUpdate_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@+id/tv_update"
+                android:text="@string/current_version"
+                android:textColor="@color/gray_light" />
+
+            <TextView
+                android:id="@+id/tv_vUpdate_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_update"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/more_img_update"
+                android:singleLine="true"
+                android:text="@string/update_date"
+                android:textColor="@color/gray_light" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/gengduo" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/subscribe_seperate_line" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

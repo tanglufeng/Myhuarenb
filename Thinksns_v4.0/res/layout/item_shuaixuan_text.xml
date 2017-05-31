@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/noselected_bg">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/rela_bg"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           />
+        <TextView
+            android:id="@+id/tv"
+            android:textColor="#111111"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="暹罗广场" />
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_centerInParent="true"
+                android:background="@drawable/iv_peisong_to"
+                android:layout_width="wrap_content"
+                android:layout_height="30px" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <View
+        android:visibility="gone"
+        android:background="#e6e6e6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+</LinearLayout>

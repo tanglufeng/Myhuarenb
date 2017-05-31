@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="118dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/linear_root">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:id="@+id/relative_icon"
+            android:layout_centerVertical="true"
+            android:layout_width="100dp"
+            android:layout_height="75dp">
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gouwuka" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/t_money"
+                android:textSize="14dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/tljr_statusbarcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥100"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@+id/relative_icon">
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/t_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="100元购物华人邦卡"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/t_all_need"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_title"
+                android:text="总需:100"
+                android:textColor="@color/tljr_gray" />
+
+            <ProgressBar
+                android:id="@+id/goods_prograss"
+                style="@style/ProgressBar_yyg"
+                android:layout_width="fill_parent"
+                android:layout_height="8dp"
+                android:layout_below="@+id/t_all_need"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/t_canyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/goods_prograss"
+                android:text="80参与"
+                android:textColor="@color/tljr_gray" />
+
+            <TextView
+                android:id="@+id/t_remain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/goods_prograss"
+                android:layout_marginRight="20dp"
+                android:text="剩余20"
+                android:textColor="@color/tljr_gray" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/subscribe_seperate_line" />
+</LinearLayout>
